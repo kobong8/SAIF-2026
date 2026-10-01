@@ -1,3 +1,25 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Local QA output and generated binary artifacts
+qa/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.avif
+*.bmp
+*.tif
+*.tiff
+*.ico
+*.pdf
+*.mp4
+*.mov
+*.avi
+*.webm
+*.zip
+*.7z
+*.tar
+*.gz
