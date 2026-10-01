@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173f3b">
+  <title>SAIF 2026 · 팀 공유 브리핑</title>
+  <link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#slide-1" aria-label="SAIF 2026 첫 화면으로 이동"><span>SAIF <b>2026</b><small>FORUM FIELD NOTES</small></span></a>
+  <div class="edition">TEAM BRIEFING <span>7 SPEAKERS</span></div>
+  <nav id="navigation" aria-label="발표자별 목차"></nav>
+  <div class="sidebar-bottom"><span class="dot"></span> 함께 읽고, 다음을 설계하다<small>AGENTIC AI · FROM INTELLIGENCE TO IMPACT</small></div>
+</aside>
+<div class="workspace">
+  <header>
+    <div class="breadcrumb">삼성 AI 포럼 <span>/</span> 참석 내용 공유</div>
+    <div class="toolbar"><button id="presentButton" class="primary">발표 모드 <kbd>F</kbd></button></div>
+  </header>
+  <div class="mobile-nav"><label for="jumpSelect">발표 이동</label><select id="jumpSelect"></select></div>
+  <main id="main" tabindex="-1"><div id="slide" aria-live="polite"><p>발표 자료를 불러오고 있습니다…</p></div></main>
+  <footer>
+    <div class="position"><span id="counter">—</span><span id="speakerName"></span></div>
+    <div id="chapterPages" aria-label="현재 발표자의 장표"></div>
+    <div class="paging"><span class="keyhint">← → 이동</span><button id="prev" aria-label="이전 슬라이드" disabled>←</button><button id="next" aria-label="다음 슬라이드" disabled>→</button></div>
+  </footer>
+  <div class="progress" role="progressbar" aria-label="장표 진행" aria-valuemin="1"><div id="progressFill"></div></div>
+</div>
+<script src="/static/app.js?v=3"></script>
+</body>
+</html>

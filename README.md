@@ -1,0 +1,80 @@
+# SAIF 2026 · 팀 공유 발표
+
+FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 발표자 7명 × 5장으로 **총 37장**입니다.
+
+## 설치와 실행
+
+Windows PowerShell / Python 3.10 이상.
+
+최초 설치 또는 의존성 변경 시:
+
+```powershell
+.\install.ps1
+```
+
+서버 실행:
+
+```powershell
+.\start.ps1
+```
+
+브라우저에서 **http://127.0.0.1:8930** 접속. 종료는 서버 터미널에서 `Ctrl+C`.
+
+PowerShell 정책으로 `.ps1` 실행이 제한되면 다음 명령을 직접 실행합니다.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8930
+```
+
+이미 서버가 실행 중이면 해당 창에서 `Ctrl+C`로 종료한 뒤 다시 시작하세요. 내용 변경 후에도 서버를 다시 시작하고 브라우저를 새로고침합니다. `start.ps1`은 설치를 수행하지 않으며 포트가 사용 중이면 안내를 표시합니다.
+
+같은 내부 네트워크의 팀원에게 공유하려면:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 0.0.0.0 --port 8930
+```
+
+팀원은 `http://발표자PC의내부IP:8930`으로 접속합니다. 네트워크와 방화벽에서 연결을 허용해야 합니다. 별도 로그인 기능은 없습니다.
+
+## 구성
+
+| 발표자 | 장수 | 주요 내용 |
+| --- | ---: | --- |
+| Richard Ho | 5 | 에이전트, 대규모 탐색·검증, Jalapeño 설계, 커널 최적화, 조직 확산 |
+| David Green | 5 | Learn·Unlearn·Retool, 개인 사례, 기업 사례, 실행 통제, 평가·확산 |
+| Ranjay Krishna | 5 | 공간·움직임, Sketching, 시각적 근거, 행동 계획, 현장 적용 |
+| Yun Kim | 5 | 모델 구조, 지속 학습, Attention, 문맥 압축, 온디바이스 |
+| Ajaz Munsiff | 5 | 사업 전략, 과제 선정, 데이터, 하이브리드 실행, 운영·성과 |
+| 최상근 | 5 | 위협 모델, 프롬프트 주입, 격리 환경, 다층 방어, 운영 검증 |
+| 한재준 | 5 | R&D 흐름, 연구 데이터, 시뮬레이션, 플랫폼, 팀 실행 과제 |
+
+각 장은 핵심 항목, 구체적인 사례·기술 설명, 핵심 메시지로 구성됩니다.
+
+## 발표 조작
+
+- 왼쪽 발표자 목차를 펼쳐 원하는 장표로 이동합니다.
+- 모바일에서는 상단 선택 목록으로 이동합니다.
+- `←` `→`, `PageUp` `PageDown`, `Space`: 이동.
+- `Home` / `End`: 처음 / 마지막.
+- `F`: 발표 모드와 전체 화면. `Esc`: 종료.
+- 하단 숫자로 현재 발표자의 다른 장표에 바로 이동할 수 있습니다.
+- `#slide-8`처럼 주소를 공유하면 해당 장부터 열립니다.
+
+타이머, 발표 대본, 자료 검색·다운로드 기능은 제공하지 않습니다. 외부 폰트·CDN·AI API 없이 동작합니다.
+
+## 수정과 검증
+
+- `content.py`: 발표 내용과 발표자 목록.
+- `static/`: 화면, 스타일, 키보드 이동 기능.
+- `main.py`: 웹페이지와 발표 데이터 API.
+- `install.ps1`: 가상환경 생성·패키지 설치.
+- `start.ps1`: 포트 점검·8930 서버 실행.
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+node --check static/app.js
+```
+
+API: `/health`, `/api/slides`. 기존 입력 자료 두 파일은 수정하지 않으며 웹으로 노출하지 않습니다.
