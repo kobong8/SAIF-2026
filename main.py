@@ -16,6 +16,7 @@ def index():
 
 
 @app.get("/api/slides")
+@app.get("/slides.json")
 def slides():
     return {"title": "삼성 AI 포럼 2026", "speakers": [
         {"id": i + 1, "name": name, "topic": topic}

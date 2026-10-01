@@ -96,7 +96,7 @@ function navButton(s,index) {
 
 async function init() {
   try {
-    const response = await fetch('/api/slides',{cache:'no-store'});
+    const response = await fetch('./slides.json',{cache:'no-store'});
     if(!response.ok) throw new Error('Load failed');
     const data = await response.json();
     slides = data.slides;
@@ -110,7 +110,7 @@ async function init() {
     $('#jumpSelect').innerHTML = slides.map((s,i) => `<option value="${i}">${s.group ? esc(s.speaker)+' · ' : ''}${esc(s.nav)}</option>`).join('');
     fromHash();
   } catch {
-    $('#slide').innerHTML = '<h1>자료를 불러오지 못했습니다.</h1><p>서버를 다시 실행한 뒤 페이지를 새로고침해 주세요.</p>';
+    $('#slide').innerHTML = '<h1>자료를 불러오지 못했습니다.</h1><p>잠시 후 페이지를 새로고침해 주세요.</p>';
   }
 }
 init();

@@ -2,6 +2,23 @@
 
 FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 발표자 7명 × 5장으로 **총 37장**입니다.
 
+## GitHub Pages
+
+**https://kobong8.github.io/SAIF-2026/** 에서 Python 서버 없이 발표 화면을 열 수 있습니다.
+
+저장소의 **Settings → Pages → Deploy from a branch → main / (root)** 설정을 사용합니다. 루트의 `index.html`, `slides.json`, `static/`가 웹페이지를 구성하고 `.nojekyll`은 Jekyll 변환을 끕니다.
+
+내용이나 HTML을 수정한 뒤 정적 파일을 갱신하고 함께 커밋·푸시합니다.
+
+```powershell
+python build_pages.py
+git add content.py static index.html slides.json .nojekyll
+git commit -m "Update presentation"
+git push
+```
+
+`build_pages.py`는 Python 기본 라이브러리만 사용합니다. FastAPI 설치는 로컬 서버를 실행할 때만 필요합니다.
+
 ## 설치와 실행
 
 Windows PowerShell / Python 3.10 이상.
@@ -77,4 +94,4 @@ python -m venv .venv
 node --check static/app.js
 ```
 
-API: `/health`, `/api/slides`. 기존 입력 자료 두 파일은 수정하지 않으며 웹으로 노출하지 않습니다.
+로컬 API: `/health`, `/api/slides`, `/slides.json`. 발표 화면에는 원본 자료 다운로드 기능이 없습니다.
