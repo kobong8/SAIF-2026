@@ -36,12 +36,12 @@ class PagesTests(unittest.TestCase):
             with urlopen(base, timeout=5) as response:
                 html = response.read().decode('utf-8')
             self.assertIn('id="slide"', html)
-            for file in ('./static/style.css?v=6', './static/app.js?v=6'):
+            for file in ('./static/style.css?v=7', './static/app.js?v=7'):
                 self.assertIn(file, html)
                 with urlopen(urljoin(base, file), timeout=5) as response:
                     self.assertEqual(response.status, 200)
             with urlopen(urljoin(base, './slides.json'), timeout=5) as response:
-                self.assertEqual(len(json.load(response)['slides']), 72)
+                self.assertEqual(len(json.load(response)['slides']), 79)
             js = (ROOT / 'static/app.js').read_text(encoding='utf-8')
             self.assertIn("fetch('./slides.json'", js)
         finally:

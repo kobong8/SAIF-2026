@@ -7,14 +7,17 @@ from main import ROOT, app, slides
 
 
 class PresentationTests(unittest.TestCase):
-    def test_every_speaker_has_ten_slides(self):
+    def test_every_speaker_has_eleven_slides(self):
         counts = Counter(s["group"] for s in SLIDES)
         self.assertEqual(len(SPEAKERS), 7)
-        self.assertEqual(len(SLIDES), 72)
+        self.assertEqual(len(SLIDES), 79)
         self.assertEqual(counts[0], 2)
         for group in range(1, 8):
-            self.assertEqual(counts[group], 10)
-            self.assertEqual([s["page"] for s in SLIDES if s["group"] == group], list(range(1, 11)))
+            self.assertEqual(counts[group], 11)
+            self.assertEqual([s["page"] for s in SLIDES if s["group"] == group], list(range(1, 12)))
+            chapters = [s for s in SLIDES if s["group"] == group]
+            self.assertEqual(chapters[0]["nav"], "발표 요약")
+            self.assertEqual(sum(s["nav"] == "발표 요약" for s in chapters), 1)
         self.assertEqual(SLIDES[1]["title"], "요약")
 
     def test_slides_have_substantive_unique_content(self):
@@ -26,7 +29,7 @@ class PresentationTests(unittest.TestCase):
 
     def test_requested_emphasis_and_chapter_endings(self):
         groups = {group: [s for s in SLIDES if s["group"] == group] for group in range(1, 8)}
-        self.assertEqual([s["id"] for s in SLIDES], list(range(1, 73)))
+        self.assertEqual([s["id"] for s in SLIDES], list(range(1, 80)))
         openai = json.dumps(groups[1], ensure_ascii=False)
         for text in ("챗봇은 질문에 답하고", "64%", "합산 출력 토큰", "108배", "영업·채용 41배", "26배", "개발 5배", "Plugins & Skills", "9% → 21%", "3% → 19%"):
             self.assertIn(text, openai)

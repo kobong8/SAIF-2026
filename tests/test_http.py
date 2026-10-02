@@ -38,9 +38,9 @@ class HttpTests(unittest.TestCase):
     def test_current_deck_and_static_assets(self):
         with urlopen(self.base + "/api/slides", timeout=5) as response:
             data = json.load(response)
-        self.assertEqual(len(data["slides"]), 72)
+        self.assertEqual(len(data["slides"]), 79)
         self.assertEqual(len(data["speakers"]), 7)
-        for path in ("/", "/static/app.js?v=6", "/static/style.css?v=6", "/slides.json", "/health"):
+        for path in ("/", "/static/app.js?v=7", "/static/style.css?v=7", "/slides.json", "/health"):
             with self.subTest(path=path), urlopen(self.base + path, timeout=5) as response:
                 self.assertEqual(response.status, 200)
                 self.assertTrue(response.read())

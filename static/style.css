@@ -110,6 +110,13 @@ h1{font-weight:750;letter-spacing:-.05em;color:#15213b}
 .paging button:hover{background:#e4e9fc}
 #counter{font-family:Consolas,monospace;color:#4255a2}
 #progressFill{background:linear-gradient(90deg,#5265de,#9878df)}
+.slide--summary h1{font-size:clamp(28px,2.6vw,42px);line-height:1.25;margin:16px 0 10px}
+.slide--summary .subtitle{margin-bottom:20px}
+.slide--summary .card{padding:20px 23px}
+.slide--summary .card h2{font-size:21px;line-height:1.5;margin:10px 0 12px}
+.slide--summary .card li{font-size:14px;line-height:1.85}
+.slide--summary .card li+li{margin-top:9px}
+@container (max-width:700px){.slide--summary .cards{grid-template-columns:1fr}.slide--summary .card{padding:20px}.slide--summary .card h2{font-size:20px}}
 @media(max-width:760px){
   .brand{font-size:22px}
   .sidebar{background:linear-gradient(110deg,#17233e,#222b4d)}

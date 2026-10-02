@@ -292,12 +292,17 @@ add(7, "우리 팀의 R&D 실행 과제", "작은 흐름을 완성하고\n검증
     ("다음 팀 회의에서 정할 것", "첫 적용 업무, 필요한 데이터, 실행 담당자, 결과 검토자, 완료 기준과 확인 날짜를 정합니다. 효과가 확인되면 입력 형식·실행 절차·평가 기준을 묶어 다른 업무로 확장합니다."), kind="closing")
 
 
-from content_expanded import expand
+from content_expanded import add_summaries, expand
 
 # Interleave the additional chapters with the original case studies.
 _original = list(SLIDES)
 expand(add)
 _additional = SLIDES[len(_original):]
+_before_summaries = len(SLIDES)
+add_summaries(add)
+_summaries = {s["group"]: s for s in SLIDES[_before_summaries:]}
+for _summary in _summaries.values():
+    _summary["kind"] = "summary"
 _orders = {
     1: [0, 5, 6, 7, 8, 1, 2, 3, 9, 4],
     2: [0, 5, 1, 7, 2, 6, 3, 8, 4, 9],
@@ -310,8 +315,8 @@ _orders = {
 SLIDES[:] = [s for s in _original if s["group"] == 0]
 for _group, _order in _orders.items():
     _chapters = [s for s in _original + _additional if s["group"] == _group]
-    for _page, _index in enumerate(_order, 1):
-        _slide = _chapters[_index]
+    _ordered = [_summaries[_group]] + [_chapters[index] for index in _order]
+    for _page, _slide in enumerate(_ordered, 1):
         _slide.update(id=len(SLIDES) + 1, page=_page)
         SLIDES.append(_slide)
 

@@ -136,6 +136,60 @@
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "에이전트와 엔지니어링\n발표 요약",
+      "subtitle": "Richard Ho · OpenAI",
+      "cards": [
+        {
+          "label": "01 · AGENT",
+          "title": "챗봇의 응답에서 에이전트의 실행으로",
+          "points": [
+            "챗봇은 사람의 질문에 답하고, 에이전트는 목표를 받아 도구를 사용하며 여러 단계를 수행합니다.",
+            "탐색 → 계획 → 실행 → 검증을 반복하고 중간 결과에 따라 접근을 수정합니다.",
+            "사람은 목표·권한·완료 기준을 정하고, 에이전트가 제출한 결과와 증거를 검토합니다."
+          ]
+        },
+        {
+          "label": "02 · ADOPTION",
+          "title": "Codex 64%와 비개발 부서의 확산",
+          "points": [
+            "기업 고객의 ChatGPT·Codex 합산 출력 토큰 중 Codex 비중은 64%로 제시됐습니다.",
+            "2월 이후 Codex 주간 활성 사용자 증가: 법무 108배, 영업·채용 각 41배, 마케팅 26배, 개발 5배입니다.",
+            "이 수치는 사용 비중과 사용자 증가 배수이며, 생산성 향상률을 뜻하지는 않습니다."
+          ]
+        },
+        {
+          "label": "03 · ENGINEERING",
+          "title": "탐색 규모를 실제 개선으로 연결",
+          "points": [
+            "수학 연구에서는 약 10,000개 에이전트가 88시간 탐색하고 17시간의 정형 검증을 추가했습니다.",
+            "Jalapeño는 설계 변경과 EDA 검증을 반복해 행렬 연산·SIMD 블록 면적을 각각 10%·8% 줄였습니다.",
+            "특정 MLA 커널은 Roofline 대비 성능이 0.31%에서 88.94%로 개선됐으며, 전체 칩의 성능 수치와는 구분됩니다."
+          ]
+        },
+        {
+          "label": "04 · REUSE",
+          "title": "Plugins·Skills를 조직의 역량으로",
+          "points": [
+            "Plugins는 기능을 묶어 공유·배포하고, Skills는 도구를 활용해 과업을 수행하는 절차와 방법을 담습니다.",
+            "일반군 대비 선도군의 주간 활용률은 Plugins 9%→21%, Skills 3%→19%로 더 높았습니다.",
+            "좋은 사용법과 검증 기준을 함께 공유해 개인의 성공을 동료가 재현할 수 있는 업무 방식으로 만듭니다."
+          ]
+        }
+      ],
+      "takeaway": "사람은 목표와 검증 기준을 설계하고, 에이전트의 실행 방법을 팀의 자산으로 축적합니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "에이전트의 가치는 여러 도구를 활용해 실제 업무를 완수하는 데 있습니다. 활용 확산의 수치를 살펴본 뒤 엔지니어링 사례를 통해 결과 검증의 중요성을 확인하고, 좋은 수행 방법을 조직이 공유하는 방식으로 이어집니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 4,
+      "group": 1,
+      "speaker": "Richard Ho",
+      "section": "01 · Richard Ho",
+      "page": 2,
       "nav": "챗봇에서 에이전트로",
       "title": "챗봇은 질문에 답하고,\n에이전트는 목표를 수행합니다",
       "subtitle": "에이전트는 목표를 가지고 도구를 활용해 여러 단계의 작업을 수행합니다 · OpenAI",
@@ -173,11 +227,11 @@
       "kind": "flow"
     },
     {
-      "id": 4,
+      "id": 5,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 2,
+      "page": 3,
       "nav": "Codex가 차지하는 64%",
       "title": "기업의 AI 활용이\n답변에서 실행으로 이동",
       "subtitle": "Codex · 기업 고객의 ChatGPT·Codex 합산 출력 토큰 기준",
@@ -215,11 +269,11 @@
       "kind": "metrics"
     },
     {
-      "id": 5,
+      "id": 6,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 3,
+      "page": 4,
       "nav": "부서별 사용 확산",
       "title": "법무 108배, 영업·채용 41배\n비개발 업무로 확산",
       "subtitle": "2월 이후 기업 Codex 주간 활성 사용자 증가 배수",
@@ -257,11 +311,11 @@
       "kind": "metrics"
     },
     {
-      "id": 6,
+      "id": 7,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 4,
+      "page": 5,
       "nav": "Plugins와 Skills의 차이",
       "title": "공유할 기능을 묶고,\n일하는 방법을 담습니다",
       "subtitle": "Plugins & Skills · 조직 안에서 좋은 사용법을 재사용하는 두 층",
@@ -299,11 +353,11 @@
       "kind": "cards"
     },
     {
-      "id": 7,
+      "id": 8,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 5,
+      "page": 6,
       "nav": "Frontier 기업의 활용",
       "title": "선도 기업은 도구와 방법을\n더 넓게 공유합니다",
       "subtitle": "Frontier firms · 사용자당 월간 출력 토큰 상위 10% 기업군",
@@ -341,11 +395,11 @@
       "kind": "metrics"
     },
     {
-      "id": 8,
+      "id": 9,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 6,
+      "page": 7,
       "nav": "대규모 탐색과 검증",
       "title": "탐색을 확장하는 힘은\n엄격한 검증에서 나옵니다",
       "subtitle": "수학 연구 사례 · 여러 탐색 경로를 하나의 검증 가능한 결과로 결합",
@@ -383,11 +437,11 @@
       "kind": "metrics"
     },
     {
-      "id": 9,
+      "id": 10,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 7,
+      "page": 8,
       "nav": "Jalapeño 하드웨어 설계",
       "title": "Jalapeño: 설계 변경을\n측정 가능한 개선으로",
       "subtitle": "AI를 활용한 하드웨어·소프트웨어 공동 설계",
@@ -425,11 +479,11 @@
       "kind": "flow"
     },
     {
-      "id": 10,
+      "id": 11,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 8,
+      "page": 9,
       "nav": "커널 성능 최적화",
       "title": "동작하는 코드에서\n하드웨어를 활용하는 코드로",
       "subtitle": "Jalapeño의 MLA 커널 · AI를 통한 반복 최적화",
@@ -467,11 +521,11 @@
       "kind": "performance"
     },
     {
-      "id": 11,
+      "id": 12,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 9,
+      "page": 10,
       "nav": "사람이 맡을 판단",
       "title": "탐색이 빨라질수록\n문제와 검증의 설계가 중요",
       "subtitle": "엔지니어링 적용 · 목표, 제약, 실험과 검토의 역할",
@@ -509,11 +563,11 @@
       "kind": "cards"
     },
     {
-      "id": 12,
+      "id": 13,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
-      "page": 10,
+      "page": 11,
       "nav": "조직이 축적해야 할 역량",
       "title": "좋은 위임 방식을\n팀의 공통 자산으로 만듭니다",
       "subtitle": "에이전트 활용을 확장하는 Skills, Plugins, 그리고 사람의 판단",
@@ -551,11 +605,65 @@
       "kind": "cards"
     },
     {
-      "id": 13,
+      "id": 14,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "전사 AI 전환\n발표 요약",
+      "subtitle": "David Green · AWS",
+      "cards": [
+        {
+          "label": "01 · CHANGE",
+          "title": "Learn · Unlearn · Retool",
+          "points": [
+            "리더와 실무자가 실제 업무에 AI를 사용하며 강점과 한계를 직접 배웁니다.",
+            "기존 절차의 목적과 대기 시간을 재검토하고, 사람의 판단과 에이전트의 반복 실행을 연결합니다.",
+            "개인의 번역·정보 수집 자동화를 구조화·검색·평가가 이어지는 팀의 업무 체계로 확장합니다."
+          ]
+        },
+        {
+          "label": "02 · CASES",
+          "title": "개인 생산성에서 사업의 결과로",
+          "points": [
+            "Mantle은 6명의 팀이 76일 동안 추론 계층을 재구축한 사례로 소개됐습니다.",
+            "Prime Video의 정산 시스템은 90주 예상에서 24주로, NOL은 핵심 변환 10시간과 전체 작업 6주로 제시됐습니다.",
+            "코드 변환 시간과 테스트·수정·배포를 포함한 전체 기간을 구분해 실제 개선 범위를 판단합니다."
+          ]
+        },
+        {
+          "label": "03 · FOUNDATION",
+          "title": "평가·데이터·통제를 공통 기반으로",
+          "points": [
+            "필요한 정보를 검색·구조화하고 같은 업무 평가셋으로 모델의 품질과 비용을 비교합니다.",
+            "회사 신원, 허용 도구, 데이터 접근 권한, 예산과 실행 기록을 공통 게이트웨이에서 관리합니다.",
+            "여러 단계의 오류 감지·재시도·최종 검증을 설계하고 재작업까지 포함한 완료 업무당 비용을 측정합니다."
+          ]
+        },
+        {
+          "label": "04 · CUSTOMER",
+          "title": "성공은 고객에게 전달한 경험",
+          "points": [
+            "토큰 소비량은 사용 상태를 보여 주지만, 성공의 기준은 고객에게 전달한 가치입니다.",
+            "고객의 대기 시간, 반복 설명, 오류와 재처리가 줄고 원하는 결과를 정확히 얻는지 확인합니다.",
+            "검증된 도구·스킬·사례를 공유해 다른 팀도 같은 품질을 재현하도록 확산합니다."
+          ]
+        }
+      ],
+      "takeaway": "성공은 토큰을 얼마나 소비했는지가 아니라 고객에게 어떤 경험과 가치를 제공했는지입니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "리더와 실무자의 직접 사용에서 출발해 개인 생산성을 팀과 사업의 성과로 확장합니다. 이 과정에서 평가와 통제를 공통 기반으로 마련하고, 최종적으로 고객이 체감하는 결과를 전환의 성공 기준으로 삼습니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 15,
+      "group": 2,
+      "speaker": "David Green",
+      "section": "02 · David Green",
+      "page": 2,
       "nav": "Learn · Unlearn · Retool",
       "title": "전사 AI 전환은\n업무 방식의 재설계에서 시작",
       "subtitle": "From Individual Productivity to Enterprise-Wide Impact · AWS",
@@ -593,11 +701,11 @@
       "kind": "flow"
     },
     {
-      "id": 14,
+      "id": 16,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 2,
+      "page": 3,
       "nav": "리더의 직접 사용",
       "title": "리더도 작은 업무를\n직접 바꿔 보는 경험부터",
       "subtitle": "AI empowerment · 현장의 문제를 기술 담당자와 함께 해결",
@@ -635,11 +743,11 @@
       "kind": "cards"
     },
     {
-      "id": 15,
+      "id": 17,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 3,
+      "page": 4,
       "nav": "개인 업무의 확장",
       "title": "번역 한 번에서\n지속적인 정보 활용 체계로",
       "subtitle": "개인 사례 · 뉴스와 다국어 자료를 수집·정리·검색하는 흐름",
@@ -677,11 +785,11 @@
       "kind": "flow"
     },
     {
-      "id": 16,
+      "id": 18,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 4,
+      "page": 5,
       "nav": "모델과 검색의 역할",
       "title": "필요한 정보만 찾고\n업무에 맞는 모델을 선택",
       "subtitle": "정보 활용 체계 · 검색, 데이터 구조, 모델 평가의 결합",
@@ -719,11 +827,11 @@
       "kind": "cards"
     },
     {
-      "id": 17,
+      "id": 19,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 5,
+      "page": 6,
       "nav": "팀·사업 단위의 사례",
       "title": "속도 개선을 넘어\n사업의 결과를 다시 정의",
       "subtitle": "Mantle · Prime Video · NOL의 업무 재구성 사례",
@@ -761,11 +869,11 @@
       "kind": "metrics"
     },
     {
-      "id": 18,
+      "id": 20,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 6,
+      "page": 7,
       "nav": "고객의 과정에서 출발",
       "title": "프로세스를 바꿀 때는\n고객의 기다림을 먼저 봅니다",
       "subtitle": "Prime Video 사례에서 생각할 변화 · 팀 적용 관점",
@@ -803,11 +911,11 @@
       "kind": "flow"
     },
     {
-      "id": 19,
+      "id": 21,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 7,
+      "page": 8,
       "nav": "에이전트 바깥의 통제",
       "title": "권한과 비용의 통제를\n실행 경로에 배치합니다",
       "subtitle": "기업용 게이트웨이 · 신원, 허용 도구, 예산, 실행 기록",
@@ -845,11 +953,11 @@
       "kind": "flow"
     },
     {
-      "id": 20,
+      "id": 22,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 8,
+      "page": 9,
       "nav": "완료까지의 신뢰성",
       "title": "여러 단계의 성공을\n하나의 업무 성공으로 연결",
       "subtitle": "팀 적용 · 단계별 검증, 복구, 최종 결과 확인",
@@ -887,11 +995,11 @@
       "kind": "flow"
     },
     {
-      "id": 21,
+      "id": 23,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 9,
+      "page": 10,
       "nav": "평가와 조직 내 확산",
       "title": "한 업무의 효과를 측정하고\n다른 팀이 반복하게 만듭니다",
       "subtitle": "전사 확산의 기반 · 평가셋, 업무당 비용, 공통 저장소",
@@ -929,11 +1037,11 @@
       "kind": "cards"
     },
     {
-      "id": 22,
+      "id": 24,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
-      "page": 10,
+      "page": 11,
       "nav": "성공은 고객 경험",
       "title": "성공의 기준은\n고객에게 전달한 경험과 가치",
       "subtitle": "AWS의 핵심 메시지 · 토큰 소비량은 사용 지표, 고객 가치는 성과 지표",
@@ -971,11 +1079,65 @@
       "kind": "closing"
     },
     {
-      "id": 23,
+      "id": 25,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "물리 세계의 AI\n발표 요약",
+      "subtitle": "Ranjay Krishna · University of Washington",
+      "cards": [
+        {
+          "label": "01 · CHALLENGE",
+          "title": "물체 인식만으로는 깊이를 알기 어려움",
+          "points": [
+            "2차원 사진에서 물체의 이름을 알아도 어느 것이 앞에 있고 얼마나 떨어져 있는지 판단하기는 어렵습니다.",
+            "가림·원근·시점의 단서를 해석해야 하며, 위치를 가리키는 능력만으로 깊이 비교가 해결되지는 않습니다.",
+            "로봇의 행동에는 위치·깊이·움직임과 함께 도달 거리, 충돌 가능성, 반응 시간이 필요합니다."
+          ]
+        },
+        {
+          "label": "02 · SKETCHING",
+          "title": "필요한 중간 그림을 만들어 다시 추론",
+          "points": [
+            "Sketching은 관찰 → 중간 표현 생성 → 재관찰 → 판단의 과정으로 시각 문제를 푸는 접근입니다.",
+            "겹친 쿠키의 앞뒤 관계를 파악할 때 깊이 지도를 만들어 공간 정보를 드러내는 사례가 제시됐습니다.",
+            "기하 문제의 보조선, 함수 그래프, 작은 간판의 확대처럼 질문에 맞는 시각 도구를 선택합니다."
+          ]
+        },
+        {
+          "label": "03 · REPRESENTATION",
+          "title": "전문 도구의 지각 능력을 모델로 통합",
+          "points": [
+            "초기에는 깊이 추정·물체 검출 같은 전문 비전 도구의 결과를 언어 모델이 해석합니다.",
+            "위치·깊이를 다루는 지각 토큰으로 공간 정보를 표현하며 시각·언어 모델 안에 관련 능력을 통합합니다.",
+            "점·박스·프레임으로 판단 대상을 표시하면 사람이 모델이 본 대상과 근거를 확인할 수 있습니다."
+          ]
+        },
+        {
+          "label": "04 · ACTION",
+          "title": "공간 표현을 계획과 현장 검증으로",
+          "points": [
+            "장면의 깊이와 대상 위치에서 3차원 이동 경로를 구성하고, 사람이 경로를 확인·수정하게 합니다.",
+            "새 물체·배치·조명에서의 일반화와 실제 완료 시간, 제어 정밀도까지 함께 평가해야 합니다.",
+            "시뮬레이터의 허점을 이용한 높은 점수가 현실의 유효한 행동인지도 별도로 확인해야 합니다."
+          ]
+        }
+      ],
+      "takeaway": "깊이 인식의 어려움을 다루기 위해 Sketching을 도입하고, 시각적 표현을 행동 계획으로 연결합니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "사진 속 대상을 설명하는 능력에서 출발해 실제 공간에서 행동하는 능력으로 확장합니다. 필요한 중간 그림을 만드는 Sketching과 공간 정보를 다루는 지각 표현이 그 사이를 연결하며, 현장에서는 반응 속도와 실패 조건까지 평가해야 합니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 26,
+      "group": 3,
+      "speaker": "Ranjay Krishna",
+      "section": "03 · Ranjay Krishna",
+      "page": 2,
       "nav": "물리적 지능의 조건",
       "title": "물리 세계를 이해하려면\n공간과 움직임을 다뤄야 합니다",
       "subtitle": "Grounding Agents in the Physical World · University of Washington",
@@ -1013,11 +1175,11 @@
       "kind": "cards"
     },
     {
-      "id": 24,
+      "id": 27,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 2,
+      "page": 3,
       "nav": "사진의 깊이가 어려운 이유",
       "title": "사진 속 물체를 알아도\n앞뒤와 거리는 어려울 수 있습니다",
       "subtitle": "2차원 이미지에서 3차원 공간으로 · 깊이 인식의 과제",
@@ -1055,11 +1217,11 @@
       "kind": "cards"
     },
     {
-      "id": 25,
+      "id": 28,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 3,
+      "page": 4,
       "nav": "Sketching으로 추론하기",
       "title": "중간 그림이\n추론의 도구가 됩니다",
       "subtitle": "Sketching · 필요한 시각 정보를 만들고 그 위에서 생각하기",
@@ -1097,11 +1259,11 @@
       "kind": "flow"
     },
     {
-      "id": 26,
+      "id": 29,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 4,
+      "page": 5,
       "nav": "쿠키와 깊이 지도",
       "title": "겹친 쿠키의 관계를\n깊이 지도로 다시 봅니다",
       "subtitle": "Sketching 사례 · 질문에 필요한 중간 이미지를 만들어 해석",
@@ -1139,11 +1301,11 @@
       "kind": "flow"
     },
     {
-      "id": 27,
+      "id": 30,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 5,
+      "page": 6,
       "nav": "질문에 맞는 시각 도구",
       "title": "보조선·확대·깊이 지도\n문제마다 다른 그림이 필요",
       "subtitle": "Sketching의 범위 · 계산과 시각적 관찰의 반복",
@@ -1181,11 +1343,11 @@
       "kind": "cards"
     },
     {
-      "id": 28,
+      "id": 31,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 6,
+      "page": 7,
       "nav": "픽셀에 연결된 판단",
       "title": "무엇을 봤는지\n사람이 확인할 수 있게",
       "subtitle": "시각적 grounding · 점, 박스, 프레임으로 답변의 대상을 연결",
@@ -1223,11 +1385,11 @@
       "kind": "cards"
     },
     {
-      "id": 29,
+      "id": 32,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 7,
+      "page": 8,
       "nav": "전문 도구에서 통합 모델로",
       "title": "도구로 얻은 지각 능력을\n모델 안으로 연결",
       "subtitle": "전문 비전 모델 · 지각 토큰 · 시각·언어 모델",
@@ -1265,11 +1427,11 @@
       "kind": "flow"
     },
     {
-      "id": 30,
+      "id": 33,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 8,
+      "page": 9,
       "nav": "깊이 인식에서 행동 계획으로",
       "title": "공간을 표현하고,\n경로를 계획한 뒤 행동",
       "subtitle": "Perception tokens · 시각·언어 모델을 로봇 제어로 확장",
@@ -1307,11 +1469,11 @@
       "kind": "flow"
     },
     {
-      "id": 31,
+      "id": 34,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 9,
+      "page": 10,
       "nav": "사람이 조정하는 행동 계획",
       "title": "행동 경로를 먼저 보여 주고\n사람이 수정하게 합니다",
       "subtitle": "팀 적용 · 관찰 가능한 계획과 실행 중 확인",
@@ -1349,11 +1511,11 @@
       "kind": "cards"
     },
     {
-      "id": 32,
+      "id": 35,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
-      "page": 10,
+      "page": 11,
       "nav": "현장 적용의 과제",
       "title": "실제 환경에서 통하는\n학습과 평가가 필요합니다",
       "subtitle": "물리적 AI의 다음 과제 · 일반화, 반응 속도, 현실적 검증",
@@ -1391,11 +1553,65 @@
       "kind": "cards"
     },
     {
-      "id": 33,
+      "id": 36,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "지속 학습과 온디바이스\n발표 요약",
+      "subtitle": "Yun Kim",
+      "cards": [
+        {
+          "label": "01 · EXPERIENCE",
+          "title": "장시간 일하며 경험을 활용하는 지능",
+          "points": [
+            "에이전트의 능력은 사전·사후 학습된 모델과 도구·기억·평가를 연결하는 실행 구조에서 나옵니다.",
+            "외부 지식을 찾는 검색, 작업 이력을 보존하는 기억, 경험을 모델에 반영하는 학습을 구분해야 합니다.",
+            "새 업무에 적응하는 정도와 기존 업무의 능력 유지 여부를 함께 평가하는 것이 지속 학습의 과제입니다."
+          ]
+        },
+        {
+          "label": "02 · ATTENTION",
+          "title": "긴 이력을 처리하는 메모리 구조",
+          "points": [
+            "일반 Attention은 이전 문맥을 참조하므로 이력이 길어질수록 메모리와 접근 비용이 커집니다.",
+            "선형 Attention은 상태를 갱신하는 방식으로 정보를 축적하고, 혼합 구조는 전역 참조 능력을 함께 활용합니다.",
+            "고정 크기 상태의 효율과 중요한 세부 정보·장거리 관계를 보존하는 능력 사이의 균형이 필요합니다."
+          ]
+        },
+        {
+          "label": "03 · COMPACTION",
+          "title": "크기와 후속 업무 능력을 함께 평가",
+          "points": [
+            "긴 이력을 텍스트로 요약하거나 잠재 표현·일부 파라미터·KV cache를 압축하는 방향을 다룹니다.",
+            "목표·제약·결정·실패 이유가 남아야 다음 단계에서 같은 오류를 반복하지 않을 수 있습니다.",
+            "팀 적용에서는 압축 전후 같은 과업을 수행해 품질, 누락, 압축 시간과 메모리 절감을 함께 비교합니다."
+          ]
+        },
+        {
+          "label": "04 · DEVICE",
+          "title": "온디바이스를 위한 모델 설계",
+          "points": [
+            "로컬 실행은 네트워크 왕복과 연결 의존성을 줄이고 민감한 입력을 기기 가까이에서 처리합니다.",
+            "Looped transformer는 깊이 방향으로 파라미터를 재사용해 모델 크기 부담을 줄이는 접근입니다.",
+            "가중치와 작업 메모리가 기기에 들어가는지뿐 아니라 지연·전력·실제 과업 품질도 확인해야 합니다."
+          ]
+        }
+      ],
+      "takeaway": "지속적으로 배우고 기기 안에서 실행하려면 모델의 기억과 계산 구조를 함께 설계해야 합니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "장시간 일하는 에이전트는 경험을 계속 쌓지만 사용할 수 있는 자원은 한정되어 있습니다. 기억 구조와 압축, 파라미터 재사용을 통해 효율을 높이되, 필요한 정보를 유지하고 실제 업무를 수행하는 능력이 보존되는지 확인합니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 37,
+      "group": 4,
+      "speaker": "Yun Kim",
+      "section": "04 · Yun Kim",
+      "page": 2,
       "nav": "에이전트 지능의 구조",
       "title": "에이전트의 다음 도약은\n모델 구조의 진화와 연결",
       "subtitle": "Architectures for Agentic Intelligence · Yun Kim",
@@ -1433,11 +1649,11 @@
       "kind": "flow"
     },
     {
-      "id": 34,
+      "id": 38,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 2,
+      "page": 3,
       "nav": "지속 학습의 요구",
       "title": "새로운 경험을\n어떻게 계속 활용할 것인가",
       "subtitle": "Continual learning · 변화하는 지식과 환경에 대한 적응",
@@ -1475,11 +1691,11 @@
       "kind": "cards"
     },
     {
-      "id": 35,
+      "id": 39,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 3,
+      "page": 4,
       "nav": "기억과 학습의 구분",
       "title": "정보를 찾아오는 것과\n경험을 배우는 것은 다른 설계",
       "subtitle": "검색 · 작업 기억 · 모델의 적응",
@@ -1517,11 +1733,11 @@
       "kind": "cards"
     },
     {
-      "id": 36,
+      "id": 40,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 4,
+      "page": 5,
       "nav": "선형·혼합 Attention",
       "title": "긴 이력을 다루는\n효율적인 메모리 구조",
       "subtitle": "Linear attention과 hybrid architecture",
@@ -1559,11 +1775,11 @@
       "kind": "flow"
     },
     {
-      "id": 37,
+      "id": 41,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 5,
+      "page": 6,
       "nav": "고정 크기 기억의 선택",
       "title": "작은 상태에 담을 때\n무엇을 보존할지가 핵심",
       "subtitle": "선형 attention을 이해하는 관점 · 효율과 정보 유지",
@@ -1601,11 +1817,11 @@
       "kind": "cards"
     },
     {
-      "id": 38,
+      "id": 42,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 6,
+      "page": 7,
       "nav": "문맥 압축과 내재화",
       "title": "긴 문맥을\n더 작은 표현으로 압축",
       "subtitle": "텍스트 요약에서 잠재 공간·파라미터·KV cache 압축으로",
@@ -1643,11 +1859,11 @@
       "kind": "cards"
     },
     {
-      "id": 39,
+      "id": 43,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 7,
+      "page": 8,
       "nav": "압축 이후의 검증",
       "title": "요약이 짧아졌다면\n다음 작업이 가능한지 확인",
       "subtitle": "팀 적용 · 문맥 압축의 품질 평가",
@@ -1685,11 +1901,11 @@
       "kind": "cards"
     },
     {
-      "id": 40,
+      "id": 44,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 8,
+      "page": 9,
       "nav": "지속 학습의 평가 기준",
       "title": "새 경험을 익히면서\n기존 능력도 유지해야 합니다",
       "subtitle": "팀 적용 · 장기간 사용하는 에이전트의 품질 관리",
@@ -1727,11 +1943,11 @@
       "kind": "cards"
     },
     {
-      "id": 41,
+      "id": 45,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 9,
+      "page": 10,
       "nav": "파라미터 공유의 의미",
       "title": "모델 크기와 계산 깊이를\n함께 설계하는 접근",
       "subtitle": "Looped transformer · 깊이 방향으로 파라미터 재사용",
@@ -1769,11 +1985,11 @@
       "kind": "cards"
     },
     {
-      "id": 42,
+      "id": 46,
       "group": 4,
       "speaker": "Yun Kim",
       "section": "04 · Yun Kim",
-      "page": 10,
+      "page": 11,
       "nav": "온디바이스 아키텍처",
       "title": "기기 안에서 실행하려면\n메모리부터 다시 생각",
       "subtitle": "On-device deployment · 지연, 연결성, 프라이버시, 상시 동작",
@@ -1811,11 +2027,65 @@
       "kind": "cards"
     },
     {
-      "id": 43,
+      "id": 47,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "AI-native 기업\n발표 요약",
+      "subtitle": "Ajaz Munsiff · Dell Technologies",
+      "cards": [
+        {
+          "label": "01 · BUSINESS",
+          "title": "가치와 실행 가능성으로 과제 선정",
+          "points": [
+            "800개의 아이디어를 사업 가치와 실행 가능성의 관점에서 평가해 우선순위를 정합니다.",
+            "매출·고객 경험·비용·출시 속도에 미치는 효과와 데이터·사람·플랫폼의 준비도를 함께 봅니다.",
+            "사업 부서와 IT가 방향과 성과를 공동으로 책임지고, 기존 업무 절차도 함께 재설계합니다."
+          ]
+        },
+        {
+          "label": "02 · USE CASES",
+          "title": "직원의 판단과 고객 대응을 지원",
+          "points": [
+            "Sales Chat은 영업 준비와 정보 탐색을, Ask Dell은 직원의 사내 지식 접근을 지원합니다.",
+            "고객 서비스의 다음 조치 추천과 소프트웨어 개발 흐름에도 AI를 적용합니다.",
+            "팀 적용에서는 응답 속도뿐 아니라 정보의 정확성·최신성, 후속 확인 부담과 실제 업무 효과를 평가합니다."
+          ]
+        },
+        {
+          "label": "03 · DATA",
+          "title": "분산된 정보를 AI가 사용할 기반으로",
+          "points": [
+            "파일·DB·업무 앱에 흩어진 자료를 연결하고, 데이터의 의미·관계·품질·접근 권한을 정리합니다.",
+            "최신 버전과 소유자, 지표와 단위의 정의를 관리해야 여러 시스템의 정보를 올바르게 조합할 수 있습니다.",
+            "공통 업무에서 재사용할 데이터와 처리·저장·오케스트레이션 기반을 마련합니다."
+          ]
+        },
+        {
+          "label": "04 · OPERATIONS",
+          "title": "실행 위치와 운영 성과를 함께 설계",
+          "points": [
+            "클라우드·데이터센터·엣지는 품질·지연·데이터 정책·메모리·전력 조건에 따라 선택합니다.",
+            "반복 호출·긴 문맥·재시도·사람의 검토까지 포함해 완료 업무당 총비용을 비교합니다.",
+            "허용 행동과 감독, 중단·오류 추적 체계를 갖추고 실제 사업 효과가 확인된 방법을 확산합니다."
+          ]
+        }
+      ],
+      "takeaway": "AI-native 전환은 사업 목표, 데이터, 실행 기반, 운영 책임을 하나의 업무 흐름으로 연결하는 일입니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "많은 아이디어 중 사업에 필요한 과제를 고르고, 이를 실행할 데이터와 플랫폼을 마련합니다. 파일럿의 효과를 실제 운영으로 이어가려면 업무에 맞는 자율성, 실행 위치, 예외 처리와 전체 비용까지 함께 설계해야 합니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 48,
+      "group": 5,
+      "speaker": "Ajaz Munsiff",
+      "section": "05 · Ajaz Munsiff",
+      "page": 2,
       "nav": "AI-native 기업의 방향",
       "title": "기업 전략에 연결된\nAI 전환을 설계합니다",
       "subtitle": "The Dell AI Journey · Dell Technologies",
@@ -1853,11 +2123,11 @@
       "kind": "cards"
     },
     {
-      "id": 44,
+      "id": 49,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 2,
+      "page": 3,
       "nav": "활용 과제의 우선순위",
       "title": "800개의 아이디어에서\n실행할 과제를 고르는 법",
       "subtitle": "Business value × Feasibility · 가치와 실행 가능성의 교차점",
@@ -1895,11 +2165,11 @@
       "kind": "flow"
     },
     {
-      "id": 45,
+      "id": 50,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 3,
+      "page": 4,
       "nav": "영업과 지식 접근",
       "title": "필요한 정보를 찾는 시간을\n고객을 이해하는 시간으로",
       "subtitle": "Sales Chat · Ask Dell · 업무 목적에 맞는 지식 활용",
@@ -1937,11 +2207,11 @@
       "kind": "cards"
     },
     {
-      "id": 46,
+      "id": 51,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 4,
+      "page": 5,
       "nav": "데이터 기반 만들기",
       "title": "흩어진 데이터를\n업무 맥락과 함께 연결",
       "subtitle": "Data foundation · AI가 찾고 이해하고 사용할 수 있는 데이터",
@@ -1979,11 +2249,11 @@
       "kind": "cards"
     },
     {
-      "id": 47,
+      "id": 52,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 5,
+      "page": 6,
       "nav": "데이터에 책임 부여",
       "title": "데이터를 연결한 다음에는\n최신성과 의미를 관리",
       "subtitle": "팀 적용 · 소유자, 정의, 갱신, 접근 권한",
@@ -2021,11 +2291,11 @@
       "kind": "cards"
     },
     {
-      "id": 48,
+      "id": 53,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 6,
+      "page": 7,
       "nav": "자동화와 자율성의 선택",
       "title": "업무의 불확실성에 맞춰\n실행 방식을 선택합니다",
       "subtitle": "팀 적용 · 정해진 절차와 목표 중심의 실행",
@@ -2063,11 +2333,11 @@
       "kind": "cards"
     },
     {
-      "id": 49,
+      "id": 54,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 7,
+      "page": 8,
       "nav": "업무별 실행 위치",
       "title": "적합한 모델을\n적합한 위치에서 실행",
       "subtitle": "Hybrid AI · 클라우드, 데이터센터, 데스크톱, 엣지의 역할",
@@ -2105,11 +2375,11 @@
       "kind": "cards"
     },
     {
-      "id": 50,
+      "id": 55,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 8,
+      "page": 9,
       "nav": "업무당 총비용",
       "title": "토큰 단가에서\n완료된 업무의 비용으로",
       "subtitle": "팀 적용 · 실행 위치와 운영 규모를 비교하는 기준",
@@ -2147,11 +2417,11 @@
       "kind": "cards"
     },
     {
-      "id": 51,
+      "id": 56,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 9,
+      "page": 10,
       "nav": "파일럿에서 운영으로",
       "title": "첫 성공을\n반복 가능한 서비스로",
       "subtitle": "팀 적용 · 담당자와 운영 조건을 갖춘 확산",
@@ -2189,11 +2459,11 @@
       "kind": "flow"
     },
     {
-      "id": 52,
+      "id": 57,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
-      "page": 10,
+      "page": 11,
       "nav": "운영과 성과 관리",
       "title": "실제 운영에 필요한\n통제와 성과 측정을 함께",
       "subtitle": "공통 플랫폼 · 감독 · 관찰 가능성 · 사업 효과",
@@ -2231,11 +2501,65 @@
       "kind": "cards"
     },
     {
-      "id": 53,
+      "id": 58,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "안전한 에이전트 운영\n발표 요약",
+      "subtitle": "최상근 · Anthropic",
+      "cards": [
+        {
+          "label": "01 · THREATS",
+          "title": "위협의 원인부터 구분",
+          "points": [
+            "사용자의 오용, 모델의 오동작, 외부 공격은 같은 나쁜 결과를 만들어도 방어할 지점이 다릅니다.",
+            "에이전트가 더 많은 자료를 읽고 도구를 사용할수록 중간 판단이 실제 변경·전송으로 이어질 수 있습니다.",
+            "누구를 대신해 어떤 자료를 읽고 어떤 행동을 할 수 있는지 먼저 정의해야 합니다."
+          ]
+        },
+        {
+          "label": "02 · INJECTION",
+          "title": "외부 정보가 실행 지시가 되는 위험",
+          "points": [
+            "웹·문서·MCP·도구 응답에 삽입된 악성 지시가 목표를 바꾸거나 비밀 정보 전송을 유도할 수 있습니다.",
+            "회사에서 도구 연결을 허용했어도 그 안에서 읽은 모든 콘텐츠가 신뢰되는 것은 아닙니다.",
+            "자료의 내용을 해석하는 일과 실제 도구 호출·데이터 전송을 허용하는 판단을 분리합니다."
+          ]
+        },
+        {
+          "label": "03 · DEFENSE",
+          "title": "환경·콘텐츠·행동의 다층 방어",
+          "points": [
+            "샌드박스에서 파일 접근, 네트워크 목적지, 자격 정보의 노출을 업무에 필요한 범위로 제한합니다.",
+            "외부 콘텐츠의 공격 신호와 실행 과정의 위험 행동을 점검하고 환경의 권한 제한을 함께 적용합니다.",
+            "한 방어 수단이 놓친 위험을 다른 수단이 보완하고, 잘못된 판단이 미칠 영향을 줄이는 구조입니다."
+          ]
+        },
+        {
+          "label": "04 · OPERATIONS",
+          "title": "검토 가능한 승인과 지속적인 평가",
+          "points": [
+            "팀 적용에서는 중요한 변경·전송의 대상, 목적, 영향을 보여 주어 사람이 의미 있게 승인하게 합니다.",
+            "공격을 놓치는 비율과 정상 업무를 잘못 막는 비율, 완료율·지연·비용을 함께 평가합니다.",
+            "실패 사례를 평가셋과 운영 규칙에 반영하며, 상세 설계는 마지막 장의 Claude 기술 블로그에서 확인할 수 있습니다."
+          ]
+        }
+      ],
+      "takeaway": "에이전트의 판단을 점검하고 실행 범위를 제한하는 방어 수단을 겹쳐 적용합니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "에이전트가 도구를 사용하고 외부 자료를 읽으면 잘못된 판단이 실제 행동으로 이어질 수 있습니다. 위협을 먼저 구분한 뒤 정보와 권한의 경계를 설계하고, 정상 업무와 공격 시나리오를 함께 평가하는 운영 방식으로 연결합니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 59,
+      "group": 6,
+      "speaker": "최상근",
+      "section": "06 · 최상근",
+      "page": 2,
       "nav": "에이전트의 위협 모델",
       "title": "행동하는 AI에는\n행동을 기준으로 한 보안이 필요",
       "subtitle": "Putting Claude to Work Safely · Anthropic",
@@ -2273,11 +2597,11 @@
       "kind": "cards"
     },
     {
-      "id": 54,
+      "id": 60,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 2,
+      "page": 3,
       "nav": "간접 프롬프트 주입",
       "title": "외부의 데이터가\n실행 지시로 바뀌는 순간",
       "subtitle": "Indirect prompt injection · 웹, 문서, MCP와 도구 응답의 신뢰 경계",
@@ -2315,11 +2639,11 @@
       "kind": "flow"
     },
     {
-      "id": 55,
+      "id": 61,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 3,
+      "page": 4,
       "nav": "연결 승인과 콘텐츠 신뢰",
       "title": "허용한 연결에서도\n외부 내용은 따로 판단",
       "subtitle": "도구 접근 권한과 읽어 온 정보의 신뢰 경계",
@@ -2357,11 +2681,11 @@
       "kind": "cards"
     },
     {
-      "id": 56,
+      "id": 62,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 4,
+      "page": 5,
       "nav": "실행 환경 격리",
       "title": "실행할 수 있는 범위를\n환경에서 제한합니다",
       "subtitle": "Sandbox isolation · 모델의 판단과 실행 권한을 분리",
@@ -2399,11 +2723,11 @@
       "kind": "cards"
     },
     {
-      "id": 57,
+      "id": 63,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 5,
+      "page": 6,
       "nav": "파일과 네트워크의 경계",
       "title": "읽을 파일과 보낼 목적지를\n실행 환경에서 제한",
       "subtitle": "샌드박스 · 파일 접근과 외부 통신의 결합",
@@ -2441,11 +2765,11 @@
       "kind": "cards"
     },
     {
-      "id": 58,
+      "id": 64,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 6,
+      "page": 7,
       "nav": "다층 방어 구성",
       "title": "콘텐츠와 행동을\n여러 지점에서 점검",
       "subtitle": "외부 콘텐츠 분류와 사고·행동 과정의 위험 탐지",
@@ -2483,11 +2807,11 @@
       "kind": "flow"
     },
     {
-      "id": 59,
+      "id": 65,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 7,
+      "page": 8,
       "nav": "승인이 유효하려면",
       "title": "사람이 판단할 수 있는\n정보와 선택을 제공합니다",
       "subtitle": "팀 적용 · 중요한 행동의 검토 설계",
@@ -2525,11 +2849,11 @@
       "kind": "cards"
     },
     {
-      "id": 60,
+      "id": 66,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 8,
+      "page": 9,
       "nav": "공격과 정상 업무의 평가",
       "title": "공격을 막으면서\n정상 업무도 완료하는지 확인",
       "subtitle": "팀 적용 · 방어 효과와 업무 품질을 함께 측정",
@@ -2567,11 +2891,11 @@
       "kind": "cards"
     },
     {
-      "id": 61,
+      "id": 67,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 9,
+      "page": 10,
       "nav": "안전한 운영으로 연결",
       "title": "안전성을 업무의\n검증 과정에 포함합니다",
       "subtitle": "팀 적용 · 위협 시나리오와 실제 작업을 함께 평가",
@@ -2609,11 +2933,11 @@
       "kind": "flow"
     },
     {
-      "id": 62,
+      "id": 68,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
-      "page": 10,
+      "page": 11,
       "nav": "Claude 기술 블로그",
       "title": "발표 내용을 더 자세히 보려면\nClaude 기술 블로그로",
       "subtitle": "Anthropic Engineering · 안전한 에이전트 운영의 설계와 구현",
@@ -2665,11 +2989,65 @@
       "kind": "cards"
     },
     {
-      "id": 63,
+      "id": 69,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
       "page": 1,
+      "nav": "발표 요약",
+      "title": "AI-native R&D\n발표 요약",
+      "subtitle": "한재준 · 삼성전자 DS부문",
+      "cards": [
+        {
+          "label": "01 · WORKFLOW",
+          "title": "탐색·판단·실행을 연결하는 R&D",
+          "points": [
+            "소자 설계, 공정 시뮬레이션, 메시 생성, 열·수율 분석을 연구개발의 연속된 흐름에서 다룹니다.",
+            "지식과 데이터로 후보를 만들고, 시뮬레이션·분석으로 비교한 뒤 다음 실험을 선택합니다.",
+            "실행 결과가 새로운 탐색의 입력으로 돌아오는 반복 구조로 개별 작업의 개선을 연결합니다."
+          ]
+        },
+        {
+          "label": "02 · DATA",
+          "title": "연구의 맥락을 보존하는 데이터",
+          "points": [
+            "AI-ready 데이터에는 결과 수치뿐 아니라 실험 조건·설계 정보·단위·버전의 연결이 필요합니다.",
+            "팀 적용에서는 입력 설정·도구 버전·실행 상태·평가 결과를 묶어 재현 가능한 실험 단위로 남깁니다.",
+            "실패 이유와 제외한 조건도 보존하면 다음 연구에서 같은 준비와 시행착오를 줄일 수 있습니다."
+          ]
+        },
+        {
+          "label": "03 · PLATFORM",
+          "title": "도구와 에이전트의 공통 실행 기반",
+          "points": [
+            "TSA AI-Native Platform은 데이터·업무 시스템·분석 도구를 연결하고 실행과 결과를 관리하는 방향입니다.",
+            "팀에서는 각 도구의 입력 형식·반환값·권한·오류 코드를 정리해 단계 사이의 인계 조건을 명확히 합니다.",
+            "실행 오류, 수렴 실패, 목표 미달을 구분하면 무조건 재시도하지 않고 원인에 맞는 후속 판단을 할 수 있습니다."
+          ]
+        },
+        {
+          "label": "04 · VALIDATION",
+          "title": "검증된 작은 흐름부터 확장",
+          "points": [
+            "팀 적용에서는 기준 설계와 같은 조건에서 비교하고 물리적 타당성·필수 제약·설계 목표를 각각 확인합니다.",
+            "준비·대기·실행·검토·재작업 시간을 합산하고 재현성·오류율·실제 채택 결과를 함께 측정합니다.",
+            "반복 업무 하나에서 효과를 확인한 뒤 입력·실행·평가 절차를 다른 연구 과제로 확장합니다."
+          ]
+        }
+      ],
+      "takeaway": "실험을 더 많이 실행하는 능력을 더 빠르고 신뢰할 수 있는 연구 판단으로 연결합니다.",
+      "detail": {
+        "title": "발표의 핵심 연결",
+        "text": "AI-ready 데이터와 공통 플랫폼은 여러 연구개발 도구를 이어 주는 기반입니다. 팀에서는 반복 업무 하나의 입력·실행·평가를 연결하고 재현성과 전체 효과를 확인한 뒤, 검증된 방법을 다음 과제로 확장할 수 있습니다."
+      },
+      "kind": "summary"
+    },
+    {
+      "id": 70,
+      "group": 7,
+      "speaker": "한재준",
+      "section": "07 · 한재준",
+      "page": 2,
       "nav": "AI-native DS의 방향",
       "title": "R&D 전 과정을\n연결하는 에이전트로",
       "subtitle": "Toward AI-Native DS · 삼성전자 DS부문",
@@ -2707,11 +3085,11 @@
       "kind": "flow"
     },
     {
-      "id": 64,
+      "id": 71,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 2,
+      "page": 3,
       "nav": "AI-ready 연구 데이터",
       "title": "실험 데이터를\n다음 연구의 자산으로",
       "subtitle": "Data & Scaling Infrastructure · 연구 맥락이 보존되는 데이터 기반",
@@ -2749,11 +3127,11 @@
       "kind": "cards"
     },
     {
-      "id": 65,
+      "id": 72,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 3,
+      "page": 4,
       "nav": "연구 데이터의 최소 단위",
       "title": "결과 파일에\n실험의 조건을 함께 남깁니다",
       "subtitle": "팀 적용 · 재현 가능한 실험 기록",
@@ -2791,11 +3169,11 @@
       "kind": "cards"
     },
     {
-      "id": 66,
+      "id": 73,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 4,
+      "page": 5,
       "nav": "시뮬레이션과 분석의 반복",
       "title": "후보 생성과 검증을\n반복 가능한 과정으로",
       "subtitle": "R&D 적용 흐름 · 설계, 시뮬레이션, 평가, 다음 실험",
@@ -2833,11 +3211,11 @@
       "kind": "flow"
     },
     {
-      "id": 67,
+      "id": 74,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 5,
+      "page": 6,
       "nav": "시뮬레이션 실패의 분류",
       "title": "실패를 구분해야\n다음 시도를 선택할 수 있습니다",
       "subtitle": "팀 적용 · 실행 오류, 수렴 실패, 목표 미달",
@@ -2875,11 +3253,11 @@
       "kind": "cards"
     },
     {
-      "id": 68,
+      "id": 75,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 6,
+      "page": 7,
       "nav": "설계 후보의 비교 기준",
       "title": "좋아진 지표와\n유지해야 할 제약을 함께",
       "subtitle": "팀 적용 · 연구개발 결과의 기술적 검증",
@@ -2917,11 +3295,11 @@
       "kind": "cards"
     },
     {
-      "id": 69,
+      "id": 76,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 7,
+      "page": 8,
       "nav": "공통 플랫폼의 역할",
       "title": "도구·데이터·에이전트를\n공통 실행 기반에 연결",
       "subtitle": "TSA AI-Native Platform · 연구개발 업무를 연결하는 플랫폼 방향",
@@ -2959,11 +3337,11 @@
       "kind": "cards"
     },
     {
-      "id": 70,
+      "id": 77,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 8,
+      "page": 9,
       "nav": "도구 사이의 인계",
       "title": "다음 단계가 이해할 수 있는\n입력과 결과를 전달",
       "subtitle": "팀 적용 · 연구개발 도구 연결의 인터페이스",
@@ -3001,11 +3379,11 @@
       "kind": "flow"
     },
     {
-      "id": 71,
+      "id": 78,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 9,
+      "page": 10,
       "nav": "R&D 전체 효과의 측정",
       "title": "실험 수를 늘린 뒤에는\n의사결정이 좋아졌는지 확인",
       "subtitle": "팀 적용 · 시간, 품질, 재사용을 함께 평가",
@@ -3043,11 +3421,11 @@
       "kind": "cards"
     },
     {
-      "id": 72,
+      "id": 79,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
-      "page": 10,
+      "page": 11,
       "nav": "우리 팀의 R&D 실행 과제",
       "title": "작은 흐름을 완성하고\n검증된 방식으로 확장",
       "subtitle": "팀 적용 · 반복 가능한 R&D 업무 한 가지에서 시작",

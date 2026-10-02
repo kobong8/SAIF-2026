@@ -39,7 +39,7 @@ class SlideMarkup(HTMLParser):
 
 class LayoutTests(unittest.TestCase):
     @unittest.skipUnless(shutil.which("node"), "Node is needed to exercise the JavaScript renderer")
-    def test_all_72_slides_keep_the_card_grid_inside_the_article(self):
+    def test_all_79_slides_keep_the_card_grid_inside_the_article(self):
         # Use the application's content() function, not a duplicate renderer.
         harness = """
 const fs = require('fs');
