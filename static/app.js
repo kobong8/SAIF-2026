@@ -8,7 +8,7 @@ function content(s) {
     <div class="slide-top"><span class="eyebrow">${esc(s.section)}</span><span class="chapter-count">${s.group ? 'SESSION' : 'INTRO'} <b>${String(s.page).padStart(2,'0')}</b> / ${String(total).padStart(2,'0')}</span></div>
     <h1>${esc(s.title)}</h1><p class="subtitle">${esc(s.subtitle)}</p>
     <div class="cards ${s.cards.length === 4 ? 'four' : ''}">${s.cards.map(c => `<section class="card"><span class="card-label">${esc(c.label)}</span><h2>${esc(c.title)}</h2><ul>${c.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section>`).join('')}</div>
-    <section class="detail"><h2>${esc(s.detail.title)}</h2><p>${esc(s.detail.text)}</p></section>
+    <section class="detail"><h2>${esc(s.detail.title)}</h2><div><p>${esc(s.detail.text)}</p>${(s.detail.links || []).length ? `<div class="detail-links">${s.detail.links.filter(link => /^https:\/\/www\.anthropic\.com\/engineering(?:\/|$)/.test(link.url)).map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}</div></section>
     <div class="takeaway"><span>KEY TAKEAWAY</span><p>${esc(s.takeaway)}</p></div>
   </article>`;
 }

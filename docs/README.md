@@ -2,7 +2,7 @@
 
 이 문서의 명령은 저장소 루트 폴더에서 실행합니다. Markdown 문서는 `docs/`에 모아 관리합니다.
 
-FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 발표자 7명 × 5장으로 **총 37장**입니다.
+FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 발표자 7명 × 10장으로 **총 72장**입니다.
 
 ## GitHub Pages
 
@@ -14,7 +14,7 @@ FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 
 
 ```powershell
 python build_pages.py
-git add content.py static index.html slides.json .nojekyll
+git add content.py content_expanded.py static index.html slides.json .nojekyll
 git commit -m "Update presentation"
 git push
 ```
@@ -61,13 +61,13 @@ python -m venv .venv
 
 | 발표자 | 장수 | 주요 내용 |
 | --- | ---: | --- |
-| Richard Ho | 5 | 에이전트, 대규모 탐색·검증, Jalapeño 설계, 커널 최적화, 조직 확산 |
-| David Green | 5 | Learn·Unlearn·Retool, 개인 사례, 기업 사례, 실행 통제, 평가·확산 |
-| Ranjay Krishna | 5 | 공간·움직임, Sketching, 시각적 근거, 행동 계획, 현장 적용 |
-| Yun Kim | 5 | 모델 구조, 지속 학습, Attention, 문맥 압축, 온디바이스 |
-| Ajaz Munsiff | 5 | 사업 전략, 과제 선정, 데이터, 하이브리드 실행, 운영·성과 |
-| 최상근 | 5 | 위협 모델, 프롬프트 주입, 격리 환경, 다층 방어, 운영 검증 |
-| 한재준 | 5 | R&D 흐름, 연구 데이터, 시뮬레이션, 플랫폼, 팀 실행 과제 |
+| Richard Ho | 10 | 에이전트, 대규모 탐색·검증, Jalapeño 설계, 커널 최적화, 조직 확산 |
+| David Green | 10 | Learn·Unlearn·Retool, 개인 사례, 기업 사례, 실행 통제, 평가·확산 |
+| Ranjay Krishna | 10 | 공간·움직임, Sketching, 시각적 근거, 행동 계획, 현장 적용 |
+| Yun Kim | 10 | 모델 구조, 지속 학습, Attention, 문맥 압축, 온디바이스 |
+| Ajaz Munsiff | 10 | 사업 전략, 과제 선정, 데이터, 하이브리드 실행, 운영·성과 |
+| 최상근 | 10 | 위협 모델, 프롬프트 주입, 격리 환경, 다층 방어, 운영 검증 |
+| 한재준 | 10 | R&D 흐름, 연구 데이터, 시뮬레이션, 플랫폼, 팀 실행 과제 |
 
 각 장은 핵심 항목, 구체적인 사례·기술 설명, 핵심 메시지로 구성됩니다.
 
@@ -87,7 +87,7 @@ python -m venv .venv
 
 `qa/`와 이미지·PDF·영상·압축 산출물은 `.gitignore`로 제외합니다. 검토용 파일은 로컬에 보관하고, 커밋에는 코드와 텍스트 자료를 포함합니다.
 
-- `content.py`: 발표 내용과 발표자 목록.
+- `content.py`, `content_expanded.py`: 발표 내용과 발표자 목록.
 - `static/`: 화면, 스타일, 키보드 이동 기능.
 - `main.py`: 웹페이지와 발표 데이터 API.
 - `install.ps1`: 가상환경 생성·패키지 설치.

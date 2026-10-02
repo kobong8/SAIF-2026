@@ -98,6 +98,14 @@ h1{font-weight:750;letter-spacing:-.05em;color:#15213b}
 .slide--closing .takeaway span{color:#d3d9ff}
 #chapterPages button{border-radius:7px;background:#ffffff80}
 #chapterPages .selected{background:#5265de;border-color:#5265de;color:#fff}
+#chapterPages{flex-wrap:wrap;justify-content:center}
+#chapterPages button{flex:0 0 28px}
+.detail-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.detail-links a{display:inline-block;max-width:100%;padding:8px 11px;border:1px solid #c9d2eb;border-radius:7px;color:#354ba8;background:#f2f5ff;font-size:12px;line-height:1.5;text-decoration:none;overflow-wrap:anywhere}
+.detail-links a:hover{background:#e5ebff}
+.detail-links a:focus-visible{outline:2px solid #5265de;outline-offset:3px}
+@media(max-width:1100px){footer{flex-wrap:wrap}#chapterPages{order:3;flex-basis:100%;padding-top:4px}.paging{margin-left:auto}}
+@media(max-width:760px){#chapterPages{gap:5px}#chapterPages button{flex-basis:23px}.position{flex-wrap:wrap;gap:7px}}
 .paging button{background:#ffffff99;border-color:#d5ddf0;border-radius:9px}
 .paging button:hover{background:#e4e9fc}
 #counter{font-family:Consolas,monospace;color:#4255a2}

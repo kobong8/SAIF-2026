@@ -40,7 +40,7 @@ add(0, "요약", "요약", "일곱 발표가 보여 준 에이전트 전환의 �
     ("발표의 흐름", "발표자별로 핵심 개념과 실제 사례를 살펴보고, 이를 업무에 적용할 때 필요한 조건을 정리합니다. 마지막에는 반복 업무의 입력·실행·검증을 연결하는 팀 과제로 이어갑니다."), kind="agenda")
 
 # 01 · Richard Ho
-add(1, "챗봇에서 에이전트로", "에이전트는 목표를 받아\n완료된 결과물을 만듭니다", "Chatbots to Agentic Workflows · OpenAI",
+add(1, "챗봇에서 에이전트로", "챗봇은 질문에 답하고,\n에이전트는 목표를 수행합니다", "에이전트는 목표를 가지고 도구를 활용해 여러 단계의 작업을 수행합니다 · OpenAI",
     [("DEFINE", "사람이 목표를 정의", "업무 목적과 필요한 입력을 제공\n허용 도구·변경 범위·완료 기준을 설정"),
      ("EXECUTE", "에이전트가 실행", "계획에 따라 파일·코드·도구를 사용\n중간 결과를 확인하며 다음 단계를 선택"),
      ("VERIFY", "증거로 완료를 판단", "변경안과 테스트 결과를 함께 제출\n중요한 의사결정은 사람이 검토·승인")],
@@ -290,3 +290,34 @@ add(7, "우리 팀의 R&D 실행 과제", "작은 흐름을 완성하고\n검증
      ("MEASURE", "전체 효과 확인", "준비·실행·검토·재작업 시간을 함께 측정\n재현성·오류율·업무당 비용을 비교")],
     "목표를 명확히 맡기고, 증거로 검증하고, 잘된 방법을 공유합시다.",
     ("다음 팀 회의에서 정할 것", "첫 적용 업무, 필요한 데이터, 실행 담당자, 결과 검토자, 완료 기준과 확인 날짜를 정합니다. 효과가 확인되면 입력 형식·실행 절차·평가 기준을 묶어 다른 업무로 확장합니다."), kind="closing")
+
+
+from content_expanded import expand
+
+# Interleave the additional chapters with the original case studies.
+_original = list(SLIDES)
+expand(add)
+_additional = SLIDES[len(_original):]
+_orders = {
+    1: [0, 5, 6, 7, 8, 1, 2, 3, 9, 4],
+    2: [0, 5, 1, 7, 2, 6, 3, 8, 4, 9],
+    3: [0, 5, 1, 6, 7, 2, 8, 3, 9, 4],
+    4: [0, 1, 5, 2, 6, 3, 7, 9, 8, 4],
+    5: [0, 1, 5, 2, 6, 7, 3, 8, 9, 4],
+    6: [0, 1, 5, 2, 6, 3, 7, 8, 4, 9],
+    7: [0, 1, 5, 2, 6, 7, 3, 8, 9, 4],
+}
+SLIDES[:] = [s for s in _original if s["group"] == 0]
+for _group, _order in _orders.items():
+    _chapters = [s for s in _original + _additional if s["group"] == _group]
+    for _page, _index in enumerate(_order, 1):
+        _slide = _chapters[_index]
+        _slide.update(id=len(SLIDES) + 1, page=_page)
+        SLIDES.append(_slide)
+
+_blog = next(s for s in SLIDES if s["nav"] == "Claude 기술 블로그")
+_blog["detail"]["links"] = [
+    {"label": "Claude 기술 블로그", "url": "https://www.anthropic.com/engineering"},
+    {"label": "Claude의 다층 방어 구조", "url": "https://www.anthropic.com/engineering/how-we-contain-claude"},
+    {"label": "Claude Code 샌드박스", "url": "https://www.anthropic.com/engineering/claude-code-sandboxing"},
+]

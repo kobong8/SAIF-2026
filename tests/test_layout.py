@@ -39,7 +39,7 @@ class SlideMarkup(HTMLParser):
 
 class LayoutTests(unittest.TestCase):
     @unittest.skipUnless(shutil.which("node"), "Node is needed to exercise the JavaScript renderer")
-    def test_all_37_slides_keep_the_card_grid_inside_the_article(self):
+    def test_all_72_slides_keep_the_card_grid_inside_the_article(self):
         # Use the application's content() function, not a duplicate renderer.
         harness = """
 const fs = require('fs');
@@ -63,6 +63,9 @@ process.stdout.write(JSON.stringify(result));
                 self.assertEqual(parser.card_grids, [("div", ["article"])])
                 self.assertEqual(parser.cards, len(slide["cards"]))
                 self.assertEqual([tag for tag, _ in parser.direct_children], ["div", "h1", "p", "div", "section", "div"])
+                for link in slide["detail"].get("links", []):
+                    self.assertIn('href="' + link["url"] + '"', markup)
+                    self.assertIn('rel="noopener noreferrer"', markup)
 
     def test_layout_variants_and_removed_print_controls(self):
         css = (ROOT / "static/style.css").read_text(encoding="utf-8")

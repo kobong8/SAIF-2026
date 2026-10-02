@@ -7,14 +7,14 @@ from main import ROOT, app, slides
 
 
 class PresentationTests(unittest.TestCase):
-    def test_every_speaker_has_five_slides(self):
+    def test_every_speaker_has_ten_slides(self):
         counts = Counter(s["group"] for s in SLIDES)
         self.assertEqual(len(SPEAKERS), 7)
-        self.assertEqual(len(SLIDES), 37)
+        self.assertEqual(len(SLIDES), 72)
         self.assertEqual(counts[0], 2)
         for group in range(1, 8):
-            self.assertEqual(counts[group], 5)
-            self.assertEqual([s["page"] for s in SLIDES if s["group"] == group], [1, 2, 3, 4, 5])
+            self.assertEqual(counts[group], 10)
+            self.assertEqual([s["page"] for s in SLIDES if s["group"] == group], list(range(1, 11)))
         self.assertEqual(SLIDES[1]["title"], "요약")
 
     def test_slides_have_substantive_unique_content(self):
@@ -23,6 +23,22 @@ class PresentationTests(unittest.TestCase):
             self.assertGreaterEqual(len(s["cards"]), 3)
             self.assertTrue(all(len(c["points"]) >= 2 for c in s["cards"]))
             self.assertGreater(len(s["detail"]["text"]), 60)
+
+    def test_requested_emphasis_and_chapter_endings(self):
+        groups = {group: [s for s in SLIDES if s["group"] == group] for group in range(1, 8)}
+        self.assertEqual([s["id"] for s in SLIDES], list(range(1, 73)))
+        openai = json.dumps(groups[1], ensure_ascii=False)
+        for text in ("챗봇은 질문에 답하고", "64%", "합산 출력 토큰", "108배", "영업·채용 41배", "26배", "개발 5배", "Plugins & Skills", "9% → 21%", "3% → 19%"):
+            self.assertIn(text, openai)
+        self.assertEqual(groups[2][-1]["nav"], "성공은 고객 경험")
+        self.assertIn("얼마나 많은 토큰", groups[2][-1]["takeaway"])
+        krishna = json.dumps(groups[3], ensure_ascii=False)
+        for text in ("사진의 깊이가 어려운 이유", "겹친 쿠키", "깊이 지도", "Sketching"):
+            self.assertIn(text, krishna)
+        blog = groups[6][-1]
+        self.assertEqual(blog["nav"], "Claude 기술 블로그")
+        self.assertEqual(len(blog["detail"]["links"]), 3)
+        self.assertTrue(all(link["url"].startswith("https://www.anthropic.com/engineering") for link in blog["detail"]["links"]))
 
     def test_removed_material_is_not_exposed(self):
         public_text = json.dumps(slides(), ensure_ascii=False)
