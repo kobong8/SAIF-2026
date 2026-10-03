@@ -192,7 +192,7 @@
       "page": 2,
       "nav": "챗봇에서 에이전트로",
       "title": "챗봇은 질문에 답하고,\n에이전트는 목표를 수행합니다",
-      "subtitle": "에이전트는 목표를 가지고 도구를 활용해 여러 단계의 작업을 수행합니다 · OpenAI",
+      "subtitle": "에이전트는 목표를 가지고 도구를 활용해 여러 단계의 작업을 수행합니다",
       "cards": [
         {
           "label": "DEFINE",
@@ -666,7 +666,7 @@
       "page": 2,
       "nav": "Learn · Unlearn · Retool",
       "title": "전사 AI 전환은\n업무 방식의 재설계에서 시작",
-      "subtitle": "From Individual Productivity to Enterprise-Wide Impact · AWS",
+      "subtitle": "From Individual Productivity to Enterprise-Wide Impact",
       "cards": [
         {
           "label": "LEARN",
@@ -1140,7 +1140,7 @@
       "page": 2,
       "nav": "물리적 지능의 조건",
       "title": "물리 세계를 이해하려면\n공간과 움직임을 다뤄야 합니다",
-      "subtitle": "Grounding Agents in the Physical World · University of Washington",
+      "subtitle": "Grounding Agents in the Physical World",
       "cards": [
         {
           "label": "GEOMETRY",
@@ -1614,7 +1614,7 @@
       "page": 2,
       "nav": "에이전트 지능의 구조",
       "title": "에이전트의 다음 도약은\n모델 구조의 진화와 연결",
-      "subtitle": "Architectures for Agentic Intelligence · 김윤형 · 삼성전자",
+      "subtitle": "Architectures for Agentic Intelligence",
       "cards": [
         {
           "label": "PRE-TRAINING",
@@ -2088,7 +2088,7 @@
       "page": 2,
       "nav": "AI-native 기업의 방향",
       "title": "기업 전략에 연결된\nAI 전환을 설계합니다",
-      "subtitle": "The Dell AI Journey · Dell Technologies",
+      "subtitle": "The Dell AI Journey",
       "cards": [
         {
           "label": "BUSINESS",
@@ -2562,7 +2562,7 @@
       "page": 2,
       "nav": "에이전트의 위협 모델",
       "title": "행동하는 AI에는\n행동을 기준으로 한 보안이 필요",
-      "subtitle": "Putting Claude to Work Safely · Anthropic",
+      "subtitle": "Putting Claude to Work Safely",
       "cards": [
         {
           "label": "USER MISUSE",
@@ -3050,7 +3050,7 @@
       "page": 2,
       "nav": "AI-native DS의 방향",
       "title": "R&D 전 과정을\n연결하는 에이전트로",
-      "subtitle": "Toward AI-Native DS · 삼성전자 DS부문",
+      "subtitle": "Toward AI-Native DS",
       "cards": [
         {
           "label": "EXPLORATION",
