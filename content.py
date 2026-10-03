@@ -11,6 +11,26 @@ SPEAKERS = [
     ("한재준", "AI-native R&D"),
 ]
 
+# Program titles and subtitles: https://saif2026.com/#program
+# Keep SPEAKERS' short topics as the original topic labels.
+PROGRAM = [
+    ("챗봇에서 에이전틱 워크플로우로", "ChatGPT · Codex · 프런티어 모델로 실현하는 생산성 혁신", "OpenAI"),
+    ("개인의 생산성을 넘어 전사적 AI 임팩트로", "실제 운영 환경에서 AI를 확장하고 성과를 창출하는 방법", "AWS"),
+    ("Visual Reasoning: 언어 추론 너머의 새로운 AI 추론", "스케치 기반 시각 추론방법으로 소형 모델로 고성능 로보틱스 AI를 구현하는 패러다임 소개", "University of Washington"),
+    ("차세대 에이전틱 AI 아키텍처", "에이전트의 역량을 강화하고 적용 범위를 확장하기 위한 아키텍처적 혁신 방안", "삼성전자"),
+    ("외부 AX를 통한 Business Value 창출 사례", "Dell의 AI 여정: AI 네이티브 기업을 위한 전략과 실행", "Dell Technologies"),
+    ("Claude를 안전하게 업무에 적용하기", "엔지니어링·R&D를 위한 신뢰할 수 있는 에이전트 시스템 설계", "Anthropic"),
+    ("Toward AI-Native DS", "자동화와 지능화, 두 축이 만드는 반도체의 다음 도약", "삼성전자 DS부문"),
+]
+
+
+def speaker_metadata():
+    return [
+        {"id": index, "name": name, "topic": title, "affiliation": affiliation}
+        for index, ((name, _), (title, _, affiliation))
+        in enumerate(zip(SPEAKERS, PROGRAM, strict=True), 1)
+    ]
+
 
 def add(group, nav, title, subtitle, cards, takeaway, detail, *, kind="cards"):
     number = sum(s["group"] == group for s in SLIDES) + 1
@@ -303,6 +323,10 @@ add_summaries(add)
 _summaries = {s["group"]: s for s in SLIDES[_before_summaries:]}
 for _summary in _summaries.values():
     _summary["kind"] = "summary"
+    _title, _subtitle, _affiliation = PROGRAM[_summary["group"] - 1]
+    _summary["title"] = f"{_title} · 요약"
+    _summary["subtitle"] = _subtitle
+    _summary["section"] += f" · {_affiliation}"
 _orders = {
     1: [0, 5, 6, 7, 8, 1, 2, 3, 9, 4],
     2: [0, 5, 1, 7, 2, 6, 3, 8, 4, 9],

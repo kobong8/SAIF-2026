@@ -36,7 +36,7 @@ class PagesTests(unittest.TestCase):
             with urlopen(base, timeout=5) as response:
                 html = response.read().decode('utf-8')
             self.assertIn('id="slide"', html)
-            for file in ('./static/style.css?v=7', './static/app.js?v=7'):
+            for file in ('./static/style.css?v=8', './static/app.js?v=8'):
                 self.assertIn(file, html)
                 with urlopen(urljoin(base, file), timeout=5) as response:
                     self.assertEqual(response.status, 200)

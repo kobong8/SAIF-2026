@@ -75,7 +75,7 @@ process.stdout.write(JSON.stringify(result));
         self.assertIn('@container (max-width:700px)', css)
         for variant in ('hero', 'metrics', 'performance', 'flow', 'closing'):
             self.assertIn('.slide--' + variant, css)
-        self.assertIn('<strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)}</small>', js)
+        self.assertIn('<strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)} · ${esc(speaker.affiliation)}</small>', js)
         for removed in ('printButton', 'printDeck', 'window.print', '@media print', '인쇄 / PDF'):
             self.assertNotIn(removed, js + html + css)
 

@@ -2,7 +2,7 @@ import json
 import unittest
 from collections import Counter
 
-from content import SLIDES, SPEAKERS
+from content import SLIDES, SPEAKERS, PROGRAM, speaker_metadata
 from main import ROOT, app, slides
 
 
@@ -16,9 +16,16 @@ class PresentationTests(unittest.TestCase):
             self.assertEqual(counts[group], 11)
             self.assertEqual([s["page"] for s in SLIDES if s["group"] == group], list(range(1, 12)))
             chapters = [s for s in SLIDES if s["group"] == group]
-            self.assertEqual(chapters[0]["nav"], "발표 요약")
-            self.assertEqual(sum(s["nav"] == "발표 요약" for s in chapters), 1)
+            self.assertEqual(chapters[0]["nav"], "요약")
+            self.assertEqual(sum(s["nav"] == "요약" for s in chapters), 1)
         self.assertEqual(SLIDES[1]["title"], "요약")
+        for speaker, (title, subtitle, affiliation) in zip(speaker_metadata(), PROGRAM, strict=True):
+            self.assertEqual(speaker["topic"], title)
+            self.assertEqual(speaker["affiliation"], affiliation)
+            summary = next(s for s in SLIDES if s["group"] == speaker["id"])
+            self.assertEqual(summary["subtitle"], subtitle)
+            self.assertEqual(summary["title"], f"{title} · 요약")
+            self.assertIn(affiliation, summary["section"])
 
     def test_slides_have_substantive_unique_content(self):
         self.assertEqual(len({s["title"] for s in SLIDES}), len(SLIDES))

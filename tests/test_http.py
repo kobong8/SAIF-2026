@@ -40,7 +40,7 @@ class HttpTests(unittest.TestCase):
             data = json.load(response)
         self.assertEqual(len(data["slides"]), 79)
         self.assertEqual(len(data["speakers"]), 7)
-        for path in ("/", "/static/app.js?v=7", "/static/style.css?v=7", "/slides.json", "/health"):
+        for path in ("/", "/static/app.js?v=8", "/static/style.css?v=8", "/slides.json", "/health"):
             with self.subTest(path=path), urlopen(self.base + path, timeout=5) as response:
                 self.assertEqual(response.status, 200)
                 self.assertTrue(response.read())

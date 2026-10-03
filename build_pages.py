@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-from content import SLIDES, SPEAKERS
+from content import SLIDES, speaker_metadata
 
 ROOT = Path(__file__).resolve().parent
 
@@ -10,10 +10,7 @@ ROOT = Path(__file__).resolve().parent
 def build():
     data = {
         "title": "삼성 AI 포럼 2026",
-        "speakers": [
-            {"id": i + 1, "name": name, "topic": topic}
-            for i, (name, topic) in enumerate(SPEAKERS)
-        ],
+        "speakers": speaker_metadata(),
         "slides": SLIDES,
     }
     (ROOT / "index.html").write_bytes((ROOT / "static/index.html").read_bytes())

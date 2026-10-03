@@ -20,7 +20,7 @@ footer{margin:0 40px;border-top:1px solid var(--line);padding:17px 0;display:fle
 .group-heading{min-width:0;flex:1}
 nav summary{align-items:flex-start;gap:9px}
 nav summary strong{display:block;font-size:16px;font-weight:750;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
-nav summary small{font-size:12px;font-weight:400;line-height:1.5;margin-top:5px}
+nav summary small{font-size:12px;font-weight:400;line-height:1.5;margin-top:5px;white-space:normal;overflow-wrap:anywhere}
 .group-number,.chevron{flex-shrink:0;margin-top:5px}
 .card-label{overflow-wrap:anywhere}
 .slide h1,.slide .subtitle,.slide .takeaway p{overflow-wrap:anywhere}

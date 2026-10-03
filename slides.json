@@ -4,37 +4,44 @@
     {
       "id": 1,
       "name": "Richard Ho",
-      "topic": "에이전트와 엔지니어링"
+      "topic": "챗봇에서 에이전틱 워크플로우로",
+      "affiliation": "OpenAI"
     },
     {
       "id": 2,
       "name": "David Green",
-      "topic": "전사 AI 전환"
+      "topic": "개인의 생산성을 넘어 전사적 AI 임팩트로",
+      "affiliation": "AWS"
     },
     {
       "id": 3,
       "name": "Ranjay Krishna",
-      "topic": "물리 세계의 AI"
+      "topic": "Visual Reasoning: 언어 추론 너머의 새로운 AI 추론",
+      "affiliation": "University of Washington"
     },
     {
       "id": 4,
       "name": "김윤형",
-      "topic": "지속 학습과 온디바이스"
+      "topic": "차세대 에이전틱 AI 아키텍처",
+      "affiliation": "삼성전자"
     },
     {
       "id": 5,
       "name": "Ajaz Munsiff",
-      "topic": "AI-native 기업"
+      "topic": "외부 AX를 통한 Business Value 창출 사례",
+      "affiliation": "Dell Technologies"
     },
     {
       "id": 6,
       "name": "최상근",
-      "topic": "안전한 에이전트 운영"
+      "topic": "Claude를 안전하게 업무에 적용하기",
+      "affiliation": "Anthropic"
     },
     {
       "id": 7,
       "name": "한재준",
-      "topic": "AI-native R&D"
+      "topic": "Toward AI-Native DS",
+      "affiliation": "삼성전자 DS부문"
     }
   ],
   "slides": [
@@ -134,11 +141,11 @@
       "id": 3,
       "group": 1,
       "speaker": "Richard Ho",
-      "section": "01 · Richard Ho",
+      "section": "01 · Richard Ho · OpenAI",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "에이전트와 엔지니어링\n발표 요약",
-      "subtitle": "Richard Ho · OpenAI",
+      "nav": "요약",
+      "title": "챗봇에서 에이전틱 워크플로우로 · 요약",
+      "subtitle": "ChatGPT · Codex · 프런티어 모델로 실현하는 생산성 혁신",
       "cards": [
         {
           "label": "01 · AGENT",
@@ -608,11 +615,11 @@
       "id": 14,
       "group": 2,
       "speaker": "David Green",
-      "section": "02 · David Green",
+      "section": "02 · David Green · AWS",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "전사 AI 전환\n발표 요약",
-      "subtitle": "David Green · AWS",
+      "nav": "요약",
+      "title": "개인의 생산성을 넘어 전사적 AI 임팩트로 · 요약",
+      "subtitle": "실제 운영 환경에서 AI를 확장하고 성과를 창출하는 방법",
       "cards": [
         {
           "label": "01 · CHANGE",
@@ -1082,11 +1089,11 @@
       "id": 25,
       "group": 3,
       "speaker": "Ranjay Krishna",
-      "section": "03 · Ranjay Krishna",
+      "section": "03 · Ranjay Krishna · University of Washington",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "물리 세계의 AI\n발표 요약",
-      "subtitle": "Ranjay Krishna · University of Washington",
+      "nav": "요약",
+      "title": "Visual Reasoning: 언어 추론 너머의 새로운 AI 추론 · 요약",
+      "subtitle": "스케치 기반 시각 추론방법으로 소형 모델로 고성능 로보틱스 AI를 구현하는 패러다임 소개",
       "cards": [
         {
           "label": "01 · CHALLENGE",
@@ -1556,11 +1563,11 @@
       "id": 36,
       "group": 4,
       "speaker": "김윤형",
-      "section": "04 · 김윤형",
+      "section": "04 · 김윤형 · 삼성전자",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "지속 학습과 온디바이스\n발표 요약",
-      "subtitle": "김윤형 · 삼성전자",
+      "nav": "요약",
+      "title": "차세대 에이전틱 AI 아키텍처 · 요약",
+      "subtitle": "에이전트의 역량을 강화하고 적용 범위를 확장하기 위한 아키텍처적 혁신 방안",
       "cards": [
         {
           "label": "01 · EXPERIENCE",
@@ -2030,11 +2037,11 @@
       "id": 47,
       "group": 5,
       "speaker": "Ajaz Munsiff",
-      "section": "05 · Ajaz Munsiff",
+      "section": "05 · Ajaz Munsiff · Dell Technologies",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "AI-native 기업\n발표 요약",
-      "subtitle": "Ajaz Munsiff · Dell Technologies",
+      "nav": "요약",
+      "title": "외부 AX를 통한 Business Value 창출 사례 · 요약",
+      "subtitle": "Dell의 AI 여정: AI 네이티브 기업을 위한 전략과 실행",
       "cards": [
         {
           "label": "01 · BUSINESS",
@@ -2504,11 +2511,11 @@
       "id": 58,
       "group": 6,
       "speaker": "최상근",
-      "section": "06 · 최상근",
+      "section": "06 · 최상근 · Anthropic",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "안전한 에이전트 운영\n발표 요약",
-      "subtitle": "최상근 · Anthropic",
+      "nav": "요약",
+      "title": "Claude를 안전하게 업무에 적용하기 · 요약",
+      "subtitle": "엔지니어링·R&D를 위한 신뢰할 수 있는 에이전트 시스템 설계",
       "cards": [
         {
           "label": "01 · THREATS",
@@ -2992,11 +2999,11 @@
       "id": 69,
       "group": 7,
       "speaker": "한재준",
-      "section": "07 · 한재준",
+      "section": "07 · 한재준 · 삼성전자 DS부문",
       "page": 1,
-      "nav": "발표 요약",
-      "title": "AI-native R&D\n발표 요약",
-      "subtitle": "한재준 · 삼성전자 DS부문",
+      "nav": "요약",
+      "title": "Toward AI-Native DS · 요약",
+      "subtitle": "자동화와 지능화, 두 축이 만드는 반도체의 다음 도약",
       "cards": [
         {
           "label": "01 · WORKFLOW",
