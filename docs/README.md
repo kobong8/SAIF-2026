@@ -64,7 +64,7 @@ python -m venv .venv
 | Richard Ho | 11 | 에이전트, 대규모 탐색·검증, Jalapeño 설계, 커널 최적화, 조직 확산 |
 | David Green | 11 | Learn·Unlearn·Retool, 개인 사례, 기업 사례, 실행 통제, 평가·확산 |
 | Ranjay Krishna | 11 | 공간·움직임, Sketching, 시각적 근거, 행동 계획, 현장 적용 |
-| Yun Kim | 11 | 모델 구조, 지속 학습, Attention, 문맥 압축, 온디바이스 |
+| 김윤형 | 11 | 모델 구조, 지속 학습, Attention, 문맥 압축, 온디바이스 |
 | Ajaz Munsiff | 11 | 사업 전략, 과제 선정, 데이터, 하이브리드 실행, 운영·성과 |
 | 최상근 | 11 | 위협 모델, 프롬프트 주입, 격리 환경, 다층 방어, 운영 검증 |
 | 한재준 | 11 | R&D 흐름, 연구 데이터, 시뮬레이션, 플랫폼, 팀 실행 과제 |

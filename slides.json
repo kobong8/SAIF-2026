@@ -18,7 +18,7 @@
     },
     {
       "id": 4,
-      "name": "Yun Kim",
+      "name": "김윤형",
       "topic": "지속 학습과 온디바이스"
     },
     {
@@ -103,7 +103,7 @@
           "title": "공간과 경험의 이해",
           "points": [
             "Ranjay Krishna: 시각적 근거와 행동 계획",
-            "Yun Kim: 지속 학습과 온디바이스 아키텍처"
+            "김윤형: 지속 학습과 온디바이스 아키텍처"
           ]
         },
         {
@@ -1555,12 +1555,12 @@
     {
       "id": 36,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 1,
       "nav": "발표 요약",
       "title": "지속 학습과 온디바이스\n발표 요약",
-      "subtitle": "Yun Kim",
+      "subtitle": "김윤형 · 삼성전자",
       "cards": [
         {
           "label": "01 · EXPERIENCE",
@@ -1609,12 +1609,12 @@
     {
       "id": 37,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 2,
       "nav": "에이전트 지능의 구조",
       "title": "에이전트의 다음 도약은\n모델 구조의 진화와 연결",
-      "subtitle": "Architectures for Agentic Intelligence · Yun Kim",
+      "subtitle": "Architectures for Agentic Intelligence · 김윤형 · 삼성전자",
       "cards": [
         {
           "label": "PRE-TRAINING",
@@ -1651,8 +1651,8 @@
     {
       "id": 38,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 3,
       "nav": "지속 학습의 요구",
       "title": "새로운 경험을\n어떻게 계속 활용할 것인가",
@@ -1693,8 +1693,8 @@
     {
       "id": 39,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 4,
       "nav": "기억과 학습의 구분",
       "title": "정보를 찾아오는 것과\n경험을 배우는 것은 다른 설계",
@@ -1735,8 +1735,8 @@
     {
       "id": 40,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 5,
       "nav": "선형·혼합 Attention",
       "title": "긴 이력을 다루는\n효율적인 메모리 구조",
@@ -1777,8 +1777,8 @@
     {
       "id": 41,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 6,
       "nav": "고정 크기 기억의 선택",
       "title": "작은 상태에 담을 때\n무엇을 보존할지가 핵심",
@@ -1819,8 +1819,8 @@
     {
       "id": 42,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 7,
       "nav": "문맥 압축과 내재화",
       "title": "긴 문맥을\n더 작은 표현으로 압축",
@@ -1861,8 +1861,8 @@
     {
       "id": 43,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 8,
       "nav": "압축 이후의 검증",
       "title": "요약이 짧아졌다면\n다음 작업이 가능한지 확인",
@@ -1903,8 +1903,8 @@
     {
       "id": 44,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 9,
       "nav": "지속 학습의 평가 기준",
       "title": "새 경험을 익히면서\n기존 능력도 유지해야 합니다",
@@ -1945,8 +1945,8 @@
     {
       "id": 45,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 10,
       "nav": "파라미터 공유의 의미",
       "title": "모델 크기와 계산 깊이를\n함께 설계하는 접근",
@@ -1987,8 +1987,8 @@
     {
       "id": 46,
       "group": 4,
-      "speaker": "Yun Kim",
-      "section": "04 · Yun Kim",
+      "speaker": "김윤형",
+      "section": "04 · 김윤형",
       "page": 11,
       "nav": "온디바이스 아키텍처",
       "title": "기기 안에서 실행하려면\n메모리부터 다시 생각",
