@@ -21,5 +21,5 @@ try {
     $portProbe.Stop()
 }
 Write-Host 'Open http://127.0.0.1:8930 in your browser. Press Ctrl+C to stop.'
-& $pythonPath -m uvicorn main:app --host 127.0.0.1 --port 8930
+& $pythonPath -m uvicorn main:app --host 127.0.0.1 --port 8930 --reload
 exit $LASTEXITCODE
