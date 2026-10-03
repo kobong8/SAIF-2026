@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 
+# Local source transcripts and notes
+/docs/**/*.txt
+
 # Local QA output and generated binary artifacts
 qa/
 *.png
