@@ -196,6 +196,7 @@ function renderLanding() {
     <div class="track-conclusion"><span>CONCLUSION</span><p>${esc(track.conclusion)}</p></div>
     <a class="track-link" href="#/${esc(id)}/slide-1" aria-label="${esc(track.name)} 발표 정리 자료 보기">발표 정리 자료 보기 <span aria-hidden="true">→</span></a>
     ${trackStart >= 0 ? `<a class="skip-keynote" href="#/${esc(id)}/slide-${trackStart+1}" aria-label="${esc(track.name)} 키노트 건너 뛰기">키노트 건너 뛰기 <span aria-hidden="true">↗</span></a>` : ''}
+    ${track.video_url ? `<a class="video-link" href="${esc(track.video_url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(track.name)} YouTube 발표 영상 보기 (새 탭)">YouTube 발표 영상 보기</a>` : ''}
   </article>`;
   }).join('');
 }
