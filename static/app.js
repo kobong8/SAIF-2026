@@ -92,8 +92,6 @@ function fromHash() {
     const wasTrack = activeTrack !== null;
     activeTrack = null;
     slides = [];
-    setPresentation(false);
-    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
     document.body.classList.add('is-home');
     document.title = 'SAIF 2026 · Tracks';
     if (wasTrack) {
@@ -125,13 +123,14 @@ function fromHash() {
 
 function setPresentation(enabled) {
   document.body.classList.toggle('presenting',enabled);
-  $('#presentButton').innerHTML = enabled ? '발표 종료 <kbd>F</kbd>' : '발표 모드 <kbd>F</kbd>';
-  $('#presentButton').setAttribute('aria-pressed',String(enabled));
+  ['#presentButton', '#landingPresentButton'].forEach(selector => {
+    $(selector).innerHTML = enabled ? '발표 종료 <kbd>F</kbd>' : '발표 모드 <kbd>F</kbd>';
+    $(selector).setAttribute('aria-pressed',String(enabled));
+  });
   if (!enabled) syncNavigation(true);
 }
 
 async function togglePresentation() {
-  if (!activeTrack) return;
   const enabled = !document.body.classList.contains('presenting');
   setPresentation(enabled);
   try {
@@ -144,19 +143,21 @@ document.addEventListener('fullscreenchange',() => {
   if(!document.fullscreenElement) setPresentation(false);
 });
 $('#presentButton').onclick = togglePresentation;
+$('#landingPresentButton').onclick = togglePresentation;
 $('#prev').onclick = () => go(current-1);
 $('#next').onclick = () => go(current+1);
 $('#jumpSelect').onchange = event => go(Number(event.target.value));
 window.addEventListener('hashchange',fromHash);
 document.addEventListener('keydown',event => {
-  if(!activeTrack || !slides.length || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
+  if(/INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
+  if(event.key.toLowerCase() === 'f') {event.preventDefault();togglePresentation();return;}
+  if(event.key === 'Escape' && document.body.classList.contains('presenting')) {togglePresentation();return;}
+  if(!activeTrack || !slides.length) return;
   if(event.code === 'Space' && /BUTTON|A|SUMMARY/.test(event.target.tagName)) return;
   if(['ArrowRight','PageDown'].includes(event.key) || event.code === 'Space') {event.preventDefault();go(current+1);}
   else if(['ArrowLeft','PageUp'].includes(event.key)) {event.preventDefault();go(current-1);}
   else if(event.key === 'Home') {event.preventDefault();go(0);}
   else if(event.key === 'End') {event.preventDefault();go(slides.length-1);}
-  else if(event.key.toLowerCase() === 'f') togglePresentation();
-  else if(event.key === 'Escape' && document.body.classList.contains('presenting')) togglePresentation();
 });
 
 function navButton(s,index) {
@@ -165,7 +166,7 @@ function navButton(s,index) {
 
 function buildNavigation(track) {
     let navigation = `<div class="intro-links">${slides.map((s,i) => s.group === 0 ? navButton(s,i) : '').join('')}</div>`;
-    const speakerNavigation = speaker => `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
+    const speakerNavigation = speaker => `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)} · ${esc(speaker.affiliation)}</small></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
     const sessions = track.sessions || [];
     track.speakers.filter(speaker => !sessions.some(session => session.groups.includes(speaker.id))).forEach(speaker => {
       navigation += speakerNavigation(speaker);
