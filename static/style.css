@@ -1,5 +1,6 @@
 :root{--paper:#edf1f8;--ink:#17233e;--muted:#52627c;--line:#d9e0ef;--accent:#5265de;--soft:#e5eafa;--white:#ffffff}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Malgun Gothic",sans-serif;letter-spacing:-.025em}
 button,a,input,select{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--ink);padding:10px 14px}button:hover{background:var(--soft)}button:disabled{opacity:.35;cursor:default}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}a{color:inherit}kbd{font-size:10px;margin-left:8px;border:1px solid currentColor;border-radius:3px;padding:2px 4px;opacity:.65}
 .sidebar{position:fixed;inset:0 auto 0 0;width:264px;background:#111a30;border-right:1px solid var(--line);padding:30px 18px 20px;display:flex;flex-direction:column}.brand{display:flex;gap:12px;text-decoration:none;font-size:22px;align-items:center;letter-spacing:-1px;padding-left:7px}.brand b{font-weight:400}.brand small{display:block;font-size:9px;letter-spacing:2px;margin-top:6px}.edition{margin:30px 8px 16px;display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.2px;color:var(--muted)}.edition span{color:var(--accent)}
@@ -123,4 +124,49 @@ h1{font-weight:750;letter-spacing:-.05em;color:#15213b}
   .detail{padding:17px}
   .slide--hero .card{padding:20px}
   .chapter-count{padding:5px 7px}
+}
+
+/* Track selection shares the presentation palette, cards and type scale. */
+#landing{display:none;max-width:1240px;padding:48px 40px 30px;min-height:100vh;justify-content:flex-start}
+.is-home #landing{display:flex}
+.is-home>.sidebar,.is-home>.workspace{display:none}
+.landing-brand{font-size:26px;font-weight:750;letter-spacing:-1px}
+.landing-brand b{color:var(--accent)}
+.landing-brand>span{display:block;font:10px Consolas,monospace;letter-spacing:2px;color:var(--muted);margin-top:6px}
+.landing-intro{margin:48px 0 30px}
+.landing-intro h1{font-size:clamp(34px,4.2vw,58px);margin:14px 0;word-break:keep-all}
+.landing-description{color:var(--muted);font-size:16px;line-height:1.9;margin:0}
+.track-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.track-card{display:flex;flex-direction:column;padding:30px}
+.track-card h2{font-size:34px;margin:16px 0 14px;letter-spacing:-1px}
+.track-card>.card-label{align-self:flex-start}
+.track-question{font-size:19px;font-weight:650;line-height:1.6;margin:0 0 16px;word-break:keep-all}
+.track-summary{font-size:14px;line-height:1.9;color:var(--muted);margin:0 0 18px;word-break:keep-all}
+.track-themes{font:11px/1.8 Consolas,monospace;color:#5265a3;margin:0 0 24px}
+.track-conclusion{margin-top:auto;border-top:1px solid var(--line);padding-top:18px}
+.track-conclusion>span{font:10px Consolas,monospace;letter-spacing:1.5px;color:var(--accent)}
+.track-conclusion>p{font-size:14px;line-height:1.85;margin:8px 0 22px;word-break:keep-all}
+.track-link{display:flex;justify-content:space-between;align-items:center;background:var(--accent);color:white;border-radius:9px;padding:14px 18px;text-decoration:none;font-size:14px;font-weight:600}
+.track-link:hover{background:#4251be}
+.track-card>small{font-size:11px;color:var(--muted);margin-top:13px;text-align:center}
+.landing-bridge{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin:30px 0 0;font-size:12px;color:var(--muted);line-height:1.8}
+.landing-bridge span{font:10px Consolas,monospace;color:var(--accent)}
+.landing-bridge b{font-size:20px;color:var(--accent)}
+.landing-note{font-size:11px;color:var(--muted);text-align:center;line-height:1.8;margin:10px 0 0}
+#homeLink{display:inline-flex;align-items:center;text-decoration:none;font-size:11px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;white-space:nowrap}
+#homeLink:hover{background:var(--soft)}
+.source-note{font-size:11px;line-height:1.7;color:var(--muted);margin:14px 2px 0;word-break:keep-all}
+.edition{gap:6px;align-items:center}
+#trackLabel{background:transparent;border:0;padding:0;font-size:10px}
+#main:focus,#landing:focus{outline:none}
+@media(max-width:760px){
+  #landing{padding:28px 20px}
+  .landing-intro{margin:34px 0 24px}
+  .landing-description{font-size:14px}
+  .track-cards{grid-template-columns:1fr;gap:20px}
+  .track-card{padding:24px}
+  .track-card h2{font-size:30px}
+  .track-question{font-size:18px}
+  .landing-bridge{gap:8px}
+  #homeLink{font-size:10px;padding:8px}
 }

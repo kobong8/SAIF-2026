@@ -4,20 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#111a30">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111a30'/%3E%3Cpath d='M23 10H12v6h9v6H9' fill='none' stroke='%23b5c2ff' stroke-width='3'/%3E%3C/svg%3E">
   <title>SAIF 2026 · 팀 공유 브리핑</title>
-  <link rel="stylesheet" href="./static/style.css?v=8">
+  <link rel="stylesheet" href="./static/style.css?v=9">
 </head>
-<body>
+<body class="is-home">
+<main id="landing" tabindex="-1" aria-labelledby="landingTitle">
+  <div class="landing-brand">SAIF <b>2026</b><span>FORUM FIELD NOTES</span></div>
+  <div class="landing-intro"><p class="eyebrow">FROM INTELLIGENCE TO IMPACT</p>
+    <h1 id="landingTitle">AI는 어디로 가고 있는가?</h1>
+    <p class="landing-description">기술의 발전에서 실제 적용과 가치 창출까지.<br>같은 질문을 두 가지 관점으로 읽는 삼성 AI 포럼 2026.</p>
+  </div>
+  <div id="trackCards" class="track-cards"><p role="status">발표 자료를 불러오고 있습니다…</p></div>
+  <p class="landing-bridge"><span>AI TECHNOLOGY</span> 기술적 가능성과 조건 <b aria-hidden="true">→</b> 실제 적용과 가치 창출 <span>AX INNOVATION</span></p>
+  <p class="landing-note">공통 키노트 4개에서 출발해 각 Track의 관점으로 이어집니다.</p>
+  <noscript>발표 자료를 보려면 브라우저에서 JavaScript를 활성화해 주세요.</noscript>
+</main>
 <aside class="sidebar">
-  <a class="brand" href="#slide-1" aria-label="SAIF 2026 첫 화면으로 이동"><span>SAIF <b>2026</b><small>FORUM FIELD NOTES</small></span></a>
-  <div class="edition">TEAM BRIEFING <span>7 SPEAKERS</span></div>
+  <a class="brand" href="#/" aria-label="SAIF 2026 트랙 선택으로 이동"><span>SAIF <b>2026</b><small>FORUM FIELD NOTES</small></span></a>
+  <div class="edition"><span id="trackLabel">TEAM BRIEFING</span><span id="speakerCount"></span></div>
   <nav id="navigation" aria-label="발표자별 목차"></nav>
   <div class="sidebar-bottom"><span class="dot"></span> 함께 읽고, 다음을 설계하다<small>AGENTIC AI · FROM INTELLIGENCE TO IMPACT</small></div>
 </aside>
 <div class="workspace">
   <header>
     <div class="breadcrumb">삼성 AI 포럼 <span>/</span> 참석 내용 공유</div>
-    <div class="toolbar"><button id="presentButton" class="primary">발표 모드 <kbd>F</kbd></button></div>
+    <div class="toolbar"><a id="homeLink" href="#/">← SAIF 2026 Tracks</a><button id="presentButton" class="primary" aria-pressed="false">발표 모드 <kbd>F</kbd></button></div>
   </header>
   <div class="mobile-nav"><label for="jumpSelect">발표 이동</label><select id="jumpSelect"></select></div>
   <main id="main" tabindex="-1"><div id="slide" aria-live="polite"><p>발표 자료를 불러오고 있습니다…</p></div></main>
@@ -28,6 +40,6 @@
   </footer>
   <div class="progress" role="progressbar" aria-label="장표 진행" aria-valuemin="1"><div id="progressFill"></div></div>
 </div>
-<script src="./static/app.js?v=8"></script>
+<script src="./static/app.js?v=9"></script>
 </body>
 </html>

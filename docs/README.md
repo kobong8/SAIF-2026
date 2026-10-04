@@ -2,7 +2,9 @@
 
 이 문서의 명령은 저장소 루트 폴더에서 실행합니다. Markdown 문서는 `docs/`에 모아 관리합니다.
 
-FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 발표자 7명 × 11장(요약 1장 + 본문 10장)으로 **총 79장**입니다.
+SAIF 2026을 두 관점으로 읽는 발표용 웹페이지입니다. 첫 화면에서 **AI Technology(73장, 10명)** 또는 **AX Innovation(79장, 7명)**을 선택합니다. 공통 키노트 4명 × 11장은 동일한 콘텐츠를 재사용합니다. FastAPI 로컬 서버와 GitHub Pages 정적 배포를 모두 지원합니다.
+
+새 Track의 편집 원칙, 출처 확인 사항, 검증 결과와 **73장 전체 목차·핵심 메시지**는 [Track 확장 작업 보고서](track-expansion.md)를 참고하세요.
 
 ## GitHub Pages
 
@@ -14,12 +16,16 @@ FastAPI로 실행되는 발표용 웹페이지입니다. 표지와 요약 2장, 
 
 ```powershell
 python build_pages.py
-git add content.py content_expanded.py static index.html slides.json .nojekyll
+git add content.py content_expanded.py content_technology.py tracks.py build_pages.py main.py static index.html slides.json .nojekyll docs .gitignore
 git commit -m "Update presentation"
 git push
 ```
 
 `build_pages.py`는 Python 기본 라이브러리만 사용합니다. FastAPI 설치는 로컬 서버를 실행할 때만 필요합니다.
+
+현재 수정 작업은 `develop` 브랜치에 있습니다. Pages가 기존 문서의 `main / (root)` 설정을 사용한다면, 검토 후 `develop`의 변경을 `main`에 병합하고 푸시해야 공개 사이트에 반영됩니다. 이번 작업에서는 원격 푸시나 Pages 설정 변경을 수행하지 않았습니다.
+
+주소는 `#/ai-technology/slide-1`, `#/ax-innovation/slide-1` 형식입니다. 해시 뒤의 경로는 서버에 전달되지 않아 저장소 하위 경로와 새로고침을 지원합니다. `#/`는 트랙 선택 화면이며 기존 `#slide-8` 주소는 AX 8장으로 연결됩니다.
 
 ## 설치와 실행
 
@@ -57,7 +63,7 @@ python -m venv .venv
 
 팀원은 `http://발표자PC의내부IP:8930`으로 접속합니다. 네트워크와 방화벽에서 연결을 허용해야 합니다. 별도 로그인 기능은 없습니다.
 
-## 구성
+## AX Innovation 구성
 
 | 발표자 | 장수 | 주요 내용 |
 | --- | ---: | --- |
@@ -71,6 +77,22 @@ python -m venv .venv
 
 각 발표의 첫 장은 핵심 개념·사례·수치·시사점을 4개 항목으로 상세히 정리한 요약입니다. 이어지는 본문 10장은 핵심 항목, 구체적인 사례·기술 설명, 핵심 메시지로 구성됩니다. 상세 요약은 화면 너비에 따라 2열 또는 1열로 표시되며, 내용이 길면 스크롤해서 읽을 수 있습니다.
 
+## AI Technology 구성
+
+| 순서 | 발표자 / 구분 | 장수 | 주요 내용 |
+| --- | --- | ---: | --- |
+| 도입 | 핵심 질문·발표 흐름 | 2 | 실행 → 효율 → 물리 세계 → 지속 학습 |
+| Keynote | Richard Ho · David Green · Ranjay Krishna · 김윤형 | 44 | 기존 공통 키노트 전체 재사용 |
+| Session 1 | 황인철 | 4 | 자원 제약, Right Context, Light Computation |
+| Session 1 | 이윤수 | 3 | PDE · AI Models · Agent, Action Framework |
+| Session 2 | Timothy Hospedales | 5 | 개입 기반 예측, 장기 계획, Metro World Model |
+| Session 2 | Kris Hauser | 5 | 3계층 제어, 신뢰성·비용, 맞춤화·단계적 확장 |
+| Session 3 | 이강욱 | 3 | 비모수적·파라미터 적응, 망각·퇴행 |
+| Session 3 | Juan Carlos Niebles | 5 | TrustMe, Doc-to-Atom, NB-LoRA, 기억 배치 |
+| 종합 | What We Learned · Final Takeaway | 2 | 효율·현실 기반 추론·검증·경험 보존 |
+
+새 강연은 첫 장에 4개 항목의 요약, 이후 장에 기술·사례·연결 설명을 제공합니다. 분량은 확인 가능한 원본 내용에 맞췄습니다. 한국어 자동 자막 누락 구간은 제공 요약과 공식 프로그램을 근거로 재구성했으며 해당 장표 아래에 표시합니다.
+
 ## 발표 조작
 
 - 왼쪽 발표자 목차를 펼쳐 원하는 장표로 이동합니다.
@@ -78,6 +100,7 @@ python -m venv .venv
 - `←` `→`, `PageUp` `PageDown`, `Space`: 이동.
 - `Home` / `End`: 처음 / 마지막.
 - `F`: 발표 모드와 전체 화면. `Esc`: 종료.
+- 상단 `← SAIF 2026 Tracks` 또는 좌측 로고로 트랙 선택 화면에 돌아갑니다. 발표 모드에서도 상단 링크를 사용할 수 있습니다.
 - 하단 숫자로 현재 발표자의 다른 장표에 바로 이동할 수 있습니다.
 - `#slide-8`처럼 주소를 공유하면 해당 장부터 열립니다.
 
@@ -85,9 +108,11 @@ python -m venv .venv
 
 ## 수정과 검증
 
-`qa/`와 이미지·PDF·영상·압축 산출물은 `.gitignore`로 제외합니다. 검토용 파일은 로컬에 보관하고, 커밋에는 코드와 텍스트 자료를 포함합니다.
+`tests/`, `test/`, `__tests__/`, 테스트 파일 패턴, 테스트 캐시·보고서, `qa/`와 이미지·PDF·영상·압축 산출물은 `.gitignore`로 제외합니다. 기존 테스트 4개도 Git 추적에서 제외하고 로컬에 보존했습니다. 원본 TXT와 `.venv/`도 로컬 전용입니다. 실행·정적 빌드에 필요한 Python 코드, 의존성 목록, 실행 스크립트, HTML/CSS/JS와 `slides.json`은 계속 버전 관리합니다.
 
 - `content.py`, `content_expanded.py`: 발표 내용과 발표자 목록.
+- `content_technology.py`: AI Technology 강연과 종합 결론; 공통 키노트는 기존 콘텐츠를 복사해 재사용.
+- `tracks.py`: 트랙 소개·선택 카드와 두 발표 데이터의 공통 카탈로그.
 - `static/`: 화면, 스타일, 키보드 이동 기능.
 - `main.py`: 웹페이지와 발표 데이터 API.
 - `install.ps1`: 가상환경 생성·패키지 설치.
@@ -96,6 +121,10 @@ python -m venv .venv
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 node --check static/app.js
+# 로컬 검증 파일과 Playwright가 설치된 환경에서:
+.\.venv\Scripts\python.exe tests/check_tracks_browser.py
 ```
 
-로컬 API: `/health`, `/api/slides`, `/slides.json`. 발표 화면에는 원본 자료 다운로드 기능이 없습니다.
+테스트 파일은 로컬 전용이므로 새 clone에는 포함되지 않습니다. 브라우저 검증 스크립트는 설치된 Edge를 headless로 사용하며, 결과와 스크린샷은 `qa/`에 저장합니다. Playwright는 검증용으로만 설치하며 실행 의존성에 추가하지 않습니다.
+
+로컬 API: `/health`, `/api/slides`, `/slides.json`. 발표 데이터의 `tracks`에 두 Track이 있고, 기존 호환용 `slides`·`speakers`는 AX 자료를 유지합니다. `/health`의 `slides`도 기존 AX 장수(79)를 유지합니다. 발표 화면에는 원본 자료 다운로드 기능이 없습니다.

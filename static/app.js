@@ -1,5 +1,6 @@
 const $ = selector => document.querySelector(selector);
 let slides = [], current = 0;
+let tracks = {}, activeTrack = null;
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function content(s) {
@@ -9,12 +10,13 @@ function content(s) {
     <h1>${esc(s.title)}</h1><p class="subtitle">${esc(s.subtitle)}</p>
     <div class="cards ${s.cards.length === 4 ? 'four' : ''}">${s.cards.map(c => `<section class="card"><span class="card-label">${esc(c.label)}</span><h2>${esc(c.title)}</h2><ul>${c.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section>`).join('')}</div>
     <section class="detail"><h2>${esc(s.detail.title)}</h2><div><p>${esc(s.detail.text)}</p>${(s.detail.links || []).length ? `<div class="detail-links">${s.detail.links.filter(link => /^https:\/\/www\.anthropic\.com\/engineering(?:\/|$)/.test(link.url)).map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}</div></section>
-    <div class="takeaway"><span>KEY TAKEAWAY</span><p>${esc(s.takeaway)}</p></div>
+    <div class="takeaway"><span>${s.nav === 'Final Takeaway' ? 'FINAL TAKEAWAY' : 'KEY TAKEAWAY'}</span><p>${esc(s.takeaway)}</p></div>
+    ${s.source ? `<p class="source-note">자료 근거: ${esc(s.source)}</p>` : ''}
   </article>`;
 }
 
 function render() {
-  if (!slides.length) return;
+  if (!activeTrack || !slides.length) return;
   const s = slides[current];
   $('#slide').innerHTML = content(s);
   $('#counter').textContent = `${String(current+1).padStart(2,'0')} / ${slides.length}`;
@@ -41,19 +43,49 @@ function render() {
 }
 
 function go(index) {
-  if (!slides.length) return;
+  if (!activeTrack || !slides.length) return;
   const next = Math.max(0,Math.min(slides.length-1,index));
   if (current === next) return;
   current = next;
-  history.replaceState(null,'',`#slide-${current+1}`);
+  history.replaceState(null,'',`#/${activeTrack}/slide-${current+1}`);
   render();
   window.scrollTo({top:0,behavior:'instant'});
 }
 
 function fromHash() {
-  const match = location.hash.match(/^#slide-(\d+)$/);
-  current = match ? Math.max(0,Math.min(slides.length-1,Number(match[1])-1)) : 0;
+  const legacy = location.hash.match(/^#slide-(\d+)$/);
+  const match = location.hash.match(/^#\/(ai-technology|ax-innovation)(?:\/slide-(\d+))?\/?$/);
+  const trackId = legacy ? 'ax-innovation' : match?.[1];
+  if (!trackId || !tracks[trackId]) {
+    const wasTrack = activeTrack !== null;
+    activeTrack = null;
+    slides = [];
+    setPresentation(false);
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    document.body.classList.add('is-home');
+    document.title = 'SAIF 2026 · Tracks';
+    if (wasTrack) {
+      $('#landing').focus({preventScroll:true});
+      window.scrollTo({top:0,behavior:'instant'});
+    }
+    return;
+  }
+  const changed = activeTrack !== trackId;
+  activeTrack = trackId;
+  const track = tracks[trackId];
+  slides = track.slides;
+  document.body.classList.remove('is-home');
+  document.title = `SAIF 2026 · ${track.name}`;
+  $('#trackLabel').textContent = track.name.toUpperCase();
+  $('#speakerCount').textContent = `${track.speakers.length} SPEAKERS`;
+  $('.breadcrumb').textContent = `${track.label} / ${track.name}`;
+  if (changed) buildNavigation(track);
+  current = Math.max(0, Math.min(slides.length-1, Number(legacy?.[1] || match?.[2] || 1)-1));
   render();
+  if (changed) {
+    $('#main').focus({preventScroll:true});
+    window.scrollTo({top:0,behavior:'instant'});
+  }
 }
 
 function setPresentation(enabled) {
@@ -63,6 +95,7 @@ function setPresentation(enabled) {
 }
 
 async function togglePresentation() {
+  if (!activeTrack) return;
   const enabled = !document.body.classList.contains('presenting');
   setPresentation(enabled);
   try {
@@ -80,7 +113,7 @@ $('#next').onclick = () => go(current+1);
 $('#jumpSelect').onchange = event => go(Number(event.target.value));
 window.addEventListener('hashchange',fromHash);
 document.addEventListener('keydown',event => {
-  if(!slides.length || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
+  if(!activeTrack || !slides.length || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
   if(event.code === 'Space' && /BUTTON|A|SUMMARY/.test(event.target.tagName)) return;
   if(['ArrowRight','PageDown'].includes(event.key) || event.code === 'Space') {event.preventDefault();go(current+1);}
   else if(['ArrowLeft','PageUp'].includes(event.key)) {event.preventDefault();go(current-1);}
@@ -94,23 +127,43 @@ function navButton(s,index) {
   return `<button data-index="${index}"><span class="num">${String(s.page).padStart(2,'0')}</span><span>${esc(s.nav)}</span></button>`;
 }
 
-async function init() {
-  try {
-    const response = await fetch('./slides.json',{cache:'no-store'});
-    if(!response.ok) throw new Error('Load failed');
-    const data = await response.json();
-    slides = data.slides;
-    if(!Array.isArray(slides) || !slides.length || !Array.isArray(data.speakers)) throw new Error('Invalid data');
+function buildNavigation(track) {
     let navigation = `<div class="intro-links">${slides.map((s,i) => s.group === 0 ? navButton(s,i) : '').join('')}</div>`;
-    data.speakers.forEach(speaker => {
+    track.speakers.forEach(speaker => {
       navigation += `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)} · ${esc(speaker.affiliation)}</small></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
     });
     $('#navigation').innerHTML = navigation;
     document.querySelectorAll('nav button[data-index]').forEach(button => button.onclick = () => go(Number(button.dataset.index)));
     $('#jumpSelect').innerHTML = slides.map((s,i) => `<option value="${i}">${s.group ? esc(s.speaker)+' · ' : ''}${esc(s.nav)}</option>`).join('');
+}
+
+function renderLanding() {
+  $('#trackCards').innerHTML = Object.entries(tracks).map(([id, track]) => `<article class="card track-card">
+    <span class="card-label">${esc(track.label)}</span>
+    <h2>${esc(track.name)}</h2>
+    <p class="track-question">${esc(track.question)}</p>
+    <p class="track-summary">${esc(track.summary)}</p>
+    <p class="track-themes">${esc(track.themes)}</p>
+    <div class="track-conclusion"><span>CONCLUSION</span><p>${esc(track.conclusion)}</p></div>
+    <a class="track-link" href="#/${esc(id)}/slide-1" aria-label="${esc(track.name)} 발표 자료 보기">발표 자료 보기 <span aria-hidden="true">→</span></a>
+    <small>${track.speakers.length}명의 발표자 · ${track.slides.length}장의 브리핑</small>
+  </article>`).join('');
+}
+
+async function init() {
+  try {
+    const response = await fetch('./slides.json',{cache:'no-store'});
+    if(!response.ok) throw new Error('Load failed');
+    const data = await response.json();
+    if (!data.tracks || !['ai-technology','ax-innovation'].every(id =>
+      Array.isArray(data.tracks[id]?.slides) && data.tracks[id].slides.length &&
+      Array.isArray(data.tracks[id]?.speakers))) throw new Error('Invalid data');
+    tracks = data.tracks;
+    renderLanding();
     fromHash();
   } catch {
-    $('#slide').innerHTML = '<h1>자료를 불러오지 못했습니다.</h1><p>잠시 후 페이지를 새로고침해 주세요.</p>';
+    document.body.classList.add('is-home');
+    $('#trackCards').innerHTML = '<p role="alert">자료를 불러오지 못했습니다. 잠시 후 페이지를 새로고침해 주세요.</p>';
   }
 }
 init();
