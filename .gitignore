@@ -2,6 +2,23 @@
 __pycache__/
 *.pyc
 
+# Local-only tests, browser checks and their output (not runtime dependencies)
+tests/
+test/
+__tests__/
+test_*.py
+*_test.py
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+playwright-report/
+test-results/
+
 # Local source transcripts and notes
 /docs/**/*.txt
 

@@ -3,7 +3,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from content import SLIDES, speaker_metadata
+from tracks import SLIDES, presentation_data
 
 ROOT = Path(__file__).resolve().parent
 app = FastAPI(title="SAIF 2026 · 팀 공유 브리핑")
@@ -18,7 +18,7 @@ def index():
 @app.get("/api/slides")
 @app.get("/slides.json")
 def slides():
-    return {"title": "삼성 AI 포럼 2026", "speakers": speaker_metadata(), "slides": SLIDES}
+    return presentation_data()
 
 
 @app.get("/health")
