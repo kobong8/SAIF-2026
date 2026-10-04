@@ -49,11 +49,11 @@
       "id": 1,
       "group": 0,
       "speaker": "삼성 AI 포럼 2026",
-      "section": "SAIF 2026 · TEAM BRIEFING",
+      "section": "SAIF 2026 · AX INNOVATION",
       "page": 1,
-      "nav": "포럼의 핵심 메시지",
-      "title": "AI에게 답을 묻는 시대에서,\n일을 맡기는 시대로",
-      "subtitle": "삼성 AI 포럼 2026 · 에이전트의 기술, 조직의 변화, 그리고 우리 팀의 실행",
+      "nav": "핵심 질문",
+      "title": "AI에게 맡긴 일을\n어떻게 조직의 성과로 만들까요?",
+      "subtitle": "Keynote + Track 2 · 사업 목표, 데이터, 안전한 운영과 R&D 실행을 연결",
       "cards": [
         {
           "label": "EXECUTION",
@@ -91,42 +91,42 @@
       "id": 2,
       "group": 0,
       "speaker": "삼성 AI 포럼 2026",
-      "section": "SAIF 2026 · TEAM BRIEFING",
+      "section": "SAIF 2026 · AX INNOVATION",
       "page": 2,
-      "nav": "요약",
-      "title": "요약",
-      "subtitle": "일곱 발표가 보여 준 에이전트 전환의 공통 방향",
+      "nav": "발표의 흐름",
+      "title": "개인의 업무 위임에서\n조직이 재사용하는 실행 방식으로",
+      "subtitle": "4개의 공통 키노트와 3개의 AX Innovation 강연을 하나의 흐름으로 읽기",
       "cards": [
         {
-          "label": "01 · WORKFLOW",
-          "title": "검증 가능한 업무 위임",
+          "label": "KEYNOTE",
+          "title": "실행 가능한 지능의 조건",
           "points": [
-            "Richard Ho: 탐색과 검증을 결합한 엔지니어링",
-            "David Green: 개인의 활용을 팀·전사 성과로 확장"
+            "Richard Ho · David Green: 검증과 조직 확장",
+            "Ranjay Krishna · 김윤형: 공간 이해와 학습 구조"
           ]
         },
         {
-          "label": "02 · INTELLIGENCE",
-          "title": "공간과 경험의 이해",
+          "label": "SESSION 1 · BUSINESS VALUE",
+          "title": "가치 있는 업무를 선택",
           "points": [
-            "Ranjay Krishna: 시각적 근거와 행동 계획",
-            "김윤형: 지속 학습과 온디바이스 아키텍처"
+            "Ajaz Munsiff: 사업 목표와 데이터 준비",
+            "과제·배포 위치·운영 책임을 함께 설계"
           ]
         },
         {
-          "label": "03 · ENTERPRISE",
-          "title": "데이터와 안전한 운영",
+          "label": "SESSION 2 · TRUSTED AGENTS",
+          "title": "신뢰할 수 있는 실행",
           "points": [
-            "Ajaz Munsiff: 사업 가치와 데이터 준비",
-            "최상근: 위협 모델과 다층 방어"
+            "최상근: 위협 모델과 다층 방어",
+            "권한·환경·검증으로 안전한 업무 위임"
           ]
         },
         {
-          "label": "04 · R&D",
-          "title": "연구개발 과정의 연결",
+          "label": "SESSION 3 · AI-NATIVE R&D",
+          "title": "연구개발 전체를 연결",
           "points": [
-            "한재준: 탐색·판단·실행을 연결하는 R&D",
-            "팀 과제: 반복 업무 하나의 전체 성과 측정"
+            "한재준: 탐색·판단·실행의 R&D 흐름",
+            "재현 가능한 데이터와 도구를 공통 자산으로"
           ]
         }
       ],
@@ -139,6 +139,98 @@
     },
     {
       "id": 3,
+      "group": 0,
+      "speaker": "삼성 AI 포럼 2026",
+      "section": "SAIF 2026 · AX INNOVATION",
+      "page": 3,
+      "nav": "What We Learned",
+      "title": "What We Learned",
+      "subtitle": "AX Innovation 전체에서 도출한 네 가지 실행 원칙",
+      "cards": [
+        {
+          "label": "01 · OUTCOME",
+          "title": "도입의 기준은 업무의 결과",
+          "points": [
+            "토큰·사용량과 실제 성과를 구분",
+            "고객 경험과 검토를 마친 결과물로 평가"
+          ]
+        },
+        {
+          "label": "02 · DATA",
+          "title": "데이터에 맥락과 책임을",
+          "points": [
+            "자료의 조건·권한·유효성을 함께 관리",
+            "다음 사람과 에이전트가 재사용할 수 있게"
+          ]
+        },
+        {
+          "label": "03 · TRUST",
+          "title": "실행 권한과 검증을 설계",
+          "points": [
+            "모델의 판단과 환경의 권한을 분리",
+            "다층 방어와 정상 업무의 완료율을 함께 확인"
+          ]
+        },
+        {
+          "label": "04 · WORKFLOW",
+          "title": "개별 자동화를 전체 흐름으로",
+          "points": [
+            "탐색·실행·검토·재작업의 병목을 연결",
+            "검증된 방법을 팀의 공통 자산으로 축적"
+          ]
+        }
+      ],
+      "takeaway": "AX의 성과는 가치 있는 업무에 데이터·도구·검증·운영 책임을 연결하고, 검증된 실행 방식을 반복할 때 만들어집니다.",
+      "detail": {
+        "title": "발표를 읽는 네 가지 기준",
+        "text": "이 원칙은 일곱 발표를 묶어 정리한 종합 해석입니다. 이어지는 강연에서 기술과 사례를 볼 때 어떤 업무 결과가 달라졌는지, 데이터가 준비됐는지, 실행을 통제할 수 있는지, 다른 팀도 재현할 수 있는지를 함께 살펴봅니다."
+      },
+      "kind": "closing"
+    },
+    {
+      "id": 4,
+      "group": 0,
+      "speaker": "삼성 AI 포럼 2026",
+      "section": "SAIF 2026 · AX INNOVATION",
+      "page": 4,
+      "nav": "Final Takeaway",
+      "title": "작은 업무의 성공을\n조직의 실행 역량으로",
+      "subtitle": "Final Takeaway · 기술의 도입에서 반복 가능한 가치 창출로",
+      "cards": [
+        {
+          "label": "CHOOSE",
+          "title": "가치 있는 업무 하나",
+          "points": [
+            "반복 빈도와 병목, 완료 기준을 정의",
+            "기존 방식의 시간·품질·비용을 기록"
+          ]
+        },
+        {
+          "label": "CONNECT",
+          "title": "실행과 검증을 연결",
+          "points": [
+            "필요한 데이터·도구·권한을 준비",
+            "결과 검토와 예외 대응의 책임을 설정"
+          ]
+        },
+        {
+          "label": "REUSE",
+          "title": "성과가 확인되면 확장",
+          "points": [
+            "검토·재작업을 포함한 전체 효과를 비교",
+            "잘된 절차와 평가 기준을 다른 팀에 공유"
+          ]
+        }
+      ],
+      "takeaway": "AX의 성과는 가치 있는 업무에 데이터·도구·검증·운영 책임을 연결하고, 검증된 실행 방식을 반복할 때 만들어집니다.",
+      "detail": {
+        "title": "이제 사례에서 확인할 것",
+        "text": "좋은 모델을 선택한 뒤에도 어떤 업무를 맡길지, 무엇을 결과로 인정할지, 누가 운영할지에 대한 판단이 남습니다. 공통 키노트부터 사업 가치, 안전한 에이전트 운영, AI-native R&D 순서로 이 질문의 구체적인 답을 따라갑니다."
+      },
+      "kind": "closing"
+    },
+    {
+      "id": 5,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho · OpenAI",
@@ -192,7 +284,7 @@
       "kind": "summary"
     },
     {
-      "id": 4,
+      "id": 6,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -234,7 +326,7 @@
       "kind": "flow"
     },
     {
-      "id": 5,
+      "id": 7,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -276,7 +368,7 @@
       "kind": "metrics"
     },
     {
-      "id": 6,
+      "id": 8,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -318,7 +410,7 @@
       "kind": "metrics"
     },
     {
-      "id": 7,
+      "id": 9,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -360,7 +452,7 @@
       "kind": "cards"
     },
     {
-      "id": 8,
+      "id": 10,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -402,7 +494,7 @@
       "kind": "metrics"
     },
     {
-      "id": 9,
+      "id": 11,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -444,7 +536,7 @@
       "kind": "metrics"
     },
     {
-      "id": 10,
+      "id": 12,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -486,7 +578,7 @@
       "kind": "flow"
     },
     {
-      "id": 11,
+      "id": 13,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -528,7 +620,7 @@
       "kind": "performance"
     },
     {
-      "id": 12,
+      "id": 14,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -570,7 +662,7 @@
       "kind": "cards"
     },
     {
-      "id": 13,
+      "id": 15,
       "group": 1,
       "speaker": "Richard Ho",
       "section": "01 · Richard Ho",
@@ -612,7 +704,7 @@
       "kind": "cards"
     },
     {
-      "id": 14,
+      "id": 16,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green · AWS",
@@ -666,7 +758,7 @@
       "kind": "summary"
     },
     {
-      "id": 15,
+      "id": 17,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -708,7 +800,7 @@
       "kind": "flow"
     },
     {
-      "id": 16,
+      "id": 18,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -750,7 +842,7 @@
       "kind": "cards"
     },
     {
-      "id": 17,
+      "id": 19,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -792,7 +884,7 @@
       "kind": "flow"
     },
     {
-      "id": 18,
+      "id": 20,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -834,7 +926,7 @@
       "kind": "cards"
     },
     {
-      "id": 19,
+      "id": 21,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -876,7 +968,7 @@
       "kind": "metrics"
     },
     {
-      "id": 20,
+      "id": 22,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -918,7 +1010,7 @@
       "kind": "flow"
     },
     {
-      "id": 21,
+      "id": 23,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -960,7 +1052,7 @@
       "kind": "flow"
     },
     {
-      "id": 22,
+      "id": 24,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -1002,7 +1094,7 @@
       "kind": "flow"
     },
     {
-      "id": 23,
+      "id": 25,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -1044,7 +1136,7 @@
       "kind": "cards"
     },
     {
-      "id": 24,
+      "id": 26,
       "group": 2,
       "speaker": "David Green",
       "section": "02 · David Green",
@@ -1086,7 +1178,7 @@
       "kind": "closing"
     },
     {
-      "id": 25,
+      "id": 27,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna · University of Washington",
@@ -1140,7 +1232,7 @@
       "kind": "summary"
     },
     {
-      "id": 26,
+      "id": 28,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1182,7 +1274,7 @@
       "kind": "cards"
     },
     {
-      "id": 27,
+      "id": 29,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1224,7 +1316,7 @@
       "kind": "cards"
     },
     {
-      "id": 28,
+      "id": 30,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1266,7 +1358,7 @@
       "kind": "flow"
     },
     {
-      "id": 29,
+      "id": 31,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1308,7 +1400,7 @@
       "kind": "flow"
     },
     {
-      "id": 30,
+      "id": 32,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1350,7 +1442,7 @@
       "kind": "cards"
     },
     {
-      "id": 31,
+      "id": 33,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1392,7 +1484,7 @@
       "kind": "cards"
     },
     {
-      "id": 32,
+      "id": 34,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1434,7 +1526,7 @@
       "kind": "flow"
     },
     {
-      "id": 33,
+      "id": 35,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1476,7 +1568,7 @@
       "kind": "flow"
     },
     {
-      "id": 34,
+      "id": 36,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1518,7 +1610,7 @@
       "kind": "cards"
     },
     {
-      "id": 35,
+      "id": 37,
       "group": 3,
       "speaker": "Ranjay Krishna",
       "section": "03 · Ranjay Krishna",
@@ -1560,7 +1652,7 @@
       "kind": "cards"
     },
     {
-      "id": 36,
+      "id": 38,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형 · 삼성전자",
@@ -1614,7 +1706,7 @@
       "kind": "summary"
     },
     {
-      "id": 37,
+      "id": 39,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1656,7 +1748,7 @@
       "kind": "flow"
     },
     {
-      "id": 38,
+      "id": 40,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1698,7 +1790,7 @@
       "kind": "cards"
     },
     {
-      "id": 39,
+      "id": 41,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1740,7 +1832,7 @@
       "kind": "cards"
     },
     {
-      "id": 40,
+      "id": 42,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1782,7 +1874,7 @@
       "kind": "flow"
     },
     {
-      "id": 41,
+      "id": 43,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1824,7 +1916,7 @@
       "kind": "cards"
     },
     {
-      "id": 42,
+      "id": 44,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1866,7 +1958,7 @@
       "kind": "cards"
     },
     {
-      "id": 43,
+      "id": 45,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1908,7 +2000,7 @@
       "kind": "cards"
     },
     {
-      "id": 44,
+      "id": 46,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1950,7 +2042,7 @@
       "kind": "cards"
     },
     {
-      "id": 45,
+      "id": 47,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -1992,7 +2084,7 @@
       "kind": "cards"
     },
     {
-      "id": 46,
+      "id": 48,
       "group": 4,
       "speaker": "김윤형",
       "section": "04 · 김윤형",
@@ -2034,7 +2126,7 @@
       "kind": "cards"
     },
     {
-      "id": 47,
+      "id": 49,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff · Dell Technologies",
@@ -2088,7 +2180,7 @@
       "kind": "summary"
     },
     {
-      "id": 48,
+      "id": 50,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2130,7 +2222,7 @@
       "kind": "cards"
     },
     {
-      "id": 49,
+      "id": 51,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2172,7 +2264,7 @@
       "kind": "flow"
     },
     {
-      "id": 50,
+      "id": 52,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2214,7 +2306,7 @@
       "kind": "cards"
     },
     {
-      "id": 51,
+      "id": 53,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2256,7 +2348,7 @@
       "kind": "cards"
     },
     {
-      "id": 52,
+      "id": 54,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2298,7 +2390,7 @@
       "kind": "cards"
     },
     {
-      "id": 53,
+      "id": 55,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2340,7 +2432,7 @@
       "kind": "cards"
     },
     {
-      "id": 54,
+      "id": 56,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2382,7 +2474,7 @@
       "kind": "cards"
     },
     {
-      "id": 55,
+      "id": 57,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2424,7 +2516,7 @@
       "kind": "cards"
     },
     {
-      "id": 56,
+      "id": 58,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2466,7 +2558,7 @@
       "kind": "flow"
     },
     {
-      "id": 57,
+      "id": 59,
       "group": 5,
       "speaker": "Ajaz Munsiff",
       "section": "05 · Ajaz Munsiff",
@@ -2508,7 +2600,7 @@
       "kind": "cards"
     },
     {
-      "id": 58,
+      "id": 60,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근 · Anthropic",
@@ -2562,7 +2654,7 @@
       "kind": "summary"
     },
     {
-      "id": 59,
+      "id": 61,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2604,7 +2696,7 @@
       "kind": "cards"
     },
     {
-      "id": 60,
+      "id": 62,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2646,7 +2738,7 @@
       "kind": "flow"
     },
     {
-      "id": 61,
+      "id": 63,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2688,7 +2780,7 @@
       "kind": "cards"
     },
     {
-      "id": 62,
+      "id": 64,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2730,7 +2822,7 @@
       "kind": "cards"
     },
     {
-      "id": 63,
+      "id": 65,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2772,7 +2864,7 @@
       "kind": "cards"
     },
     {
-      "id": 64,
+      "id": 66,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2814,7 +2906,7 @@
       "kind": "flow"
     },
     {
-      "id": 65,
+      "id": 67,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2856,7 +2948,7 @@
       "kind": "cards"
     },
     {
-      "id": 66,
+      "id": 68,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2898,7 +2990,7 @@
       "kind": "cards"
     },
     {
-      "id": 67,
+      "id": 69,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2940,7 +3032,7 @@
       "kind": "flow"
     },
     {
-      "id": 68,
+      "id": 70,
       "group": 6,
       "speaker": "최상근",
       "section": "06 · 최상근",
@@ -2996,7 +3088,7 @@
       "kind": "cards"
     },
     {
-      "id": 69,
+      "id": 71,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준 · 삼성전자 DS부문",
@@ -3050,7 +3142,7 @@
       "kind": "summary"
     },
     {
-      "id": 70,
+      "id": 72,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3092,7 +3184,7 @@
       "kind": "flow"
     },
     {
-      "id": 71,
+      "id": 73,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3134,7 +3226,7 @@
       "kind": "cards"
     },
     {
-      "id": 72,
+      "id": 74,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3176,7 +3268,7 @@
       "kind": "cards"
     },
     {
-      "id": 73,
+      "id": 75,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3218,7 +3310,7 @@
       "kind": "flow"
     },
     {
-      "id": 74,
+      "id": 76,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3260,7 +3352,7 @@
       "kind": "cards"
     },
     {
-      "id": 75,
+      "id": 77,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3302,7 +3394,7 @@
       "kind": "cards"
     },
     {
-      "id": 76,
+      "id": 78,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3344,7 +3436,7 @@
       "kind": "cards"
     },
     {
-      "id": 77,
+      "id": 79,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3386,7 +3478,7 @@
       "kind": "flow"
     },
     {
-      "id": 78,
+      "id": 80,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3428,7 +3520,7 @@
       "kind": "cards"
     },
     {
-      "id": 79,
+      "id": 81,
       "group": 7,
       "speaker": "한재준",
       "section": "07 · 한재준",
@@ -3547,7 +3639,7 @@
           "speaker": "삼성 AI 포럼 2026",
           "section": "SAIF 2026 · AI TECHNOLOGY",
           "page": 1,
-          "nav": "AI Technology의 핵심 질문",
+          "nav": "핵심 질문",
           "title": "AI가 계속 일하고 배우려면,\n무엇이 달라져야 할까요?",
           "subtitle": "Keynote + Track 1 · 효율, 물리 세계, 지속 학습으로 이어지는 기술의 다음 조건",
           "cards": [
@@ -3630,13 +3722,107 @@
           "takeaway": "효율·행동·학습은 서로 다른 발표 주제이면서, 오래 작동하는 에이전트가 함께 충족해야 할 조건입니다.",
           "detail": {
             "title": "자료를 읽는 기준",
-            "text": "기술 설명과 실험 결과, 제품의 요구 조건을 구분합니다. 마지막 What We Learned에서는 발표자를 다시 나열하기보다 여러 강연에서 반복된 설계 원칙을 종합합니다. 문장은 발표 내용을 재구성한 요약이며 직접 인용이 아닙니다."
+            "text": "기술 설명과 실험 결과, 제품의 요구 조건을 구분합니다. 먼저 What We Learned와 Final Takeaway에서 전체 설계 원칙을 살펴본 뒤, 각 발표의 기술과 사례에서 그 의미를 확인합니다. 문장은 발표 내용을 재구성한 요약이며 직접 인용이 아닙니다."
           },
           "kind": "agenda",
           "source": ""
         },
         {
           "id": 3,
+          "group": 0,
+          "speaker": "삼성 AI 포럼 2026",
+          "section": "SAIF 2026 · AI TECHNOLOGY",
+          "page": 3,
+          "nav": "What We Learned",
+          "title": "What We Learned",
+          "subtitle": "개별 강연을 넘어, AI Technology 전체에서 도출한 네 가지 설계 원칙",
+          "cards": [
+            {
+              "label": "01 · EFFICIENCY",
+              "title": "제약을 설계의 출발점으로",
+              "points": [
+                "모델 크기뿐 아니라 맥락·기억·계산을 함께 설계",
+                "지연과 품질을 실제 실행 환경에서 확인"
+              ]
+            },
+            {
+              "label": "02 · GROUNDING",
+              "title": "행동할 공간에서 추론",
+              "points": [
+                "텍스트·시각·상태 표현을 과업에 맞게 결합",
+                "계층적 계획으로 긴 목표와 빠른 반응을 연결"
+              ]
+            },
+            {
+              "label": "03 · VERIFICATION",
+              "title": "성공과 신뢰를 함께 검증",
+              "points": [
+                "후보·예측·기억의 변경을 근거로 점검",
+                "데모의 성능과 배포 가능한 범위를 구분"
+              ]
+            },
+            {
+              "label": "04 · CONTINUAL LEARNING",
+              "title": "경험을 보존 가능한 능력으로",
+              "points": [
+                "기억 편집과 파라미터 학습의 역할을 분담",
+                "새 적응과 기존 능력의 유지가 함께 성장"
+              ]
+            }
+          ],
+          "takeaway": "AI의 다음 도약은 제한된 자원 안에서 현실에 맞게 행동하고, 검증된 경험을 잃지 않으며 계속 배우는 시스템입니다.",
+          "detail": {
+            "title": "종합 해석",
+            "text": "이 결론은 발표자 개인의 직접 발언이 아니라 전체 강연에서 반복된 요구를 묶은 편집적 종합입니다. 효율·신뢰성·지속 학습은 하나의 기법으로 모두 해결되는 문제가 아니며, 각 개선이 전체 과업의 성공으로 이어지는지 확인해야 합니다."
+          },
+          "kind": "closing",
+          "source": ""
+        },
+        {
+          "id": 4,
+          "group": 0,
+          "speaker": "삼성 AI 포럼 2026",
+          "section": "SAIF 2026 · AI TECHNOLOGY",
+          "page": 4,
+          "nav": "Final Takeaway",
+          "title": "더 오래, 더 가까이,\n더 믿을 수 있게 작동하는 AI",
+          "subtitle": "Final Takeaway · 기술의 발전을 실제 적용으로 연결",
+          "cards": [
+            {
+              "label": "DESIGN",
+              "title": "실행 조건을 먼저",
+              "points": [
+                "어디서 어떤 일을 할지 정함",
+                "자원과 반응 시간의 제약을 반영"
+              ]
+            },
+            {
+              "label": "VALIDATE",
+              "title": "끝까지 수행하는지",
+              "points": [
+                "중간 추론과 최종 결과를 함께 확인",
+                "실패와 복구가 가능한 범위를 평가"
+              ]
+            },
+            {
+              "label": "LEARN",
+              "title": "다음 실행을 더 좋게",
+              "points": [
+                "새 경험을 적절한 기억에 반영",
+                "기존 능력을 보존하며 적용 범위를 확대"
+              ]
+            }
+          ],
+          "takeaway": "AI의 다음 도약은 제한된 자원 안에서 현실에 맞게 행동하고, 검증된 경험을 잃지 않으며 계속 배우는 시스템입니다.",
+          "detail": {
+            "title": "이제 기술과 사례에서 확인할 것",
+            "text": "공통 키노트에서 실행과 검증의 출발점을 확인한 뒤, 효율적인 온디바이스 지능과 물리 세계의 계획, 경험을 축적하는 지속 학습을 차례로 살펴봅니다. 제한된 자원과 변화하는 환경 속에서 어떻게 이 결론을 실현할지 각 강연의 해법을 연결합니다."
+          },
+          "kind": "closing",
+          "source": ""
+        },
+        {
+          "id": 5,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho · OpenAI",
@@ -3690,7 +3876,7 @@
           "kind": "summary"
         },
         {
-          "id": 4,
+          "id": 6,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3732,7 +3918,7 @@
           "kind": "flow"
         },
         {
-          "id": 5,
+          "id": 7,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3774,7 +3960,7 @@
           "kind": "metrics"
         },
         {
-          "id": 6,
+          "id": 8,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3816,7 +4002,7 @@
           "kind": "metrics"
         },
         {
-          "id": 7,
+          "id": 9,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3858,7 +4044,7 @@
           "kind": "cards"
         },
         {
-          "id": 8,
+          "id": 10,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3900,7 +4086,7 @@
           "kind": "metrics"
         },
         {
-          "id": 9,
+          "id": 11,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3942,7 +4128,7 @@
           "kind": "metrics"
         },
         {
-          "id": 10,
+          "id": 12,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -3984,7 +4170,7 @@
           "kind": "flow"
         },
         {
-          "id": 11,
+          "id": 13,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -4026,7 +4212,7 @@
           "kind": "performance"
         },
         {
-          "id": 12,
+          "id": 14,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -4068,7 +4254,7 @@
           "kind": "cards"
         },
         {
-          "id": 13,
+          "id": 15,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -4110,7 +4296,7 @@
           "kind": "cards"
         },
         {
-          "id": 14,
+          "id": 16,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green · AWS",
@@ -4164,7 +4350,7 @@
           "kind": "summary"
         },
         {
-          "id": 15,
+          "id": 17,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4206,7 +4392,7 @@
           "kind": "flow"
         },
         {
-          "id": 16,
+          "id": 18,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4248,7 +4434,7 @@
           "kind": "cards"
         },
         {
-          "id": 17,
+          "id": 19,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4290,7 +4476,7 @@
           "kind": "flow"
         },
         {
-          "id": 18,
+          "id": 20,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4332,7 +4518,7 @@
           "kind": "cards"
         },
         {
-          "id": 19,
+          "id": 21,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4374,7 +4560,7 @@
           "kind": "metrics"
         },
         {
-          "id": 20,
+          "id": 22,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4416,7 +4602,7 @@
           "kind": "flow"
         },
         {
-          "id": 21,
+          "id": 23,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4458,7 +4644,7 @@
           "kind": "flow"
         },
         {
-          "id": 22,
+          "id": 24,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4500,7 +4686,7 @@
           "kind": "flow"
         },
         {
-          "id": 23,
+          "id": 25,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4542,7 +4728,7 @@
           "kind": "cards"
         },
         {
-          "id": 24,
+          "id": 26,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -4584,7 +4770,7 @@
           "kind": "closing"
         },
         {
-          "id": 25,
+          "id": 27,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna · University of Washington",
@@ -4638,7 +4824,7 @@
           "kind": "summary"
         },
         {
-          "id": 26,
+          "id": 28,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4680,7 +4866,7 @@
           "kind": "cards"
         },
         {
-          "id": 27,
+          "id": 29,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4722,7 +4908,7 @@
           "kind": "cards"
         },
         {
-          "id": 28,
+          "id": 30,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4764,7 +4950,7 @@
           "kind": "flow"
         },
         {
-          "id": 29,
+          "id": 31,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4806,7 +4992,7 @@
           "kind": "flow"
         },
         {
-          "id": 30,
+          "id": 32,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4848,7 +5034,7 @@
           "kind": "cards"
         },
         {
-          "id": 31,
+          "id": 33,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4890,7 +5076,7 @@
           "kind": "cards"
         },
         {
-          "id": 32,
+          "id": 34,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4932,7 +5118,7 @@
           "kind": "flow"
         },
         {
-          "id": 33,
+          "id": 35,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -4974,7 +5160,7 @@
           "kind": "flow"
         },
         {
-          "id": 34,
+          "id": 36,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -5016,7 +5202,7 @@
           "kind": "cards"
         },
         {
-          "id": 35,
+          "id": 37,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -5058,7 +5244,7 @@
           "kind": "cards"
         },
         {
-          "id": 36,
+          "id": 38,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형 · 삼성전자",
@@ -5112,7 +5298,7 @@
           "kind": "summary"
         },
         {
-          "id": 37,
+          "id": 39,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5154,7 +5340,7 @@
           "kind": "flow"
         },
         {
-          "id": 38,
+          "id": 40,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5196,7 +5382,7 @@
           "kind": "cards"
         },
         {
-          "id": 39,
+          "id": 41,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5238,7 +5424,7 @@
           "kind": "cards"
         },
         {
-          "id": 40,
+          "id": 42,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5280,7 +5466,7 @@
           "kind": "flow"
         },
         {
-          "id": 41,
+          "id": 43,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5322,7 +5508,7 @@
           "kind": "cards"
         },
         {
-          "id": 42,
+          "id": 44,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5364,7 +5550,7 @@
           "kind": "cards"
         },
         {
-          "id": 43,
+          "id": 45,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5406,7 +5592,7 @@
           "kind": "cards"
         },
         {
-          "id": 44,
+          "id": 46,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5448,7 +5634,7 @@
           "kind": "cards"
         },
         {
-          "id": 45,
+          "id": 47,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5490,7 +5676,7 @@
           "kind": "cards"
         },
         {
-          "id": 46,
+          "id": 48,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -5532,7 +5718,7 @@
           "kind": "cards"
         },
         {
-          "id": 47,
+          "id": 49,
           "group": 5,
           "speaker": "황인철",
           "section": "05 · 황인철 · 삼성전자 MX사업부",
@@ -5583,7 +5769,7 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:11–05:35"
         },
         {
-          "id": 48,
+          "id": 50,
           "group": 5,
           "speaker": "황인철",
           "section": "05 · 황인철 · 삼성전자 MX사업부",
@@ -5626,7 +5812,7 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성"
         },
         {
-          "id": 49,
+          "id": 51,
           "group": 5,
           "speaker": "황인철",
           "section": "05 · 황인철 · 삼성전자 MX사업부",
@@ -5663,13 +5849,13 @@
           "takeaway": "맥락을 줄이는 목적은 정보를 버리는 것이 아니라 필요한 판단을 더 적은 자원으로 수행하는 것입니다.",
           "detail": {
             "title": "다음 발표와의 연결",
-            "text": "필요한 맥락을 선택하려면 기기 안의 개인 데이터를 이해할 수 있어야 합니다. 이 질문은 이윤수 발표의 Personal Data Engine과 개인화된 에이전트 플랫폼으로 자연스럽게 이어집니다."
+            "text": "필요한 맥락을 선택하려면 기기 안의 개인 데이터를 이해할 수 있어야 합니다. 이 질문은 다음 발표자의 Personal Data Engine과 개인화된 에이전트 플랫폼 설명으로 이어집니다."
           },
           "kind": "flow",
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 자막 키워드 05:22–05:27"
         },
         {
-          "id": 50,
+          "id": 52,
           "group": 5,
           "speaker": "황인철",
           "section": "05 · 황인철 · 삼성전자 MX사업부",
@@ -5712,7 +5898,93 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:23–05:32"
         },
         {
-          "id": 51,
+          "id": 53,
+          "group": 5,
+          "speaker": "황인철",
+          "section": "05 · 황인철 · 삼성전자 MX사업부",
+          "page": 5,
+          "nav": "Test-Time Training",
+          "title": "사용할 때의 적응도\n효율의 일부입니다",
+          "subtitle": "Test-Time Training · 고정된 모델에서 실행 시점의 적응으로",
+          "cards": [
+            {
+              "label": "STATIC",
+              "title": "학습된 상태로 실행",
+              "points": [
+                "미리 학습한 지식과 능력으로 요청 처리",
+                "새로운 환경과 입력에는 차이가 생길 수 있음"
+              ]
+            },
+            {
+              "label": "ADAPT",
+              "title": "실행 시점에 조정",
+              "points": [
+                "테스트 시점의 정보를 활용하는 적응 방향",
+                "전체 재학습과 구분해 생각할 필요"
+              ]
+            },
+            {
+              "label": "BUDGET",
+              "title": "적응 비용까지 고려",
+              "points": [
+                "추가 학습이 쓰는 시간과 자원을 포함",
+                "개선된 결과가 그 비용에 부합하는지 확인"
+              ]
+            }
+          ],
+          "takeaway": "실행 시점에 적응하는 능력도 기기의 자원 예산 안에서 설계해야 합니다.",
+          "detail": {
+            "title": "팀 적용 관점: 무엇을 비교할까",
+            "text": "같은 과업을 고정된 모델과 적응을 수행하는 모델로 나누어 비교할 수 있습니다. 답변의 품질뿐 아니라 적응에 필요한 시간, 추가 메모리, 이후 요청에서의 유지 효과도 측정해야 합니다. 이는 TTT라는 기술 방향을 검토할 때의 적용 관점이며 특정 제품의 구현을 설명하는 것은 아닙니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:28"
+        },
+        {
+          "id": 54,
+          "group": 5,
+          "speaker": "황인철",
+          "section": "05 · 황인철 · 삼성전자 MX사업부",
+          "page": 6,
+          "nav": "하이브리드 실행 설계",
+          "title": "모델·맥락·실행 자원을\n하나의 경험으로 맞춥니다",
+          "subtitle": "Efficient AI · 필요한 일을 적절한 자원에 배치",
+          "cards": [
+            {
+              "label": "WORKLOAD",
+              "title": "작업의 성격을 구분",
+              "points": [
+                "맥락 준비와 추론, 후속 실행을 나눔",
+                "단계별로 필요한 품질과 반응 속도를 정의"
+              ]
+            },
+            {
+              "label": "RESOURCES",
+              "title": "기기의 자원을 조합",
+              "points": [
+                "CPU·GPU·NPU 등 서로 다른 실행 자원",
+                "단계의 특성과 자원 제약을 함께 고려"
+              ]
+            },
+            {
+              "label": "END TO END",
+              "title": "전체 흐름으로 판단",
+              "points": [
+                "계산 사이의 인계와 대기도 비용에 포함",
+                "개별 연산 개선이 실제 응답성으로 이어지는지"
+              ]
+            }
+          ],
+          "takeaway": "효율적인 AI는 작은 모델 하나가 아니라 맥락과 연산, 실행 자원을 함께 맞춘 시스템입니다.",
+          "detail": {
+            "title": "다음 발표와의 연결",
+            "text": "Right Context가 입력을, Light Computation이 계산을 다룬다면 하이브리드 실행은 그 일을 어디서 처리할지 다룹니다. 이러한 기술은 다음 발표자의 온디바이스 플랫폼 설명에서 개인 데이터 이해와 실제 앱 행동을 연결하는 구조로 이어집니다."
+          },
+          "kind": "flow",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:30–05:32"
+        },
+        {
+          "id": 55,
           "group": 6,
           "speaker": "이윤수",
           "section": "06 · 이윤수 · 삼성전자 MX사업부",
@@ -5763,7 +6035,7 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:35–05:55"
         },
         {
-          "id": 52,
+          "id": 56,
           "group": 6,
           "speaker": "이윤수",
           "section": "06 · 이윤수 · 삼성전자 MX사업부",
@@ -5806,11 +6078,54 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:39–05:46"
         },
         {
-          "id": 53,
+          "id": 57,
           "group": 6,
           "speaker": "이윤수",
           "section": "06 · 이윤수 · 삼성전자 MX사업부",
           "page": 3,
+          "nav": "AI Models의 역할",
+          "title": "개인 맥락을\n요청의 의미로 연결합니다",
+          "subtitle": "PDE · AI Models · Agent 사이의 역할 분담",
+          "cards": [
+            {
+              "label": "PDE",
+              "title": "정보를 사용할 수 있게",
+              "points": [
+                "기기 안의 개인 데이터를 저장하고 이해",
+                "현재 요청에 필요한 맥락을 준비"
+              ]
+            },
+            {
+              "label": "AI MODELS",
+              "title": "맥락을 해석하는 기능",
+              "points": [
+                "요청과 데이터를 함께 처리",
+                "언어·음성 등 필요한 AI 기능을 제공"
+              ]
+            },
+            {
+              "label": "AGENT",
+              "title": "결과를 행동에 사용",
+              "points": [
+                "해석한 요청을 실행할 기능과 연결",
+                "모델의 출력을 사용자 경험으로 전달"
+              ]
+            }
+          ],
+          "takeaway": "개인화는 데이터의 준비, 모델의 해석, 에이전트의 실행이 이어질 때 작동합니다.",
+          "detail": {
+            "title": "구성 요소를 나누는 이유",
+            "text": "개인 데이터를 저장하는 역할과 요청을 해석하는 역할, 기기의 기능을 실행하는 역할은 서로 다릅니다. 플랫폼을 이 세 요소로 읽으면 모델을 개선하는 일과 데이터 연결·행동 인터페이스를 개선하는 일을 구분해 볼 수 있습니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성"
+        },
+        {
+          "id": 58,
+          "group": 6,
+          "speaker": "이윤수",
+          "section": "06 · 이윤수 · 삼성전자 MX사업부",
+          "page": 4,
           "nav": "Action Framework",
           "title": "이해한 요청을\n실행 가능한 행동으로",
           "subtitle": "개인 데이터 → AI Models → Agent",
@@ -5842,14 +6157,100 @@
           ],
           "takeaway": "플랫폼의 가치는 모델의 이해가 실제 기기의 행동과 사용자 경험으로 이어지는 데 있습니다.",
           "detail": {
-            "title": "다음 세션으로 이어지는 질문",
-            "text": "기기 안의 행동을 연결한 뒤에는, 현실의 환경을 바꾸는 로봇의 행동도 생각할 수 있습니다. Physical AI 세션은 어떤 행동을 선택하고 그 결과를 어떻게 예측·검증할 것인지로 질문을 확장합니다."
+            "title": "팀 적용 예: 일정 관련 요청",
+            "text": "일정을 참고해 필요한 앱 기능을 사용하는 흐름을 생각할 수 있습니다. 개인 맥락의 해석과 실제 기능 호출 사이에는 필요한 입력을 전달하는 연결이 있어야 합니다. 이 예시는 플랫폼의 역할을 설명하기 위한 적용 관점이며 발표에서 검증된 제품 동작을 재현한 것은 아닙니다."
           },
           "kind": "flow",
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:38–05:47"
         },
         {
-          "id": 54,
+          "id": 59,
+          "group": 6,
+          "speaker": "이윤수",
+          "section": "06 · 이윤수 · 삼성전자 MX사업부",
+          "page": 5,
+          "nav": "Agent UX와 오케스트레이션",
+          "title": "여러 기능의 실행을\n하나의 사용자 경험으로",
+          "subtitle": "실행의 조율과 결과의 전달",
+          "cards": [
+            {
+              "label": "ORCHESTRATE",
+              "title": "기능 사이를 연결",
+              "points": [
+                "요청에 필요한 기능을 함께 활용",
+                "여러 단계의 결과를 다음 실행에 전달"
+              ]
+            },
+            {
+              "label": "BACKGROUND",
+              "title": "작업의 진행을 관리",
+              "points": [
+                "백그라운드 작업과 사용자 접점을 조율",
+                "기기에서 이루어지는 실행을 연결"
+              ]
+            },
+            {
+              "label": "UX",
+              "title": "사용자에게 결과 전달",
+              "points": [
+                "에이전트가 수행한 일을 이해할 수 있게",
+                "요청의 해결과 후속 상호작용을 연결"
+              ]
+            }
+          ],
+          "takeaway": "사용자는 여러 모델과 기능의 조합을 하나의 일관된 경험으로 만나야 합니다.",
+          "detail": {
+            "title": "팀 적용 관점: 연결의 품질",
+            "text": "각 모델의 출력이 좋아도 앞 단계의 결과가 다음 기능에 전달되지 않으면 요청은 완료되지 않습니다. 모델별 품질과 함께 입력의 인계, 실행 상태, 사용자에게 전달되는 결과까지 보는 것이 플랫폼을 평가하는 관점입니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 05:44–05:47"
+        },
+        {
+          "id": 60,
+          "group": 6,
+          "speaker": "이윤수",
+          "section": "06 · 이윤수 · 삼성전자 MX사업부",
+          "page": 6,
+          "nav": "프라이버시와 응답성",
+          "title": "개인화된 실행을\n기기의 조건 안에서",
+          "subtitle": "온디바이스 플랫폼의 두 가지 요구",
+          "cards": [
+            {
+              "label": "PRIVACY",
+              "title": "개인 맥락의 처리",
+              "points": [
+                "개인 데이터를 기기 안에서 이해하는 방향",
+                "유용한 개인화와 데이터 사용 범위를 함께 설계"
+              ]
+            },
+            {
+              "label": "RUNTIME",
+              "title": "공유 자원의 사용",
+              "points": [
+                "여러 모델과 기능이 기기 자원을 사용",
+                "동시 실행의 부담과 반응 시간을 고려"
+              ]
+            },
+            {
+              "label": "EXPERIENCE",
+              "title": "끝까지 이어지는 요청",
+              "points": [
+                "데이터 이해부터 행동과 결과까지 연결",
+                "개별 기능이 아닌 전체 경험으로 확인"
+              ]
+            }
+          ],
+          "takeaway": "온디바이스 AI는 개인 맥락을 다루는 방식과 실시간으로 반응하는 실행 기반을 함께 갖춰야 합니다.",
+          "detail": {
+            "title": "물리 세계로 이어지는 요구",
+            "text": "기기 안에서의 개인화와 빠른 실행은 로봇에도 중요한 조건입니다. 다음 Physical AI 세션에서는 이 조건 위에 공간 이해, 행동 결과의 예측, 실제 환경에서의 신뢰성을 더해 살펴봅니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성"
+        },
+        {
+          "id": 61,
           "group": 7,
           "speaker": "Timothy Hospedales",
           "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
@@ -5900,7 +6301,7 @@
           "source": "발표 06:10–06:32 · 질의응답 포함"
         },
         {
-          "id": 55,
+          "id": 62,
           "group": 7,
           "speaker": "Timothy Hospedales",
           "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
@@ -5943,7 +6344,7 @@
           "source": "발표 06:14–06:20"
         },
         {
-          "id": 56,
+          "id": 63,
           "group": 7,
           "speaker": "Timothy Hospedales",
           "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
@@ -5986,7 +6387,7 @@
           "source": "발표 06:20–06:24"
         },
         {
-          "id": 57,
+          "id": 64,
           "group": 7,
           "speaker": "Timothy Hospedales",
           "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
@@ -6029,11 +6430,54 @@
           "source": "발표 06:24–06:26"
         },
         {
-          "id": 58,
+          "id": 65,
           "group": 7,
           "speaker": "Timothy Hospedales",
           "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
           "page": 5,
+          "nav": "반응과 숙고의 조합",
+          "title": "언제 바로 행동하고,\n언제 앞을 내다볼까요?",
+          "subtitle": "System 1과 System 2 · 추론 시점의 계산을 선택",
+          "cards": [
+            {
+              "label": "REACT",
+              "title": "빠른 정책 실행",
+              "points": [
+                "관측을 바탕으로 행동을 곧바로 선택",
+                "매번 여러 미래를 탐색할 필요를 줄임"
+              ]
+            },
+            {
+              "label": "DELIBERATE",
+              "title": "목표에 맞는 경로 탐색",
+              "points": [
+                "가능한 행동의 결과를 비교",
+                "새로운 목표에도 모델을 활용해 계획"
+              ]
+            },
+            {
+              "label": "COMBINE",
+              "title": "상황에 맞게 결합",
+              "points": [
+                "숙고는 추가 추론 시간과 계산이 필요",
+                "반응성과 계획 능력을 함께 갖추는 방향"
+              ]
+            }
+          ],
+          "takeaway": "월드 모델은 모든 순간을 느리게 계획하기보다 필요한 때에 숙고할 수 있는 선택지를 제공합니다.",
+          "detail": {
+            "title": "목표가 바뀐 미로",
+            "text": "발표의 미로 예에서 보상의 위치가 바뀌면, 환경 변화의 모델을 사용하는 계획기는 새 목표로 가는 경로를 다시 탐색할 수 있습니다. 반면 정책만으로 행동한다면 새 목표에 대한 재학습이 필요할 수 있습니다. 이 이점은 추론 시점의 추가 계산과 함께 판단해야 합니다."
+          },
+          "kind": "flow",
+          "source": "발표 06:17–06:20, 06:29"
+        },
+        {
+          "id": 66,
+          "group": 7,
+          "speaker": "Timothy Hospedales",
+          "section": "07 · Timothy Hospedales · 삼성전자 삼성리서치",
+          "page": 6,
           "nav": "성과와 검증 범위",
           "title": "좋은 예측인지는\n과업을 끝내 봐야 압니다",
           "subtitle": "Metro의 발표 결과 · 벤치마크와 초기 로봇 실험",
@@ -6066,13 +6510,13 @@
           "takeaway": "월드 모델의 품질은 화면의 사실감뿐 아니라 계획과 제어의 유용성으로 검증해야 합니다.",
           "detail": {
             "title": "다음 강연으로의 연결",
-            "text": "발표는 벤치마크 개선과 초기 물리 로봇 실험을 보여 주지만 장기 계획의 난제가 모두 해결됐다고 말하지 않습니다. Kris Hauser의 다음 강연은 이런 연구 성과를 공장과 가정에 배포할 때 요구되는 신뢰성과 비용을 살펴봅니다."
+            "text": "발표는 벤치마크 개선과 초기 물리 로봇 실험을 보여 주지만 장기 계획의 난제가 모두 해결됐다고 말하지 않습니다. 이런 연구 성과는 다음 발표자의 강연에서 공장과 가정에 로봇을 배포할 때 요구되는 신뢰성과 비용 문제로 이어집니다."
           },
           "kind": "metrics",
           "source": "발표 06:26–06:32"
         },
         {
-          "id": 59,
+          "id": 67,
           "group": 8,
           "speaker": "Kris Hauser",
           "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
@@ -6123,7 +6567,7 @@
           "source": "발표 06:33–06:57"
         },
         {
-          "id": 60,
+          "id": 68,
           "group": 8,
           "speaker": "Kris Hauser",
           "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
@@ -6166,7 +6610,7 @@
           "source": "발표 06:36–06:44"
         },
         {
-          "id": 61,
+          "id": 69,
           "group": 8,
           "speaker": "Kris Hauser",
           "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
@@ -6209,7 +6653,7 @@
           "source": "발표 06:40–06:46"
         },
         {
-          "id": 62,
+          "id": 70,
           "group": 8,
           "speaker": "Kris Hauser",
           "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
@@ -6252,11 +6696,54 @@
           "source": "발표 06:48–06:51"
         },
         {
-          "id": 63,
+          "id": 71,
           "group": 8,
           "speaker": "Kris Hauser",
           "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
           "page": 5,
+          "nav": "행동과 지각의 두 계층",
+          "title": "픽셀에서 개념을 거쳐\n로봇의 행동으로",
+          "subtitle": "Behavior stack과 perception stack의 결합",
+          "cards": [
+            {
+              "label": "ESTIMATION",
+              "title": "현재 상태를 추정",
+              "points": [
+                "낮은 수준에서 상태 정보를 유지",
+                "제어가 활용할 수 있는 환경 정보"
+              ]
+            },
+            {
+              "label": "PREDICTION",
+              "title": "대상과 변화를 파악",
+              "points": [
+                "중간 계층에서 탐지와 예측",
+                "어디로 이동하고 무엇을 조작할지 판단 지원"
+              ]
+            },
+            {
+              "label": "KNOWLEDGE",
+              "title": "장면을 지식으로 구성",
+              "points": [
+                "물체와 이동 가능한 공간을 개념으로 표현",
+                "장면 그래프와 도구를 장기 과업에 활용"
+              ]
+            }
+          ],
+          "takeaway": "로봇이 할 수 있는 일과 현재 환경을 명시적으로 표현하면 계획과 실행을 연결하기 쉬워집니다.",
+          "detail": {
+            "title": "주방 점검 사례",
+            "text": "발표는 장면 그래프와 VLM 도구를 활용해 주방을 점검하라는 요청을 여러 단계의 실행으로 바꾸는 사례를 소개합니다. 픽셀에서 곧바로 제어 신호로 가기보다 개념을 거치는 모듈식 접근이며, 그 이점과 함께 구조가 복잡해지는 비용도 인정합니다."
+          },
+          "kind": "cards",
+          "source": "발표 06:52–06:54"
+        },
+        {
+          "id": 72,
+          "group": 8,
+          "speaker": "Kris Hauser",
+          "section": "08 · Kris Hauser · 삼성전자 RX사업추진실",
+          "page": 6,
           "nav": "신뢰 가능한 범위부터",
           "title": "잘할 수 있는 영역을\n확인하며 넓혀 갑니다",
           "subtitle": "Multi-function AI · 행동과 지각의 계층을 결합",
@@ -6295,7 +6782,7 @@
           "source": "발표 06:51–06:57"
         },
         {
-          "id": 64,
+          "id": 73,
           "group": 9,
           "speaker": "이강욱",
           "section": "09 · 이강욱 · 삼성전자 삼성리서치",
@@ -6346,7 +6833,7 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 07:10–07:30"
         },
         {
-          "id": 65,
+          "id": 74,
           "group": 9,
           "speaker": "이강욱",
           "section": "09 · 이강욱 · 삼성전자 삼성리서치",
@@ -6389,11 +6876,140 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성"
         },
         {
-          "id": 66,
+          "id": 75,
           "group": 9,
           "speaker": "이강욱",
           "section": "09 · 이강욱 · 삼성전자 삼성리서치",
           "page": 3,
+          "nav": "비모수적 적응",
+          "title": "가중치를 바꾸기 전에\n기억과 지침을 갱신합니다",
+          "subtitle": "외부 상태를 활용해 다음 실행을 조정하는 접근",
+          "cards": [
+            {
+              "label": "MEMORY",
+              "title": "사용 경험을 남김",
+              "points": [
+                "사용자 선호와 과업의 맥락을 기록",
+                "다음 요청에서 필요한 정보를 활용"
+              ]
+            },
+            {
+              "label": "PROMPT",
+              "title": "실행 방법을 조정",
+              "points": [
+                "시스템 프롬프트 등 외부 지침의 변경",
+                "반복되는 오류와 요구를 수행 방법에 반영"
+              ]
+            },
+            {
+              "label": "LIMITS",
+              "title": "모델 학습과 구분",
+              "points": [
+                "입력과 지침의 변화로 동작을 조정",
+                "기반 모델의 능력 자체가 바뀌는 것과는 구별"
+              ]
+            }
+          ],
+          "takeaway": "비모수적 적응은 기억과 지침을 통해 경험을 활용하며, 파라미터 학습과 다른 조정 수단을 제공합니다.",
+          "detail": {
+            "title": "팀 적용 예: 반복되는 문서 형식",
+            "text": "사용자가 매번 같은 형식 수정을 요청한다면, 그 선호를 기억하거나 작성 지침에 반영하는 방법을 생각할 수 있습니다. 이는 지속 학습의 개념을 설명하는 적용 예시이며, 특정 서비스에서 자동으로 구현된 기능을 뜻하지 않습니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 07:12"
+        },
+        {
+          "id": 76,
+          "group": 9,
+          "speaker": "이강욱",
+          "section": "09 · 이강욱 · 삼성전자 삼성리서치",
+          "page": 4,
+          "nav": "자가 진화의 피드백 루프",
+          "title": "실행한 경험이\n다음 시도의 입력으로",
+          "subtitle": "실행 기록과 피드백을 통한 지속 개선",
+          "cards": [
+            {
+              "label": "OBSERVE",
+              "title": "실행과 결과를 관찰",
+              "points": [
+                "어떤 요청을 어떤 방식으로 수행했는지",
+                "사용자의 수정과 과업 결과를 함께 살펴봄"
+              ]
+            },
+            {
+              "label": "REFLECT",
+              "title": "바꿀 대상을 선택",
+              "points": [
+                "문맥 부족과 잘못된 수행 방법을 구분",
+                "기억·지침·학습 중 적절한 수단을 검토"
+              ]
+            },
+            {
+              "label": "RETRY",
+              "title": "다음 실행에서 확인",
+              "points": [
+                "경험을 반영한 방식으로 다시 수행",
+                "실제 개선이 있었는지 결과를 비교"
+              ]
+            }
+          ],
+          "takeaway": "자가 진화는 실행 기록을 쌓는 데서 끝나지 않고, 경험을 변화와 검증으로 연결하는 과정입니다.",
+          "detail": {
+            "title": "편집 관점: 결과와 개선의 연결",
+            "text": "제공 요약은 실행 로그와 오류 감지, 시스템 프롬프트 갱신을 자가 진화의 방향으로 설명합니다. 이를 관찰 → 변경 대상 선택 → 다음 실행의 비교로 풀어 정리했습니다. 구체적인 자동 갱신 알고리즘이나 성능 수치는 제시하지 않습니다."
+          },
+          "kind": "flow",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성"
+        },
+        {
+          "id": 77,
+          "group": 9,
+          "speaker": "이강욱",
+          "section": "09 · 이강욱 · 삼성전자 삼성리서치",
+          "page": 5,
+          "nav": "개인화와 프라이버시",
+          "title": "경험을 활용할수록\n데이터의 경계도 분명하게",
+          "subtitle": "개인화된 디바이스에서의 지속 적응",
+          "cards": [
+            {
+              "label": "PERSONAL",
+              "title": "사용자마다 다른 경험",
+              "points": [
+                "일반 지식만으로 알기 어려운 선호",
+                "기기와 일상에서 쌓이는 새로운 맥락"
+              ]
+            },
+            {
+              "label": "BOUNDARY",
+              "title": "활용 범위를 설계",
+              "points": [
+                "어떤 개인 경험이 적응에 필요한지",
+                "그 정보를 어디서 처리할지 함께 고려"
+              ]
+            },
+            {
+              "label": "CONTINUITY",
+              "title": "변화를 계속 반영",
+              "points": [
+                "사용자의 요구도 시간에 따라 바뀜",
+                "과거 선호와 현재 요청의 차이를 구분"
+              ]
+            }
+          ],
+          "takeaway": "개인화된 지속 학습은 성능 향상과 함께 경험을 다루는 범위와 방식을 설계하는 일입니다.",
+          "detail": {
+            "title": "팀 적용 관점: 개인화의 평가",
+            "text": "일반 평가셋의 점수만으로 개인에게 유용한지 판단하기는 어렵습니다. 현재 선호가 반영되는지, 바뀐 정보를 고칠 수 있는지, 개인 경험이 필요한 범위에서 쓰이는지도 확인할 수 있습니다. 이 관점은 다음 발표의 신뢰할 수 있는 기억 편집 문제로 이어집니다."
+          },
+          "kind": "cards",
+          "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 07:28"
+        },
+        {
+          "id": 78,
+          "group": 9,
+          "speaker": "이강욱",
+          "section": "09 · 이강욱 · 삼성전자 삼성리서치",
+          "page": 6,
           "nav": "성장과 퇴행을 함께 평가",
           "title": "새로 배운 뒤에도\n이전의 일을 잘해야 합니다",
           "subtitle": "Catastrophic Forgetting · regression · privacy",
@@ -6432,7 +7048,7 @@
           "source": "한국어 자동 자막 누락 구간 · 제공된 발표자 요약과 공식 프로그램을 바탕으로 재구성 · 자막 키워드 07:11, 07:27–07:29"
         },
         {
-          "id": 67,
+          "id": 79,
           "group": 10,
           "speaker": "Juan Carlos Niebles",
           "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
@@ -6483,11 +7099,54 @@
           "source": "발표 07:30–07:53"
         },
         {
-          "id": 68,
+          "id": 80,
           "group": 10,
           "speaker": "Juan Carlos Niebles",
           "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
           "page": 2,
+          "nav": "일반 지식에서 개인 기억으로",
+          "title": "도시를 아는 모델도\n내 일정은 모릅니다",
+          "subtitle": "Maya의 출장 준비 · 개인화 RAG의 출발점과 한계",
+          "cards": [
+            {
+              "label": "GENERAL KNOWLEDGE",
+              "title": "일반적인 질문",
+              "points": [
+                "도시의 시간대처럼 널리 알려진 사실",
+                "기반 모델이 가진 지식으로 답변"
+              ]
+            },
+            {
+              "label": "PERSONAL CONTEXT",
+              "title": "개인의 사정이 필요한 질문",
+              "points": [
+                "가족 일정과 운동 시간, 이동 선호",
+                "외부 기억에서 관련 정보를 찾아 제공"
+              ]
+            },
+            {
+              "label": "EVOLVING MEMORY",
+              "title": "기억이 변하고 늘어남",
+              "points": [
+                "바뀐 사실이 옛 정보와 충돌할 수 있음",
+                "긴 문맥과 새 학습은 지연·망각 문제를 만듦"
+              ]
+            }
+          ],
+          "takeaway": "개인화는 정보를 한 번 넣는 작업이 아니라 변하는 기억을 정확하고 효율적으로 유지하는 문제입니다.",
+          "detail": {
+            "title": "세 가지 기술로 나누는 이유",
+            "text": "발표의 Maya는 베를린 출장에 자신의 가족 일정과 선호를 반영하고 싶어 합니다. RAG는 관련 개인 정보를 제공하는 출발점이지만, 기억 편집의 정확성·응답 속도·기존 능력의 보존을 각각 해결해야 합니다. 이후 TrustMe, Doc-to-Atom, NB-LoRA가 이 세 질문에 대응합니다."
+          },
+          "kind": "cards",
+          "source": "발표 07:30–07:34"
+        },
+        {
+          "id": 81,
+          "group": 10,
+          "speaker": "Juan Carlos Niebles",
+          "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
+          "page": 3,
           "nav": "TrustMe",
           "title": "기억은 추가뿐 아니라\n수정과 검증이 필요합니다",
           "subtitle": "Memory Transition Verifier · 변경 전후를 평가",
@@ -6526,11 +7185,11 @@
           "source": "발표 07:33–07:38"
         },
         {
-          "id": 69,
+          "id": 82,
           "group": 10,
           "speaker": "Juan Carlos Niebles",
           "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
-          "page": 3,
+          "page": 4,
           "nav": "Doc-to-Atom",
           "title": "긴 문맥을 반복해서 읽는 대신\n필요한 지식을 조합합니다",
           "subtitle": "지식 원자 → micro-LoRA → 질문별 검색·결합",
@@ -6569,11 +7228,11 @@
           "source": "발표 07:38–07:43"
         },
         {
-          "id": 70,
+          "id": 83,
           "group": 10,
           "speaker": "Juan Carlos Niebles",
           "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
-          "page": 4,
+          "page": 5,
           "nav": "Null Basis LoRA",
           "title": "새로운 능력을 더하면서\n이전의 응답을 지키려면",
           "subtitle": "NB-LoRA · 기존 입력에 영향을 주지 않는 갱신 방향",
@@ -6612,11 +7271,11 @@
           "source": "발표 07:43–07:53"
         },
         {
-          "id": 71,
+          "id": 84,
           "group": 10,
           "speaker": "Juan Carlos Niebles",
           "section": "10 · Juan Carlos Niebles · 삼성전자 삼성리서치",
-          "page": 5,
+          "page": 6,
           "nav": "기억을 배치하는 기준",
           "title": "기억할 위치도\n정보의 성격에 맞춰",
           "subtitle": "외부 기억과 파라미터 기억의 상호 보완",
@@ -6653,100 +7312,6 @@
           },
           "kind": "cards",
           "source": "발표 질의응답 07:51–07:53"
-        },
-        {
-          "id": 72,
-          "group": 0,
-          "speaker": "삼성 AI 포럼 2026",
-          "section": "SAIF 2026 · AI TECHNOLOGY",
-          "page": 3,
-          "nav": "What We Learned",
-          "title": "What We Learned",
-          "subtitle": "개별 강연을 넘어, AI Technology 전체에서 도출한 네 가지 설계 원칙",
-          "cards": [
-            {
-              "label": "01 · EFFICIENCY",
-              "title": "제약을 설계의 출발점으로",
-              "points": [
-                "모델 크기뿐 아니라 맥락·기억·계산을 함께 설계",
-                "지연과 품질을 실제 실행 환경에서 확인"
-              ]
-            },
-            {
-              "label": "02 · GROUNDING",
-              "title": "행동할 공간에서 추론",
-              "points": [
-                "텍스트·시각·상태 표현을 과업에 맞게 결합",
-                "계층적 계획으로 긴 목표와 빠른 반응을 연결"
-              ]
-            },
-            {
-              "label": "03 · VERIFICATION",
-              "title": "성공과 신뢰를 함께 검증",
-              "points": [
-                "후보·예측·기억의 변경을 근거로 점검",
-                "데모의 성능과 배포 가능한 범위를 구분"
-              ]
-            },
-            {
-              "label": "04 · CONTINUAL LEARNING",
-              "title": "경험을 보존 가능한 능력으로",
-              "points": [
-                "기억 편집과 파라미터 학습의 역할을 분담",
-                "새 적응과 기존 능력의 유지가 함께 성장"
-              ]
-            }
-          ],
-          "takeaway": "AI의 다음 도약은 제한된 자원 안에서 현실에 맞게 행동하고, 검증된 경험을 잃지 않으며 계속 배우는 시스템입니다.",
-          "detail": {
-            "title": "종합 해석",
-            "text": "이 결론은 발표자 개인의 직접 발언이 아니라 전체 강연에서 반복된 요구를 묶은 편집적 종합입니다. 효율·신뢰성·지속 학습은 하나의 기법으로 모두 해결되는 문제가 아니며, 각 개선이 전체 과업의 성공으로 이어지는지 확인해야 합니다."
-          },
-          "kind": "closing",
-          "source": ""
-        },
-        {
-          "id": 73,
-          "group": 0,
-          "speaker": "삼성 AI 포럼 2026",
-          "section": "SAIF 2026 · AI TECHNOLOGY",
-          "page": 4,
-          "nav": "Final Takeaway",
-          "title": "더 오래, 더 가까이,\n더 믿을 수 있게 작동하는 AI",
-          "subtitle": "Final Takeaway · 기술의 발전을 실제 적용으로 연결",
-          "cards": [
-            {
-              "label": "DESIGN",
-              "title": "실행 조건을 먼저",
-              "points": [
-                "어디서 어떤 일을 할지 정함",
-                "자원과 반응 시간의 제약을 반영"
-              ]
-            },
-            {
-              "label": "VALIDATE",
-              "title": "끝까지 수행하는지",
-              "points": [
-                "중간 추론과 최종 결과를 함께 확인",
-                "실패와 복구가 가능한 범위를 평가"
-              ]
-            },
-            {
-              "label": "LEARN",
-              "title": "다음 실행을 더 좋게",
-              "points": [
-                "새 경험을 적절한 기억에 반영",
-                "기존 능력을 보존하며 적용 범위를 확대"
-              ]
-            }
-          ],
-          "takeaway": "AI의 다음 도약은 제한된 자원 안에서 현실에 맞게 행동하고, 검증된 경험을 잃지 않으며 계속 배우는 시스템입니다.",
-          "detail": {
-            "title": "AX Innovation으로 이어가기",
-            "text": "AI Technology가 이런 시스템을 가능하게 할 기술적 조건을 살펴봤다면, AX Innovation은 이를 사업 목표·데이터·안전한 운영·R&D 흐름에 연결합니다. 상단의 SAIF 2026 Tracks에서 다른 관점으로 같은 포럼을 이어서 읽을 수 있습니다."
-          },
-          "kind": "closing",
-          "source": ""
         }
       ]
     },
@@ -6806,11 +7371,11 @@
           "id": 1,
           "group": 0,
           "speaker": "삼성 AI 포럼 2026",
-          "section": "SAIF 2026 · TEAM BRIEFING",
+          "section": "SAIF 2026 · AX INNOVATION",
           "page": 1,
-          "nav": "포럼의 핵심 메시지",
-          "title": "AI에게 답을 묻는 시대에서,\n일을 맡기는 시대로",
-          "subtitle": "삼성 AI 포럼 2026 · 에이전트의 기술, 조직의 변화, 그리고 우리 팀의 실행",
+          "nav": "핵심 질문",
+          "title": "AI에게 맡긴 일을\n어떻게 조직의 성과로 만들까요?",
+          "subtitle": "Keynote + Track 2 · 사업 목표, 데이터, 안전한 운영과 R&D 실행을 연결",
           "cards": [
             {
               "label": "EXECUTION",
@@ -6848,42 +7413,42 @@
           "id": 2,
           "group": 0,
           "speaker": "삼성 AI 포럼 2026",
-          "section": "SAIF 2026 · TEAM BRIEFING",
+          "section": "SAIF 2026 · AX INNOVATION",
           "page": 2,
-          "nav": "요약",
-          "title": "요약",
-          "subtitle": "일곱 발표가 보여 준 에이전트 전환의 공통 방향",
+          "nav": "발표의 흐름",
+          "title": "개인의 업무 위임에서\n조직이 재사용하는 실행 방식으로",
+          "subtitle": "4개의 공통 키노트와 3개의 AX Innovation 강연을 하나의 흐름으로 읽기",
           "cards": [
             {
-              "label": "01 · WORKFLOW",
-              "title": "검증 가능한 업무 위임",
+              "label": "KEYNOTE",
+              "title": "실행 가능한 지능의 조건",
               "points": [
-                "Richard Ho: 탐색과 검증을 결합한 엔지니어링",
-                "David Green: 개인의 활용을 팀·전사 성과로 확장"
+                "Richard Ho · David Green: 검증과 조직 확장",
+                "Ranjay Krishna · 김윤형: 공간 이해와 학습 구조"
               ]
             },
             {
-              "label": "02 · INTELLIGENCE",
-              "title": "공간과 경험의 이해",
+              "label": "SESSION 1 · BUSINESS VALUE",
+              "title": "가치 있는 업무를 선택",
               "points": [
-                "Ranjay Krishna: 시각적 근거와 행동 계획",
-                "김윤형: 지속 학습과 온디바이스 아키텍처"
+                "Ajaz Munsiff: 사업 목표와 데이터 준비",
+                "과제·배포 위치·운영 책임을 함께 설계"
               ]
             },
             {
-              "label": "03 · ENTERPRISE",
-              "title": "데이터와 안전한 운영",
+              "label": "SESSION 2 · TRUSTED AGENTS",
+              "title": "신뢰할 수 있는 실행",
               "points": [
-                "Ajaz Munsiff: 사업 가치와 데이터 준비",
-                "최상근: 위협 모델과 다층 방어"
+                "최상근: 위협 모델과 다층 방어",
+                "권한·환경·검증으로 안전한 업무 위임"
               ]
             },
             {
-              "label": "04 · R&D",
-              "title": "연구개발 과정의 연결",
+              "label": "SESSION 3 · AI-NATIVE R&D",
+              "title": "연구개발 전체를 연결",
               "points": [
-                "한재준: 탐색·판단·실행을 연결하는 R&D",
-                "팀 과제: 반복 업무 하나의 전체 성과 측정"
+                "한재준: 탐색·판단·실행의 R&D 흐름",
+                "재현 가능한 데이터와 도구를 공통 자산으로"
               ]
             }
           ],
@@ -6896,6 +7461,98 @@
         },
         {
           "id": 3,
+          "group": 0,
+          "speaker": "삼성 AI 포럼 2026",
+          "section": "SAIF 2026 · AX INNOVATION",
+          "page": 3,
+          "nav": "What We Learned",
+          "title": "What We Learned",
+          "subtitle": "AX Innovation 전체에서 도출한 네 가지 실행 원칙",
+          "cards": [
+            {
+              "label": "01 · OUTCOME",
+              "title": "도입의 기준은 업무의 결과",
+              "points": [
+                "토큰·사용량과 실제 성과를 구분",
+                "고객 경험과 검토를 마친 결과물로 평가"
+              ]
+            },
+            {
+              "label": "02 · DATA",
+              "title": "데이터에 맥락과 책임을",
+              "points": [
+                "자료의 조건·권한·유효성을 함께 관리",
+                "다음 사람과 에이전트가 재사용할 수 있게"
+              ]
+            },
+            {
+              "label": "03 · TRUST",
+              "title": "실행 권한과 검증을 설계",
+              "points": [
+                "모델의 판단과 환경의 권한을 분리",
+                "다층 방어와 정상 업무의 완료율을 함께 확인"
+              ]
+            },
+            {
+              "label": "04 · WORKFLOW",
+              "title": "개별 자동화를 전체 흐름으로",
+              "points": [
+                "탐색·실행·검토·재작업의 병목을 연결",
+                "검증된 방법을 팀의 공통 자산으로 축적"
+              ]
+            }
+          ],
+          "takeaway": "AX의 성과는 가치 있는 업무에 데이터·도구·검증·운영 책임을 연결하고, 검증된 실행 방식을 반복할 때 만들어집니다.",
+          "detail": {
+            "title": "발표를 읽는 네 가지 기준",
+            "text": "이 원칙은 일곱 발표를 묶어 정리한 종합 해석입니다. 이어지는 강연에서 기술과 사례를 볼 때 어떤 업무 결과가 달라졌는지, 데이터가 준비됐는지, 실행을 통제할 수 있는지, 다른 팀도 재현할 수 있는지를 함께 살펴봅니다."
+          },
+          "kind": "closing"
+        },
+        {
+          "id": 4,
+          "group": 0,
+          "speaker": "삼성 AI 포럼 2026",
+          "section": "SAIF 2026 · AX INNOVATION",
+          "page": 4,
+          "nav": "Final Takeaway",
+          "title": "작은 업무의 성공을\n조직의 실행 역량으로",
+          "subtitle": "Final Takeaway · 기술의 도입에서 반복 가능한 가치 창출로",
+          "cards": [
+            {
+              "label": "CHOOSE",
+              "title": "가치 있는 업무 하나",
+              "points": [
+                "반복 빈도와 병목, 완료 기준을 정의",
+                "기존 방식의 시간·품질·비용을 기록"
+              ]
+            },
+            {
+              "label": "CONNECT",
+              "title": "실행과 검증을 연결",
+              "points": [
+                "필요한 데이터·도구·권한을 준비",
+                "결과 검토와 예외 대응의 책임을 설정"
+              ]
+            },
+            {
+              "label": "REUSE",
+              "title": "성과가 확인되면 확장",
+              "points": [
+                "검토·재작업을 포함한 전체 효과를 비교",
+                "잘된 절차와 평가 기준을 다른 팀에 공유"
+              ]
+            }
+          ],
+          "takeaway": "AX의 성과는 가치 있는 업무에 데이터·도구·검증·운영 책임을 연결하고, 검증된 실행 방식을 반복할 때 만들어집니다.",
+          "detail": {
+            "title": "이제 사례에서 확인할 것",
+            "text": "좋은 모델을 선택한 뒤에도 어떤 업무를 맡길지, 무엇을 결과로 인정할지, 누가 운영할지에 대한 판단이 남습니다. 공통 키노트부터 사업 가치, 안전한 에이전트 운영, AI-native R&D 순서로 이 질문의 구체적인 답을 따라갑니다."
+          },
+          "kind": "closing"
+        },
+        {
+          "id": 5,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho · OpenAI",
@@ -6949,7 +7606,7 @@
           "kind": "summary"
         },
         {
-          "id": 4,
+          "id": 6,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -6991,7 +7648,7 @@
           "kind": "flow"
         },
         {
-          "id": 5,
+          "id": 7,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7033,7 +7690,7 @@
           "kind": "metrics"
         },
         {
-          "id": 6,
+          "id": 8,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7075,7 +7732,7 @@
           "kind": "metrics"
         },
         {
-          "id": 7,
+          "id": 9,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7117,7 +7774,7 @@
           "kind": "cards"
         },
         {
-          "id": 8,
+          "id": 10,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7159,7 +7816,7 @@
           "kind": "metrics"
         },
         {
-          "id": 9,
+          "id": 11,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7201,7 +7858,7 @@
           "kind": "metrics"
         },
         {
-          "id": 10,
+          "id": 12,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7243,7 +7900,7 @@
           "kind": "flow"
         },
         {
-          "id": 11,
+          "id": 13,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7285,7 +7942,7 @@
           "kind": "performance"
         },
         {
-          "id": 12,
+          "id": 14,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7327,7 +7984,7 @@
           "kind": "cards"
         },
         {
-          "id": 13,
+          "id": 15,
           "group": 1,
           "speaker": "Richard Ho",
           "section": "01 · Richard Ho",
@@ -7369,7 +8026,7 @@
           "kind": "cards"
         },
         {
-          "id": 14,
+          "id": 16,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green · AWS",
@@ -7423,7 +8080,7 @@
           "kind": "summary"
         },
         {
-          "id": 15,
+          "id": 17,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7465,7 +8122,7 @@
           "kind": "flow"
         },
         {
-          "id": 16,
+          "id": 18,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7507,7 +8164,7 @@
           "kind": "cards"
         },
         {
-          "id": 17,
+          "id": 19,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7549,7 +8206,7 @@
           "kind": "flow"
         },
         {
-          "id": 18,
+          "id": 20,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7591,7 +8248,7 @@
           "kind": "cards"
         },
         {
-          "id": 19,
+          "id": 21,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7633,7 +8290,7 @@
           "kind": "metrics"
         },
         {
-          "id": 20,
+          "id": 22,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7675,7 +8332,7 @@
           "kind": "flow"
         },
         {
-          "id": 21,
+          "id": 23,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7717,7 +8374,7 @@
           "kind": "flow"
         },
         {
-          "id": 22,
+          "id": 24,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7759,7 +8416,7 @@
           "kind": "flow"
         },
         {
-          "id": 23,
+          "id": 25,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7801,7 +8458,7 @@
           "kind": "cards"
         },
         {
-          "id": 24,
+          "id": 26,
           "group": 2,
           "speaker": "David Green",
           "section": "02 · David Green",
@@ -7843,7 +8500,7 @@
           "kind": "closing"
         },
         {
-          "id": 25,
+          "id": 27,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna · University of Washington",
@@ -7897,7 +8554,7 @@
           "kind": "summary"
         },
         {
-          "id": 26,
+          "id": 28,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -7939,7 +8596,7 @@
           "kind": "cards"
         },
         {
-          "id": 27,
+          "id": 29,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -7981,7 +8638,7 @@
           "kind": "cards"
         },
         {
-          "id": 28,
+          "id": 30,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8023,7 +8680,7 @@
           "kind": "flow"
         },
         {
-          "id": 29,
+          "id": 31,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8065,7 +8722,7 @@
           "kind": "flow"
         },
         {
-          "id": 30,
+          "id": 32,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8107,7 +8764,7 @@
           "kind": "cards"
         },
         {
-          "id": 31,
+          "id": 33,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8149,7 +8806,7 @@
           "kind": "cards"
         },
         {
-          "id": 32,
+          "id": 34,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8191,7 +8848,7 @@
           "kind": "flow"
         },
         {
-          "id": 33,
+          "id": 35,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8233,7 +8890,7 @@
           "kind": "flow"
         },
         {
-          "id": 34,
+          "id": 36,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8275,7 +8932,7 @@
           "kind": "cards"
         },
         {
-          "id": 35,
+          "id": 37,
           "group": 3,
           "speaker": "Ranjay Krishna",
           "section": "03 · Ranjay Krishna",
@@ -8317,7 +8974,7 @@
           "kind": "cards"
         },
         {
-          "id": 36,
+          "id": 38,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형 · 삼성전자",
@@ -8371,7 +9028,7 @@
           "kind": "summary"
         },
         {
-          "id": 37,
+          "id": 39,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8413,7 +9070,7 @@
           "kind": "flow"
         },
         {
-          "id": 38,
+          "id": 40,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8455,7 +9112,7 @@
           "kind": "cards"
         },
         {
-          "id": 39,
+          "id": 41,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8497,7 +9154,7 @@
           "kind": "cards"
         },
         {
-          "id": 40,
+          "id": 42,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8539,7 +9196,7 @@
           "kind": "flow"
         },
         {
-          "id": 41,
+          "id": 43,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8581,7 +9238,7 @@
           "kind": "cards"
         },
         {
-          "id": 42,
+          "id": 44,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8623,7 +9280,7 @@
           "kind": "cards"
         },
         {
-          "id": 43,
+          "id": 45,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8665,7 +9322,7 @@
           "kind": "cards"
         },
         {
-          "id": 44,
+          "id": 46,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8707,7 +9364,7 @@
           "kind": "cards"
         },
         {
-          "id": 45,
+          "id": 47,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8749,7 +9406,7 @@
           "kind": "cards"
         },
         {
-          "id": 46,
+          "id": 48,
           "group": 4,
           "speaker": "김윤형",
           "section": "04 · 김윤형",
@@ -8791,7 +9448,7 @@
           "kind": "cards"
         },
         {
-          "id": 47,
+          "id": 49,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff · Dell Technologies",
@@ -8845,7 +9502,7 @@
           "kind": "summary"
         },
         {
-          "id": 48,
+          "id": 50,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -8887,7 +9544,7 @@
           "kind": "cards"
         },
         {
-          "id": 49,
+          "id": 51,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -8929,7 +9586,7 @@
           "kind": "flow"
         },
         {
-          "id": 50,
+          "id": 52,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -8971,7 +9628,7 @@
           "kind": "cards"
         },
         {
-          "id": 51,
+          "id": 53,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9013,7 +9670,7 @@
           "kind": "cards"
         },
         {
-          "id": 52,
+          "id": 54,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9055,7 +9712,7 @@
           "kind": "cards"
         },
         {
-          "id": 53,
+          "id": 55,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9097,7 +9754,7 @@
           "kind": "cards"
         },
         {
-          "id": 54,
+          "id": 56,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9139,7 +9796,7 @@
           "kind": "cards"
         },
         {
-          "id": 55,
+          "id": 57,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9181,7 +9838,7 @@
           "kind": "cards"
         },
         {
-          "id": 56,
+          "id": 58,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9223,7 +9880,7 @@
           "kind": "flow"
         },
         {
-          "id": 57,
+          "id": 59,
           "group": 5,
           "speaker": "Ajaz Munsiff",
           "section": "05 · Ajaz Munsiff",
@@ -9265,7 +9922,7 @@
           "kind": "cards"
         },
         {
-          "id": 58,
+          "id": 60,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근 · Anthropic",
@@ -9319,7 +9976,7 @@
           "kind": "summary"
         },
         {
-          "id": 59,
+          "id": 61,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9361,7 +10018,7 @@
           "kind": "cards"
         },
         {
-          "id": 60,
+          "id": 62,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9403,7 +10060,7 @@
           "kind": "flow"
         },
         {
-          "id": 61,
+          "id": 63,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9445,7 +10102,7 @@
           "kind": "cards"
         },
         {
-          "id": 62,
+          "id": 64,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9487,7 +10144,7 @@
           "kind": "cards"
         },
         {
-          "id": 63,
+          "id": 65,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9529,7 +10186,7 @@
           "kind": "cards"
         },
         {
-          "id": 64,
+          "id": 66,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9571,7 +10228,7 @@
           "kind": "flow"
         },
         {
-          "id": 65,
+          "id": 67,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9613,7 +10270,7 @@
           "kind": "cards"
         },
         {
-          "id": 66,
+          "id": 68,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9655,7 +10312,7 @@
           "kind": "cards"
         },
         {
-          "id": 67,
+          "id": 69,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9697,7 +10354,7 @@
           "kind": "flow"
         },
         {
-          "id": 68,
+          "id": 70,
           "group": 6,
           "speaker": "최상근",
           "section": "06 · 최상근",
@@ -9753,7 +10410,7 @@
           "kind": "cards"
         },
         {
-          "id": 69,
+          "id": 71,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준 · 삼성전자 DS부문",
@@ -9807,7 +10464,7 @@
           "kind": "summary"
         },
         {
-          "id": 70,
+          "id": 72,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -9849,7 +10506,7 @@
           "kind": "flow"
         },
         {
-          "id": 71,
+          "id": 73,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -9891,7 +10548,7 @@
           "kind": "cards"
         },
         {
-          "id": 72,
+          "id": 74,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -9933,7 +10590,7 @@
           "kind": "cards"
         },
         {
-          "id": 73,
+          "id": 75,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -9975,7 +10632,7 @@
           "kind": "flow"
         },
         {
-          "id": 74,
+          "id": 76,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -10017,7 +10674,7 @@
           "kind": "cards"
         },
         {
-          "id": 75,
+          "id": 77,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -10059,7 +10716,7 @@
           "kind": "cards"
         },
         {
-          "id": 76,
+          "id": 78,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -10101,7 +10758,7 @@
           "kind": "cards"
         },
         {
-          "id": 77,
+          "id": 79,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -10143,7 +10800,7 @@
           "kind": "flow"
         },
         {
-          "id": 78,
+          "id": 80,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",
@@ -10185,7 +10842,7 @@
           "kind": "cards"
         },
         {
-          "id": 79,
+          "id": 81,
           "group": 7,
           "speaker": "한재준",
           "section": "07 · 한재준",

@@ -11,7 +11,6 @@ function content(s) {
     <div class="cards ${s.cards.length === 4 ? 'four' : ''}">${s.cards.map(c => `<section class="card"><span class="card-label">${esc(c.label)}</span><h2>${esc(c.title)}</h2><ul>${c.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section>`).join('')}</div>
     <section class="detail"><h2>${esc(s.detail.title)}</h2><div><p>${esc(s.detail.text)}</p>${(s.detail.links || []).length ? `<div class="detail-links">${s.detail.links.filter(link => /^https:\/\/www\.anthropic\.com\/engineering(?:\/|$)/.test(link.url)).map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)} ↗</a>`).join('')}</div>` : ''}</div></section>
     <div class="takeaway"><span>${s.nav === 'Final Takeaway' ? 'FINAL TAKEAWAY' : 'KEY TAKEAWAY'}</span><p>${esc(s.takeaway)}</p></div>
-    ${s.source ? `<p class="source-note">자료 근거: ${esc(s.source)}</p>` : ''}
   </article>`;
 }
 
@@ -40,6 +39,27 @@ function render() {
   });
   $('#chapterPages').innerHTML = slides.map((item,i) => ({item,i})).filter(({item}) => item.group === s.group).map(({item,i}) => `<button data-index="${i}" class="${i === current ? 'selected' : ''}" aria-label="${esc(item.nav)}" ${i === current ? 'aria-current="step"' : ''}>${item.page}</button>`).join('');
   $('#chapterPages').querySelectorAll('button').forEach(button => button.onclick = () => go(Number(button.dataset.index)));
+  syncNavigation();
+}
+
+function syncNavigation(force = false) {
+  const navigation = $('#navigation');
+  if (!activeTrack || !slides.length || !navigation.clientHeight) return;
+  const group = String(slides[current].group);
+  const changed = force || navigation.dataset.currentGroup !== group;
+  const target = changed && group !== '0'
+    ? navigation.querySelector(`details[data-group="${group}"] summary`)
+    : navigation.querySelector('button[aria-current="step"]');
+  navigation.dataset.currentGroup = group;
+  if (!target) return;
+  const viewport = navigation.getBoundingClientRect();
+  const bounds = target.getBoundingClientRect();
+  // Scroll only the sidebar, so the slide and keyboard focus stay in place.
+  if (changed || bounds.top < viewport.top + 8) {
+    navigation.scrollTo({top:navigation.scrollTop + bounds.top - viewport.top - 8, behavior:'instant'});
+  } else if (bounds.bottom > viewport.bottom - 8) {
+    navigation.scrollTo({top:navigation.scrollTop + bounds.bottom - viewport.bottom + 8, behavior:'instant'});
+  }
 }
 
 function go(index) {
@@ -80,7 +100,10 @@ function fromHash() {
   $('#speakerCount').textContent = `${track.speakers.length} SPEAKERS`;
   $('.breadcrumb').textContent = `${track.label} / ${track.name}`;
   if (changed) buildNavigation(track);
-  current = Math.max(0, Math.min(slides.length-1, Number(legacy?.[1] || match?.[2] || 1)-1));
+  const requestedPage = Number(legacy?.[1] || match?.[2] || 1);
+  // Original AX links predate the two extra overview pages.
+  const page = legacy && requestedPage >= 3 ? requestedPage + 2 : requestedPage;
+  current = Math.max(0, Math.min(slides.length-1, page-1));
   render();
   if (changed) {
     $('#main').focus({preventScroll:true});
@@ -92,6 +115,7 @@ function setPresentation(enabled) {
   document.body.classList.toggle('presenting',enabled);
   $('#presentButton').innerHTML = enabled ? '발표 종료 <kbd>F</kbd>' : '발표 모드 <kbd>F</kbd>';
   $('#presentButton').setAttribute('aria-pressed',String(enabled));
+  if (!enabled) syncNavigation(true);
 }
 
 async function togglePresentation() {
@@ -133,21 +157,25 @@ function buildNavigation(track) {
       navigation += `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)} · ${esc(speaker.affiliation)}</small></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
     });
     $('#navigation').innerHTML = navigation;
+    delete $('#navigation').dataset.currentGroup;
     document.querySelectorAll('nav button[data-index]').forEach(button => button.onclick = () => go(Number(button.dataset.index)));
     $('#jumpSelect').innerHTML = slides.map((s,i) => `<option value="${i}">${s.group ? esc(s.speaker)+' · ' : ''}${esc(s.nav)}</option>`).join('');
 }
 
 function renderLanding() {
-  $('#trackCards').innerHTML = Object.entries(tracks).map(([id, track]) => `<article class="card track-card">
+  $('#trackCards').innerHTML = Object.entries(tracks).map(([id, track]) => {
+    const trackStart = track.slides.findIndex(slide => slide.group === 5);
+    return `<article class="card track-card">
     <span class="card-label">${esc(track.label)}</span>
     <h2>${esc(track.name)}</h2>
     <p class="track-question">${esc(track.question)}</p>
     <p class="track-summary">${esc(track.summary)}</p>
     <p class="track-themes">${esc(track.themes)}</p>
     <div class="track-conclusion"><span>CONCLUSION</span><p>${esc(track.conclusion)}</p></div>
-    <a class="track-link" href="#/${esc(id)}/slide-1" aria-label="${esc(track.name)} 발표 자료 보기">발표 자료 보기 <span aria-hidden="true">→</span></a>
-    <small>${track.speakers.length}명의 발표자 · ${track.slides.length}장의 브리핑</small>
-  </article>`).join('');
+    <a class="track-link" href="#/${esc(id)}/slide-1" aria-label="${esc(track.name)} 발표 정리 자료 보기">발표 정리 자료 보기 <span aria-hidden="true">→</span></a>
+    ${trackStart >= 0 ? `<a class="skip-keynote" href="#/${esc(id)}/slide-${trackStart+1}" aria-label="${esc(track.name)} 키노트 건너 뛰기">키노트 건너 뛰기 <span aria-hidden="true">↗</span></a>` : ''}
+  </article>`;
+  }).join('');
 }
 
 async function init() {
