@@ -38,13 +38,13 @@ Windows PowerShell / Python 3.10 이상.
 최초 설치 또는 의존성 변경 시:
 
 ```powershell
-.\install.ps1
+.\scripts\install.ps1
 ```
 
 서버 실행:
 
 ```powershell
-.\start.ps1
+.\scripts\start.ps1
 ```
 
 브라우저에서 **http://127.0.0.1:8930** 접속. 종료는 서버 터미널에서 `Ctrl+C`.
@@ -57,7 +57,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8930
 ```
 
-이미 서버가 실행 중이면 해당 창에서 `Ctrl+C`로 종료한 뒤 다시 시작하세요. 내용 변경 후에도 서버를 다시 시작하고 브라우저를 새로고침합니다. `start.ps1`은 설치를 수행하지 않으며 포트가 사용 중이면 안내를 표시합니다.
+이미 서버가 실행 중이면 해당 창에서 `Ctrl+C`로 종료한 뒤 다시 시작하세요. 내용 변경 후에도 서버를 다시 시작하고 브라우저를 새로고침합니다. `scripts/start.ps1`은 설치를 수행하지 않으며 포트가 사용 중이면 안내를 표시합니다.
 
 같은 내부 네트워크의 팀원에게 공유하려면:
 
@@ -121,8 +121,8 @@ python -m venv .venv
 - `tracks.py`: 트랙 소개·선택 카드와 두 발표 데이터의 공통 카탈로그.
 - `static/`: 화면, 스타일, 키보드 이동 기능.
 - `main.py`: 웹페이지와 발표 데이터 API.
-- `install.ps1`: 가상환경 생성·패키지 설치.
-- `start.ps1`: 포트 점검·8930 서버 실행.
+- `scripts/install.ps1`: 가상환경 생성·패키지 설치.
+- `scripts/start.ps1`: 포트 점검·8930 서버 실행.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
