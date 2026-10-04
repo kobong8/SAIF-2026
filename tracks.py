@@ -1,13 +1,43 @@
 """One catalog for the local API and the generated GitHub Pages data."""
-from content import SLIDES, speaker_metadata
-from content_technology import SLIDES as AI_SLIDES, SPEAKERS as AI_SPEAKERS
+from copy import deepcopy
+from content_keynote import SLIDES as KEYNOTE_SLIDES, SPEAKERS as KEYNOTE_SPEAKERS
+from content_track1 import SLIDES as TRACK1_SLIDES, SPEAKERS as TRACK1_SPEAKERS
+from content_track2 import SLIDES as TRACK2_SLIDES, SPEAKERS as TRACK2_SPEAKERS
+
+
+def compose_slides(track_slides, track_speakers):
+    """Insert shared keynotes after the intro and assign display numbers."""
+    slides = deepcopy([s for s in track_slides if s['group'] == 0] + KEYNOTE_SLIDES
+                      + [s for s in track_slides if s['group'] != 0])
+    pages = {}
+    speakers = {speaker['id']: speaker for speaker in KEYNOTE_SPEAKERS + track_speakers}
+    for index, slide in enumerate(slides, 1):
+        group = slide['group']
+        if group:
+            speaker = speakers[group]
+            slide['speaker'] = speaker['name']
+            slide['section'] = f"{group:02d} · {speaker['name']} · {speaker['affiliation']}"
+        pages[group] = pages.get(group, 0) + 1
+        numbered = {'id': index}
+        for key, value in slide.items():
+            if key == 'nav':
+                numbered['page'] = pages[group]
+            numbered[key] = value
+        slides[index - 1] = numbered
+    return slides
+
+
+SLIDES = compose_slides(TRACK2_SLIDES, TRACK2_SPEAKERS)
+AI_SLIDES = compose_slides(TRACK1_SLIDES, TRACK1_SPEAKERS)
+AX_SPEAKERS = KEYNOTE_SPEAKERS + TRACK2_SPEAKERS
+AI_SPEAKERS = KEYNOTE_SPEAKERS + TRACK1_SPEAKERS
 
 
 def presentation_data():
     return {
         "title": "삼성 AI 포럼 2026",
         # Preserve the existing API shape for consumers of the AX presentation.
-        "speakers": speaker_metadata(),
+        "speakers": AX_SPEAKERS,
         "slides": SLIDES,
         "tracks": {
             "ai-technology": {
@@ -38,7 +68,7 @@ def presentation_data():
                 "summary": "개인의 업무 위임을 팀과 기업의 성과로 확장합니다. 사업 목표와 데이터, 안전한 에이전트 운영을 연결하고 반도체 R&D의 탐색·판단·실행 흐름에 적용합니다.",
                 "conclusion": "가치 있는 업무를 맡기고 결과를 검증하며, 데이터와 운영 책임을 갖춘 실행 방식을 조직의 자산으로 축적해야 합니다.",
                 "themes": "Business Value · Trusted Agents · AI-native R&D",
-                "speakers": speaker_metadata(), "slides": SLIDES,
+                "speakers": AX_SPEAKERS, "slides": SLIDES,
             },
         },
     }

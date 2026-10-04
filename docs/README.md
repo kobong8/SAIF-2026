@@ -16,7 +16,7 @@ SAIF 2026을 두 관점으로 읽는 발표용 웹페이지입니다. 첫 화면
 
 ```powershell
 python build_pages.py
-git add content.py content_expanded.py content_technology.py tracks.py build_pages.py main.py static index.html slides.json .nojekyll docs .gitignore
+git add content_keynote.py content_track1.py content_track2.py tracks.py build_pages.py main.py static index.html slides.json .nojekyll docs scripts .gitignore
 git commit -m "Update presentation"
 git push
 ```
@@ -116,13 +116,18 @@ python -m venv .venv
 
 `tests/`, `test/`, `__tests__/`, 테스트 파일 패턴, 테스트 캐시·보고서, `qa/`와 이미지·PDF·영상·압축 산출물은 `.gitignore`로 제외합니다. 기존 테스트 4개도 Git 추적에서 제외하고 로컬에 보존했습니다. 원본 TXT와 `.venv/`도 로컬 전용입니다. 실행·정적 빌드에 필요한 Python 코드, 의존성 목록, 실행 스크립트, HTML/CSS/JS와 `slides.json`은 계속 버전 관리합니다.
 
-- `content.py`, `content_expanded.py`: 발표 내용과 발표자 목록.
-- `content_technology.py`: AI Technology 강연과 종합 결론; 공통 키노트는 기존 콘텐츠를 복사해 재사용.
+- `content_keynote.py`: 공통 키노트 01–04의 발표자 정보와 슬라이드. 수정하면 두 Track에 함께 반영됩니다.
+- `content_track1.py`: Track 1 / AI Technology의 도입부 4장과 발표 05–10.
+- `content_track2.py`: Track 2 / AX Innovation의 도입부 4장과 발표 05–07.
 - `tracks.py`: 트랙 소개·선택 카드와 두 발표 데이터의 공통 카탈로그.
 - `static/`: 화면, 스타일, 키보드 이동 기능.
 - `main.py`: 웹페이지와 발표 데이터 API.
 - `scripts/install.ps1`: 가상환경 생성·패키지 설치.
 - `scripts/start.ps1`: 포트 점검·8930 서버 실행.
+
+내용 파일의 `SPEAKERS`는 목차의 발표자 정보이고, `SLIDES`는 화면 순서대로 배치된 슬라이드입니다. `title`은 제목, `subtitle`은 부제, `cards`는 본문 카드, `detail`은 하단 설명, `takeaway`는 핵심 메시지입니다. `group`은 발표 번호이며 전체 페이지와 발표 안의 페이지 번호는 자동 계산됩니다.
+
+표현을 수정한 뒤 `python build_pages.py`를 실행하세요. `slides.json`과 루트 `index.html`은 생성 파일이므로 직접 수정하지 않습니다. HTML 원본은 `static/index.html`입니다.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v

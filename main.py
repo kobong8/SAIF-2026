@@ -3,8 +3,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from content import SLIDES
-from tracks import presentation_data
+from tracks import SLIDES, presentation_data
 
 ROOT = Path(__file__).resolve().parent
 app = FastAPI(title="SAIF 2026 · 팀 공유 브리핑")
