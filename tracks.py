@@ -17,6 +17,20 @@ def presentation_data():
                 "conclusion": "다음 도약은 효율적인 실행, 현실에서의 검증, 경험을 보존하는 지속 학습을 함께 설계하는 데 있습니다.",
                 "themes": "Efficient AI · Physical AI · Continual Learning",
                 "speakers": AI_SPEAKERS, "slides": AI_SLIDES,
+                "sessions": [
+                    {"id": "efficient-ai", "name": "Efficient AI", "groups": [5, 6], "descriptions": [
+                        "제한된 자원 안에서 최적의 사용자 경험을 구현하는 Efficient AI의 설계 원칙과 삼성의 기술적 접근을 소개",
+                        "On-Device AI Platform의 3대 구성 요소인 Personal Data Engine (PDE), AI Models, Agent를 소개",
+                    ]},
+                    {"id": "physical-ai", "name": "Physical AI", "groups": [7, 8], "descriptions": [
+                        "빠르게 변화하는 월드 모델의 동향을 조망하고, 삼성리서치의 초기 성과와 함께 그 가능성을 실현하기 위한 로드맵을 소개",
+                        "로봇 파운데이션 모델의 현위치와 삼성 RX사업추진실의 전략",
+                    ]},
+                    {"id": "continual-learning", "name": "Continual Learning", "groups": [9, 10], "descriptions": [
+                        "사용 경험을 토대로 스스로 성장하는 Self-evolving AI 기술과 삼성전자에서의 활용 방안을 소개",
+                        "신뢰할 수 있는 메모리 편집, 효율적인 지식 컴파일, 망각 없는 지속 학습을 위한 세 가지 새로운 기법",
+                    ]},
+                ],
             },
             "ax-innovation": {
                 "name": "AX Innovation", "label": "Keynote + Track 2",

@@ -32,11 +32,18 @@ function render() {
     if (active) button.setAttribute('aria-current','step');
     else button.removeAttribute('aria-current');
   });
-  document.querySelectorAll('nav details').forEach(group => {
+  document.querySelectorAll('nav details[data-group]').forEach(group => {
     const active = Number(group.dataset.group) === s.group;
     group.classList.toggle('current-group',active);
     group.open = active;
   });
+  const session = (tracks[activeTrack].sessions || []).find(item => item.groups.includes(s.group));
+  document.querySelectorAll('nav details[data-session]').forEach(item => {
+    const active = item.dataset.session === session?.id;
+    item.open = active;
+    item.classList.toggle('current-session', active);
+  });
+  $('.breadcrumb').textContent = `${tracks[activeTrack].label} / ${session?.name || tracks[activeTrack].name}`;
   $('#chapterPages').innerHTML = slides.map((item,i) => ({item,i})).filter(({item}) => item.group === s.group).map(({item,i}) => `<button data-index="${i}" class="${i === current ? 'selected' : ''}" aria-label="${esc(item.nav)}" ${i === current ? 'aria-current="step"' : ''}>${item.page}</button>`).join('');
   $('#chapterPages').querySelectorAll('button').forEach(button => button.onclick = () => go(Number(button.dataset.index)));
   syncNavigation();
@@ -47,9 +54,14 @@ function syncNavigation(force = false) {
   if (!activeTrack || !slides.length || !navigation.clientHeight) return;
   const group = String(slides[current].group);
   const changed = force || navigation.dataset.currentGroup !== group;
-  const target = changed && group !== '0'
+  let target = changed && group !== '0'
     ? navigation.querySelector(`details[data-group="${group}"] summary`)
     : navigation.querySelector('button[aria-current="step"]');
+  const session = (tracks[activeTrack].sessions || []).find(item => item.groups.includes(Number(group)));
+  if (session && navigation.dataset.currentSession !== session.id) {
+    target = navigation.querySelector(`details[data-session="${session.id}"] > summary`);
+  }
+  navigation.dataset.currentSession = session?.id || '';
   navigation.dataset.currentGroup = group;
   if (!target) return;
   const viewport = navigation.getBoundingClientRect();
@@ -153,13 +165,22 @@ function navButton(s,index) {
 
 function buildNavigation(track) {
     let navigation = `<div class="intro-links">${slides.map((s,i) => s.group === 0 ? navButton(s,i) : '').join('')}</div>`;
-    track.speakers.forEach(speaker => {
-      navigation += `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong><small>${esc(speaker.name)} · ${esc(speaker.affiliation)}</small></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
+    const speakerNavigation = speaker => `<details data-group="${speaker.id}"><summary><span class="group-number">${String(speaker.id).padStart(2,'0')}</span><span class="group-heading"><strong>${esc(speaker.topic)}</strong></span><span class="chevron">⌄</span></summary><div class="group-slides">${slides.map((s,i) => s.group === speaker.id ? navButton(s,i) : '').join('')}</div></details>`;
+    const sessions = track.sessions || [];
+    track.speakers.filter(speaker => !sessions.some(session => session.groups.includes(speaker.id))).forEach(speaker => {
+      navigation += speakerNavigation(speaker);
+    });
+    sessions.forEach(session => {
+      navigation += `<details class="topic-session" data-session="${esc(session.id)}"><summary><span class="group-heading"><strong>${esc(session.name)}</strong></span><span class="chevron">⌄</span></summary>${session.groups.map(id => speakerNavigation(track.speakers.find(speaker => speaker.id === id))).join('')}</details>`;
     });
     $('#navigation').innerHTML = navigation;
     delete $('#navigation').dataset.currentGroup;
+    delete $('#navigation').dataset.currentSession;
     document.querySelectorAll('nav button[data-index]').forEach(button => button.onclick = () => go(Number(button.dataset.index)));
-    $('#jumpSelect').innerHTML = slides.map((s,i) => `<option value="${i}">${s.group ? esc(s.speaker)+' · ' : ''}${esc(s.nav)}</option>`).join('');
+    const option = (s,i) => `<option value="${i}">${s.group ? esc(s.speaker)+' · ' : ''}${esc(s.nav)}</option>`;
+    $('#jumpSelect').innerHTML = sessions.length
+      ? [{name:'도입부 · 공통 키노트', groups:[0,1,2,3,4]}, ...sessions].map(session => `<optgroup label="${esc(session.name)}">${slides.map((s,i) => session.groups.includes(s.group) ? option(s,i) : '').join('')}</optgroup>`).join('')
+      : slides.map(option).join('');
 }
 
 function renderLanding() {

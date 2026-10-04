@@ -134,3 +134,6 @@ node --check static/app.js
 테스트 파일은 로컬 전용이므로 새 clone에는 포함되지 않습니다. 브라우저 검증 스크립트는 설치된 Edge를 headless로 사용하며, 결과와 스크린샷은 `qa/`에 저장합니다. Playwright는 검증용으로만 설치하며 실행 의존성에 추가하지 않습니다.
 
 로컬 API: `/health`, `/api/slides`, `/slides.json`. 발표 데이터의 `tracks`에 두 Track이 있고, 기존 호환용 `slides`·`speakers`는 AX 자료를 제공합니다. `/health`의 `slides`는 현재 AX 장수(81)입니다. 발표 화면에는 원본 자료 다운로드 기능이 없습니다.
+# Track 1 주제별 목차
+
+Track 1은 Efficient AI(05–06), Physical AI(07–08), Continual Learning(09–10)의 세 주제 아래 발표 두 개씩 구성합니다. 목차는 주제와 발표 제목으로 표시하며, 주제 아래 발표를 펼쳐 슬라이드로 이동할 수 있습니다. 페이지 이동과 키노트 건너뛰기 시 현재 주제와 발표가 자동으로 펼쳐지고 목차 스크롤이 따라갑니다. 모바일 발표 이동 메뉴도 같은 주제로 묶습니다.
