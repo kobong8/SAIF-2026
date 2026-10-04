@@ -111,8 +111,8 @@ function fromHash() {
   $('.breadcrumb').textContent = `${track.label} / ${track.name}`;
   if (changed) buildNavigation(track);
   const requestedPage = Number(legacy?.[1] || match?.[2] || 1);
-  // Original AX links predate the two extra overview pages.
-  const page = legacy && requestedPage >= 3 ? requestedPage + 2 : requestedPage;
+  // The two-page intro now matches the original AX page numbering.
+  const page = requestedPage;
   current = Math.max(0, Math.min(slides.length-1, page-1));
   render();
   if (changed) {
