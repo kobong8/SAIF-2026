@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#111a30">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111a30'/%3E%3Cpath d='M23 10H12v6h9v6H9' fill='none' stroke='%23b5c2ff' stroke-width='3'/%3E%3C/svg%3E">
   <title>SAIF 2026 · 팀 공유 브리핑</title>
-  <link rel="stylesheet" href="./static/style.css?v=17">
+  <link rel="stylesheet" href="./static/style.css?v=18">
 </head>
 <body class="is-home">
 <main id="landing" tabindex="-1" aria-labelledby="landingTitle">
-  <div class="landing-toolbar"><div class="landing-brand">SAIF <b>2026</b><span>FORUM FIELD NOTES</span></div><button id="landingPresentButton" class="primary" aria-pressed="false">발표 모드 <kbd>F</kbd></button></div>
+  <div class="landing-toolbar"><div class="landing-brand">SAIF <b>2026</b><span>FORUM FIELD NOTES</span></div><div class="landing-actions"><button type="button" data-open-search aria-haspopup="dialog">자료 검색</button><button id="landingPresentButton" class="primary" aria-pressed="false">발표 모드 <kbd>F</kbd></button></div></div>
   <div class="landing-intro"><p class="eyebrow">The Agentic Shift: FROM INTELLIGENCE TO IMPACT</p>
     <h1 id="landingTitle">AI는 어디로 가고 있는가?</h1>
     <p class="landing-description">기술의 발전에서 실제 적용과 가치 창출까지. 같은 질문을 두 가지 관점으로 읽는 삼성 AI 포럼 2026.</p>
@@ -27,7 +27,7 @@
 <div class="workspace">
   <header>
     <div class="breadcrumb">삼성 AI 포럼 <span>/</span> 참석 내용 공유</div>
-    <div class="toolbar"><a id="homeLink" href="#/">← SAIF 2026 Tracks</a><button id="presentButton" class="primary" aria-pressed="false">발표 모드 <kbd>F</kbd></button></div>
+    <div class="toolbar"><a id="homeLink" href="#/">← SAIF 2026 Tracks</a><button type="button" data-open-search aria-haspopup="dialog">자료 검색</button><button id="presentButton" class="primary" aria-pressed="false">발표 모드 <kbd>F</kbd></button></div>
   </header>
   <div class="mobile-nav"><label for="jumpSelect">발표 이동</label><select id="jumpSelect"></select></div>
   <main id="main" tabindex="-1"><div id="slide" aria-live="polite"><p>발표 자료를 불러오고 있습니다…</p></div></main>
@@ -38,6 +38,14 @@
   </footer>
   <div class="progress" role="progressbar" aria-label="장표 진행" aria-valuemin="1"><div id="progressFill"></div></div>
 </div>
-<script src="./static/app.js?v=18"></script>
+<dialog id="searchDialog" aria-labelledby="searchTitle" aria-describedby="searchHelp">
+  <div class="search-header"><h2 id="searchTitle">발표 자료 검색</h2><button id="closeSearch" type="button" aria-label="검색 닫기">닫기 <kbd>Esc</kbd></button></div>
+  <p id="searchHelp">발표 제목, 발표자, 본문의 단어로 검색하세요. 여러 단어를 입력하면 모두 포함된 슬라이드를 찾습니다.</p>
+  <div class="search-controls"><div class="search-query"><label for="searchInput">검색어</label><input id="searchInput" type="search" placeholder="예: 기억 보존, 월드 모델, 이윤수" autocomplete="off" maxlength="200"></div><div><label for="searchScope">검색 범위</label><select id="searchScope"><option value="all">전체 자료</option><option value="ai-technology">AI Technology</option><option value="ax-innovation">AX Innovation</option></select></div></div>
+  <p id="searchStatus" role="status" aria-live="polite"></p>
+  <ol id="searchResults" aria-label="검색 결과"></ol>
+</dialog>
+<script src="./static/app.js?v=19"></script>
+<script src="./static/search.js?v=1"></script>
 </body>
 </html>

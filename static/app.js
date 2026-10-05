@@ -149,6 +149,7 @@ $('#next').onclick = () => go(current+1);
 $('#jumpSelect').onchange = event => go(Number(event.target.value));
 window.addEventListener('hashchange',fromHash);
 document.addEventListener('keydown',event => {
+  if (document.querySelector('#searchDialog[open]')) return;
   if(/INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
   if(event.key.toLowerCase() === 'f') {event.preventDefault();togglePresentation();return;}
   if(event.key === 'Escape' && document.body.classList.contains('presenting')) {togglePresentation();return;}

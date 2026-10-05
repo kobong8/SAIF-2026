@@ -43,3 +43,8 @@ qa/
 *.7z
 *.tar
 *.gz
+
+# Local-only editorial and design documents
+/docs/content-editorial-methodology.md
+/docs/presentation-prd.md
+/docs/presentation-trd.md
