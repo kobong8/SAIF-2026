@@ -96,13 +96,22 @@
     if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
   });
   input.addEventListener('compositionstart', () => { composing = true; });
-  input.addEventListener('compositionend', () => { composing = false; search(); });
-  input.addEventListener('input', () => { if (!composing) search(); });
+  function prepareSearch() {
+    results.innerHTML = '';
+    status.textContent = input.value.trim()
+      ? 'Enter를 누르거나 검색 버튼을 선택하세요.'
+      : '검색어를 입력한 뒤 Enter를 누르거나 검색 버튼을 선택하세요.';
+  }
+  input.addEventListener('compositionend', () => { composing = false; prepareSearch(); });
+  input.addEventListener('input', prepareSearch);
+  const submitButton = document.querySelector('#submitSearch');
+  submitButton.textContent = '검색';
+  submitButton.onclick = search;
   scope.addEventListener('change', search);
   input.addEventListener('keydown', event => {
-    if (event.isComposing) return;
+    if (event.isComposing || composing || event.keyCode === 229) return;
     if (event.key === 'ArrowDown') { event.preventDefault(); results.querySelector('a')?.focus(); }
-    if (event.key === 'Enter') { event.preventDefault(); results.querySelector('a')?.click(); }
+    if (event.key === 'Enter') { event.preventDefault(); search(); }
   });
   results.addEventListener('click', event => {
     const link = event.target.closest('a.search-result');
