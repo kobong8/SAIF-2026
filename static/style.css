@@ -212,3 +212,35 @@ body.search-open{overflow:hidden}
   .search-header h2{font-size:19px}
   .search-result{padding:13px}
 }
+
+/* Theme palette follows kobong-site-template. */
+:root{color-scheme:light}
+html[data-theme="dark"]{color-scheme:dark;--paper:#111a2c;--ink:#edf2ff;--muted:#aebcd4;--line:#35425e;--accent:#a7b3ff;--soft:#263650;--white:#1b2941}
+[data-theme-toggle]{white-space:nowrap}
+
+html[data-theme="dark"] body{background:radial-gradient(ellipse at 90% 0%,#5265de0d 0,transparent 45%),var(--paper)}
+html[data-theme="dark"] header{border-color:var(--line)}
+html[data-theme="dark"] :is(h1,.card h2){color:var(--ink)}
+html[data-theme="dark"] :is(.subtitle,.card li,.detail p){color:var(--muted)}
+html[data-theme="dark"] :is(.card,.slide--hero .card){background:var(--white);border-color:var(--line);border-top-color:var(--card-accent)}
+html[data-theme="dark"] .card{--card-accent:#a7b3ff}
+html[data-theme="dark"] .card:nth-child(2){--card-accent:#c9afff}
+html[data-theme="dark"] .card:nth-child(3){--card-accent:#78c8ec}
+html[data-theme="dark"] .card:nth-child(4){--card-accent:#aebcd4}
+html[data-theme="dark"] :is(.chapter-count,.card-label,.detail,.detail-links a,.skip-keynote){background:var(--soft);border-color:var(--line)}
+html[data-theme="dark"] :is(.card-label,.detail h2,.detail-links a,.track-themes,.skip-keynote,.search-result-meta,#counter){color:var(--accent)}
+html[data-theme="dark"] :is(.detail-links a:hover,.skip-keynote:hover){background:#304365}
+html[data-theme="dark"] :is(.slide--metrics .card:last-child,.slide--performance .card:nth-child(2)){background:linear-gradient(150deg,#26365d,#26305c);border-color:#4c5c89}
+html[data-theme="dark"] :is(.slide--metrics .card:last-child,.slide--performance .card:nth-child(2)) h2{color:#d1c5ff}
+html[data-theme="dark"] :is(.slide--metrics .card:last-child,.slide--performance .card:nth-child(2)) li{color:#edf1ff}
+html[data-theme="dark"] :is(.slide--metrics .card:last-child,.slide--performance .card:nth-child(2)) .card-label{background:#394b77;color:#e1e7ff}
+html[data-theme="dark"] .slide--flow .card:not(:last-child):after{background:var(--soft);border-color:var(--line);color:var(--accent)}
+html[data-theme="dark"] :is(#chapterPages button,.paging button,.search-result,.search-controls input,.search-controls select){background:var(--white);border-color:var(--line)}
+html[data-theme="dark"] :is(.paging button:hover,.search-result:hover,#chapterPages button:hover){background:var(--soft)}
+html[data-theme="dark"] :is(#chapterPages .selected,.track-link){background:#5265de;border-color:#5265de;color:white}
+html[data-theme="dark"] .track-link:hover{background:#4251be}
+html[data-theme="dark"] #searchDialog{background:var(--paper)}
+/* Allow the extra control to wrap without overlapping the slide on narrow screens. */
+.workspace header,.presenting header{height:auto;min-height:76px;padding-block:10px}
+.landing-actions{flex-wrap:wrap}
+@media(max-width:760px){.workspace header,.presenting header{min-height:60px}.toolbar{justify-content:flex-end}.landing-toolbar button{padding:9px;font-size:11px}}
